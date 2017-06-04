@@ -1,0 +1,118 @@
+<div id="logo">
+<span id="outer"><span></span></span>
+<span id="line"></span>
+</div>
+<style>
+#logo {
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	height: 80px;
+	width: 120px;
+	background: #5a91cd;
+	padding: 30px 20px 50px 20px;
+	border-top-left-radius: 90px;
+	border-bottom-left-radius: 90px;
+	border-bottom-right-radius: 90px;
+	transform: rotate(-45deg);
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	animation: outer 4s infinite;
+}
+#logo #outer {
+	border-radius: 50%;
+	background: white;
+	width: 100px;
+	height: 100px;
+	display: block;
+	align-self: center;
+	position: relative;
+	top: 9px;
+	left: 3px;
+}
+#logo #outer span {
+	width: 45px;
+	height: 45px;
+	background: orange;
+	position: relative;
+	display: block;
+	border-radius: 50%;
+	top: 29px;
+	left: 28px;
+	z-index: 5;
+	animation: inner 4s infinite;
+}
+#logo #line {
+	top: -25px;
+	left: 75px;
+	position: absolute;
+	width: 30px;
+	height: 95px;
+	background: white;
+	display: block;
+	transform: rotate(45deg);
+}
+@keyframes outer {
+	0% {
+		background-color: #5a91cd;
+		border-top-right-radius: 0px;
+		border-top-left-radius: 90px;
+		border-bottom-left-radius: 90px;
+		border-bottom-right-radius: 90px;
+	}
+	25% {
+		background-color: #ffc40d;
+		border-top-right-radius: 90px;
+		border-top-left-radius: 0px;
+		border-bottom-left-radius: 90px;
+		border-bottom-right-radius: 90px;
+	}
+	50% {
+		background-color: #da532c;
+		border-top-right-radius: 90px;
+		border-top-left-radius: 90px;
+		border-bottom-left-radius: 0px;
+		border-bottom-right-radius: 90px;
+	}
+	75% {
+		background-color: #7e3878;
+		border-top-right-radius: 90px;
+		border-top-left-radius: 90px;
+		border-bottom-left-radius: 90px;
+		border-bottom-right-radius: 0px;
+	}
+	100% {
+		background-color: #5a91cd;
+		border-top-right-radius: 0px;
+		border-top-left-radius: 90px;
+		border-bottom-left-radius: 90px;
+		border-bottom-right-radius: 90px;
+	}
+}
+@keyframes inner {
+	0% {
+		background-color: orange;
+		border-radius: 50%;
+	}
+	25% {
+		background-color: #7e3878;
+		border-radius: 30%;
+		transform: rotate(-90deg);
+	}
+	50% {
+		background-color: #ffc40d;
+		border-radius: 10%;
+		transform: rotate(-135deg);
+	}
+	75% {
+		background-color: #da532c;
+		border-radius: 30%;
+		transform: rotate(-225deg);
+	}
+	100% {
+		background-color: orange;
+		border-radius: 50%;
+	}
+}
+</style>
