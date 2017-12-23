@@ -10,21 +10,28 @@
   <link rel="icon" type="image/x-icon" href="assets/icon/favicon.png">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
-  
+
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <!-- End jQuery -->
-  
+
   <!-- Fullpage.js -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.css" />
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.js"></script>
   <!-- End Fullpage.js -->
-  
+
+  <!-- Animate Text Dependencies -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+  <script type="text/javascript" src="assets/script/jquery.lettering-0.6.1.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"></script>
+  <!-- End Animate Text Dependencies -->
+
   <!-- Google Analytics -->
   <script>
   if (false) {
     window.ga = window.ga || function() {
-      (ga.q = ga.q || []).push(arguments) };
+      (ga.q = ga.q || []).push(arguments)
+    };
     ga.l = +new Date;
     ga('create', 'UA-107672074-1', 'auto');
     ga('send', 'pageview');
@@ -32,27 +39,35 @@
   </script>
   <script async src='https://www.google-analytics.com/analytics.js'></script>
   <!-- End Google Analytics -->
-  
+
   <link href="assets/css/main.css" rel="stylesheet">
   <script type="text/javascript" src="assets/script/main.js"></script>
 </head>
 
 <body>
   <div class="header">
-    <div class="title"></div>
+    <div class="title animated fadeInLeft"></div>
     <ul class="menu">
-      <li><span>Our Offerings</span></li>
-      <li><span>About Us</span></li>
-      <li><span>Careers</span></li>
-      <li><span>Contact Us</span></li>
+      <li>
+        <span class="animated fadeInLeft">Our Offerings</span>
+      </li>
+      <li>
+        <span class="animated fadeInLeft">About Us</span>
+      </li>
+      <li>
+        <span class="animated fadeInLeft">Careers</span>
+      </li>
+      <li>
+        <span class="animated fadeInLeft">Contact Us</span>
+      </li>
     </ul>
   </div>
   <div class="landing-page">
     <div id="fullpage">
       <div class="section page-1">
         <div class="connect">
-          <span><a href="" target="_blank">Twitter</a></span>
-          <span><a href="https://www.linkedin.com/company/brimmatech/" target="_blank">LinkedIn</a></span>
+          <span><a class="animated fadeInLeft" href="" target="_blank">Twitter</a></span>
+          <span><a class="animated fadeInLeft" href="https://www.linkedin.com/company/brimmatech/" target="_blank">LinkedIn</a></span>
         </div>
         <div class="slide slide-1">
           <span class="big-text">Tribe Brimma Tech</span>
@@ -60,29 +75,29 @@
         </div>
         <div class="slide slide-2">
           <div class="testimonial-box float-right">
-            <span class="mid-text">"We had a definite need to expand our senior software development team to design modern, cutting edge front-end consumer solutions, and Brimma Tech was a perfect fit."</span>
-            <span class="mid-text">I value a company I can seamlessly work with and even learn from. And, Brimma Tech is that company."</span>
-            <span class="annotation">- Steve Octaviano, CTO, BlueSage Solutions</span>
+            <span class="mid-text animated delayed-anime">"We had a definite need to expand our senior software development team to design modern, cutting edge front-end consumer solutions, and Brimma Tech was a perfect fit."</span>
+            <span class="mid-text animated delayed-anime">I value a company I can seamlessly work with and even learn from. And, Brimma Tech is that company."</span>
+            <span class="annotation animated delayed-anime">- Steve Octaviano, CTO, BlueSage Solutions</span>
           </div>
         </div>
         <div class="slide slide-3">
           <div class="testimonial-box float-left">
-            <span class="mid-text">"I have worked with many app development firms and all of them had strengths, But the Brimma Tech team brought a full stack of talent to the table that i hadn't seen in many larger firms."</span>
-            <span class="mid-text">I won't be looking anywhere else for help."</span>
-            <span class="annotation">- Devin Dally,Ex-COO, BlueSage Solutions</span>
+            <span class="mid-text animated delayed-anime">"I have worked with many app development firms and all of them had strengths, But the Brimma Tech team brought a full stack of talent to the table that i hadn't seen in many larger firms."</span>
+            <span class="mid-text animated delayed-anime">I won't be looking anywhere else for help."</span>
+            <span class="annotation animated delayed-anime">- Devin Dally,Ex-COO, BlueSage Solutions</span>
           </div>
         </div>
         <div class="slide slide-4">
           <div class="testimonial-box float-left expanded-box">
-            <span class="ellie-mae-logo"></span>
-            <span class="mid-text">We are one of the youngest companies to be</span>
-            <span class="bigger-text">Ellie Mae's pro select partner!</span>
+            <span class="ellie-mae-logo animated delayed-anime"></span>
+            <span class="mid-text animated delayed-anime">We are one of the youngest companies to be</span>
+            <span class="bigger-text animated delayed-anime">Ellie Mae's pro select partner!</span>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="scroll-btn"></div>
+  <div class="scroll-btn animated fadeInLeft"></div>
 </body>
 
 </html>

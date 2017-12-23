@@ -64,6 +64,16 @@ a {
 	text-decoration: unset !important;
 }
 
+.animated {
+	animation-duration: 1s !important;
+	-webkit-animation-duration: 1s !important;
+}
+
+.delayed-anime {
+	animation-delay: 1s !important;
+	-webkit-animation-delay: 1s !important;
+}
+
 .fp-controlArrow {
 	border: none !important;
 	width: 25px !important;
