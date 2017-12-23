@@ -1,0 +1,292 @@
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Lato-Black';
+  src: url('../fonts/Lato-Black.ttf');
+}
+
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url('../fonts/Lato-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Lato-Light';
+  src: url('../fonts/Lato-Light.ttf');
+}
+
+@font-face {
+  font-family: 'tahoma';
+  src: url('../fonts/tahoma.ttf');
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	overflow: hidden;
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	max-height: 100%;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	-webkit-user-drag: none;
+	-ms-content-zooming: none;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	word-wrap: break-word;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	text-size-adjust: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	font-family: 'Lato', sans-serif;
+}
+
+a {
+	color: unset !important;
+	text-decoration: unset !important;
+}
+
+.fp-controlArrow {
+	border: none !important;
+	width: 25px !important;
+	height: 25px !important;
+	bottom: 20px !important;
+	top: unset !important;
+}
+
+.fp-prev {
+	left: unset !important;
+	right: 90px !important;
+	background: url('../icon/left.png') no-repeat;
+}
+
+.fp-next {
+	left: unset !important;
+	right: 15px !important;
+	background: url('../icon/right.png') no-repeat;
+}
+
+.connect {
+	position: absolute;
+	right: 50px;
+	top: 50vh;
+	display: flex;
+	flex-flow: row;
+	color: white;
+	z-index: 2;
+	transform: rotate(90deg);
+	transform-origin: 100% 100%;
+	font-size: 0.8rem;
+}
+
+.connect span {
+	padding: 0px 30px;
+	position: relative;
+}
+
+.connect span::before {
+	content: '';
+    height: 3px;
+    width: 0%;
+    position: absolute;
+    top: 110%;
+    left: 30px;
+    background-color: white;
+    transition: all 1s;
+}
+
+.connect span:hover::before {
+	width: 45%;
+}
+
+.connect span:first-of-type:hover::before {
+	width: 42%;
+}
+
+.scroll-btn {
+	position: absolute;
+	cursor: pointer;
+	z-index: 1;
+	bottom: 10px;
+	left: 1vw;
+	width: 50px;
+	height: 50px;
+	background: url('../icon/scroll.png') no-repeat;
+}
+
+.header {
+	z-index: 1;
+	width: 100%;
+	padding: 10px;
+	padding-top: 30px;
+	position: absolute;
+	top:0;
+	left:0;
+}
+
+.title {
+	background: url('../icon/logo_bw.png') no-repeat;
+	background-size: 75%;
+    background-position: left;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 1vw;
+    top:2vh;
+}
+
+.menu {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+	display: flex;
+	flex-flow: row;
+	justify-content: flex-end;
+	color: white;
+}
+
+.menu li {
+	display: inline;
+	position: relative;
+	padding: 5px 15px;
+	margin: 0px 10px;
+	cursor: pointer;
+}
+
+.menu li span {
+	z-index: 1;
+	position: relative;
+	font-family: 'Lato-Bold', sans-serif;
+	font-size: 0.8rem;
+	font-weight: bold;
+}
+
+.menu li::before {
+	content: '';
+	position: absolute;
+	top: 5px;
+    right: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #f35d19;
+    transition: right 1s;
+}
+
+.menu li:hover::before {
+	right: 0;
+}
+
+.landing-page {
+	width: 100%;
+	height: 100%;
+}
+
+.slide {
+	background-size: cover !important;
+	background-position: bottom right !important;
+	color: white;
+	position: relative;
+}
+
+.slide-1 {
+	background: url('../images/bg_1.jpg') no-repeat;
+}
+
+.slide-2 {
+	background-position: bottom left !important;
+	background: url('../images/bg_2.jpg') no-repeat;
+}
+
+.slide-3 {
+	background: url('../images/bg_3.jpg') no-repeat;
+}
+
+.slide-4 {
+	background: url('../images/bg_4.jpg') no-repeat;
+}
+
+.testimonial-box {
+	max-width: 40vw;    
+	position: relative;
+	top: -25px;
+}
+
+.expanded-box {
+	max-width: 45vw !important;
+}
+
+.float-right {
+	float: right;
+	margin-right: 8vw;
+}
+
+.float-left {
+	float: left;
+	margin-left: 8vw;
+}
+
+.big-text {
+	font-size: 3rem;
+	display: block;
+	margin-left: 10vw;
+}
+
+.bigger-text {
+	font-size: 3rem;
+	display: block;
+}
+
+.mid-text {
+	font-size: 1.3rem;
+	display: block;
+	font-style: italic;
+	margin-bottom: 15px;
+}
+
+.small-text {
+	font-size: 1rem;
+	display: block;
+	color: #999999;
+	margin-left: 10vw;
+}
+
+.annotation {
+	color: #f35d19;
+	font-size: 1rem;
+	display: block;
+	float: right;
+	margin-top: 30px;
+}
+
+.ellie-mae-logo {
+	background: url('../images/elimae_logo.png') no-repeat;
+	width: 150px;
+	height: 150px;
+	display: block;
+	background-size: 100%;
+}
+
+@media screen and (max-width:768px) {
+	.menu {
+		/*todo*/
+	}
+}

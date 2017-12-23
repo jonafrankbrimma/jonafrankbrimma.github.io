@@ -1,118 +1,88 @@
-<div id="logo">
-<span id="outer"><span></span></span>
-<span id="line"></span>
-</div>
-<style>
-#logo {
-	position: absolute;
-	top: 40vh;
-	left: 40vw;
-	height: 80px;
-	width: 120px;
-	background: #5a91cd;
-	padding: 30px 20px 50px 20px;
-	border-top-left-radius: 90px;
-	border-bottom-left-radius: 90px;
-	border-bottom-right-radius: 90px;
-	transform: rotate(-45deg) scale(2);
-	display: flex;
-	align-content: center;
-	justify-content: center;
-	animation: outer 4s infinite;
-}
-#logo #outer {
-	border-radius: 50%;
-	background: white;
-	width: 100px;
-	height: 100px;
-	display: block;
-	align-self: center;
-	position: relative;
-	top: 9px;
-	left: 3px;
-}
-#logo #outer span {
-	width: 45px;
-	height: 45px;
-	background: orange;
-	position: relative;
-	display: block;
-	border-radius: 50%;
-	top: 29px;
-	left: 28px;
-	z-index: 5;
-	animation: inner 4s infinite;
-}
-#logo #line {
-	top: -25px;
-	left: 75px;
-	position: absolute;
-	width: 30px;
-	height: 95px;
-	background: white;
-	display: block;
-	transform: rotate(45deg);
-}
-@keyframes outer {
-	0% {
-		background-color: #5a91cd;
-		border-top-right-radius: 0px;
-		border-top-left-radius: 90px;
-		border-bottom-left-radius: 90px;
-		border-bottom-right-radius: 90px;
-	}
-	25% {
-		background-color: #ffc40d;
-		border-top-right-radius: 90px;
-		border-top-left-radius: 0px;
-		border-bottom-left-radius: 90px;
-		border-bottom-right-radius: 90px;
-	}
-	50% {
-		background-color: #da532c;
-		border-top-right-radius: 90px;
-		border-top-left-radius: 90px;
-		border-bottom-left-radius: 0px;
-		border-bottom-right-radius: 90px;
-	}
-	75% {
-		background-color: #7e3878;
-		border-top-right-radius: 90px;
-		border-top-left-radius: 90px;
-		border-bottom-left-radius: 90px;
-		border-bottom-right-radius: 0px;
-	}
-	100% {
-		background-color: #5a91cd;
-		border-top-right-radius: 0px;
-		border-top-left-radius: 90px;
-		border-bottom-left-radius: 90px;
-		border-bottom-right-radius: 90px;
-	}
-}
-@keyframes inner {
-	0% {
-		background-color: orange;
-		border-radius: 50%;
-	}
-	25% {
-		background-color: #7e3878;
-		border-radius: 30%;
-		transform: rotate(-90deg);
-	}
-	50% {
-		background-color: #ffc40d;
-		border-radius: 10%;
-		transform: rotate(-135deg);
-	}
-	75% {
-		background-color: #da532c;
-		border-radius: 30%;
-		transform: rotate(-225deg);
-	}
-	100% {
-		background-color: orange;
-		border-radius: 50%;
-	}
-}
-</style>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Brimma Tech</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <link rel="icon" type="image/x-icon" href="assets/icon/favicon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <!-- End jQuery -->
+  
+  <!-- Fullpage.js -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.css" />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.js"></script>
+  <!-- End Fullpage.js -->
+  
+  <!-- Google Analytics -->
+  <script>
+  if (false) {
+    window.ga = window.ga || function() {
+      (ga.q = ga.q || []).push(arguments) };
+    ga.l = +new Date;
+    ga('create', 'UA-107672074-1', 'auto');
+    ga('send', 'pageview');
+  }
+  </script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
+  <!-- End Google Analytics -->
+  
+  <link href="assets/css/main.css" rel="stylesheet">
+  <script type="text/javascript" src="assets/script/main.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <div class="title"></div>
+    <ul class="menu">
+      <li><span>Our Offerings</span></li>
+      <li><span>About Us</span></li>
+      <li><span>Careers</span></li>
+      <li><span>Contact Us</span></li>
+    </ul>
+  </div>
+  <div class="landing-page">
+    <div id="fullpage">
+      <div class="section page-1">
+        <div class="connect">
+          <span><a href="" target="_blank">Twitter</a></span>
+          <span><a href="https://www.linkedin.com/company/brimmatech/" target="_blank">LinkedIn</a></span>
+        </div>
+        <div class="slide slide-1">
+          <span class="big-text">Tribe Brimma Tech</span>
+          <span class="small-text">We shrink your tech phobias. Let's talk around a campfire</span>
+        </div>
+        <div class="slide slide-2">
+          <div class="testimonial-box float-right">
+            <span class="mid-text">"We had a definite need to expand our senior software development team to design modern, cutting edge front-end consumer solutions, and Brimma Tech was a perfect fit."</span>
+            <span class="mid-text">I value a company I can seamlessly work with and even learn from. And, Brimma Tech is that company."</span>
+            <span class="annotation">- Steve Octaviano, CTO, BlueSage Solutions</span>
+          </div>
+        </div>
+        <div class="slide slide-3">
+          <div class="testimonial-box float-left">
+            <span class="mid-text">"I have worked with many app development firms and all of them had strengths, But the Brimma Tech team brought a full stack of talent to the table that i hadn't seen in many larger firms."</span>
+            <span class="mid-text">I won't be looking anywhere else for help."</span>
+            <span class="annotation">- Devin Dally,Ex-COO, BlueSage Solutions</span>
+          </div>
+        </div>
+        <div class="slide slide-4">
+          <div class="testimonial-box float-left expanded-box">
+            <span class="ellie-mae-logo"></span>
+            <span class="mid-text">We are one of the youngest companies to be</span>
+            <span class="bigger-text">Ellie Mae's pro select partner!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-btn"></div>
+</body>
+
+</html>
