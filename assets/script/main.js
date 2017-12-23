@@ -6,10 +6,7 @@ $(document).ready(function() {
 		onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){
 			if(direction == 'right') {
 				let className = '.slide-' + Number(slideIndex + 2) + ' ';
-				$( className + '.mid-text').toggleClass('fadeIn');
-				$( className + '.annotation').toggleClass('fadeIn');
-				$( className + '.bigger-text').toggleClass('fadeIn');
-				$( '.ellie-mae-logo' ).toggleClass('fadeIn');
+				$( className + '.testimonial-box').toggleClass('fadeIn');
 			}
 		}
 	});
