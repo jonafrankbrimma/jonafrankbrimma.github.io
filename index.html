@@ -13,6 +13,7 @@
 
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
   <!-- End jQuery -->
 
   <!-- Fullpage.js -->
@@ -46,21 +47,32 @@
 
 <body>
   <div class="header">
-    <div class="title animated fadeInLeft"></div>
-    <ul class="menu">
-      <li>
-        <span class="animated fadeInLeft">Our Offerings</span>
-      </li>
-      <li>
-        <span class="animated fadeInLeft">About Us</span>
-      </li>
-      <li>
-        <span class="animated fadeInLeft">Careers</span>
-      </li>
-      <li>
-        <span class="animated fadeInLeft">Contact Us</span>
-      </li>
-    </ul>
+    <div class="title animated fadeInLeft" onclick="menuToggle()"></div>
+    <div class="menu-box">
+      <ul class="menu">
+        <li class="mobile-view">
+          <span class="animated fadeInLeft">Home</span>
+        </li>
+        <li>
+          <span class="animated fadeInLeft">Our Offerings</span>
+        </li>
+        <li>
+          <span class="animated fadeInLeft">About Us</span>
+        </li>
+        <li>
+          <span class="animated fadeInLeft">Careers</span>
+        </li>
+        <li>
+          <span class="animated fadeInLeft">Contact Us</span>
+        </li>
+      </ul>
+      <div class="close-btn mobile-view" onclick="menuToggle()"></div>
+      <div class="copyright mobile-view">&copy;2018 Brimma Tech, Inc.</div>
+    </div>
+  </div>
+  <div class="connect-mobile mobile-view">
+    <a class="animated fadeInLeft twitter" href="" target="_blank"></a>
+    <a class="animated fadeInLeft linkedin" href="https://www.linkedin.com/company/brimmatech/" target="_blank"></a>
   </div>
   <div class="landing-page">
     <div id="fullpage">
@@ -70,8 +82,12 @@
           <span><a class="animated fadeInLeft" href="https://www.linkedin.com/company/brimmatech/" target="_blank">LinkedIn</a></span>
         </div>
         <div class="slide slide-1">
-          <span class="big-text">Tribe Brimma Tech</span>
-          <span class="small-text">We shrink your tech phobias. Let's talk around a campfire</span>
+          <div class="content-box animated fadeIn">
+            <span class="big-text">Tribe Brimma Tech</span>
+            <span class="small-text large-screen">We <i>shrink</i> your tech phobias. Let's talk around a campfire.</span>
+            <span class="small-text mobile-view">We <i>shrink</i> your tech phobias.</span>
+            <span class="small-text mobile-view">Let's talk around a campfire.</span>
+          </div>
         </div>
         <div class="slide slide-2">
           <div class="testimonial-box float-right animated delayed-anime">

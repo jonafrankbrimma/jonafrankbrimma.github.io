@@ -14,3 +14,13 @@ $(document).ready(function() {
 	$('.big-text').textillate({ in: { effect: 'fadeInLeftBig' } });
 	$('.small-text').textillate({ in: { effect: 'fadeInLeftBig' } });
 });
+
+function menuToggle() {
+	if (isMobile()) {
+		$('.menu-box').toggle( "explode", {}, 500 );
+	}
+}
+
+function isMobile() {
+	return ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) );
+}

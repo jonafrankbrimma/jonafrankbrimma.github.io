@@ -64,6 +64,27 @@ a {
 	text-decoration: unset !important;
 }
 
+.close-btn {
+	position: absolute;
+    top: 20px;
+    right: 20px;
+    background: url(../icon/close.png) no-repeat;
+    height: 25px;
+    width: 25px;
+    background-size: contain;
+    -webkit-filter: invert(100%);
+    filter: invert(80%);
+    cursor: pointer;
+}
+
+.copyright {
+	font-size: 10px;
+	position: absolute;
+	color: #eaeaea;
+	bottom: 20px;
+	left: 10px;
+}
+
 .animated {
 	animation-duration: 1s !important;
 	-webkit-animation-duration: 1s !important;
@@ -97,7 +118,7 @@ a {
 .connect {
 	position: absolute;
 	right: 50px;
-	top: 50vh;
+	top: 60%;
 	display: flex;
 	flex-flow: row;
 	color: white;
@@ -131,12 +152,41 @@ a {
 	width: 42%;
 }
 
+.connect-mobile {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	z-index: 1;
+}
+
+.linkedin {
+	background: url("../icon/linkedin.png") no-repeat;
+	background-size: 100%;
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	margin: 5px;
+	-webkit-filter: invert(100%);
+    filter: invert(65%);
+}
+
+.twitter {
+	background: url("../icon/twitter.png") no-repeat;
+	background-size: 100%;
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	margin: 5px;
+	-webkit-filter: invert(100%);
+    filter: invert(65%);
+}
+
 .scroll-btn {
 	position: absolute;
 	cursor: pointer;
 	z-index: 1;
 	bottom: 10px;
-	left: 1vw;
+	left: 20px;
 	width: 50px;
 	height: 50px;
 	background: url('../icon/scroll.png') no-repeat;
@@ -159,8 +209,10 @@ a {
     width: 50px;
     height: 50px;
     position: absolute;
-    left: 1vw;
+    left: 20px;
     top:2vh;
+    z-index: 1;
+    cursor: pointer;
 }
 
 .menu {
@@ -275,8 +327,12 @@ a {
 .small-text {
 	font-size: 1rem;
 	display: block;
-	color: #999999;
+	color: #eaeaea;
 	margin-left: 10vw;
+}
+
+.mobile-view {
+	display: none !important;
 }
 
 .annotation {
@@ -295,8 +351,66 @@ a {
 	background-size: 100%;
 }
 
-@media screen and (max-width:768px) {
-	.menu {
-		/*todo*/
+@media screen and (max-width:500px) {
+	.menu-box, .fp-controlArrow, .connect, .scroll-btn, .large-screen {
+		display: none;
+	}
+	.menu-box {
+		position: absolute;
+		height: 100vh;
+		width: 100vw;
+		left:0;
+		top: 0;
+		background: #0e1922;
+	}
+	.menu-box .menu {
+		flex-flow: column;
+		justify-content: center;
+		margin-top: 50%;
+	}
+	.menu li span {
+		font-size: 1rem;
+	}
+	.mobile-view {
+		display: block !important;
+	}
+	.content-box, .testimonial-box {
+		background: rgba(0, 0, 0, 0.5);
+		padding: 30px 10px;
+	}
+	.slide-1 {
+		background-position: 87% 100% !important;
+	}
+	.slide-1 .fp-tableCell {
+		position: relative;
+		top: -140px;
+	}
+	.slide-2 {
+		background-position: 35% 100% !important;
+	}
+	.slide-2 .testimonial-box {
+		margin-right: 10px !important;
+	}
+	.mid-text {
+		font-size: 0.8rem;
+	}
+	.annotation {
+		font-size: 0.7rem;
+		margin-top: 10px;
+	}
+	.slide-3 .testimonial-box {
+		float: right !important;
+		margin-left: 0;
+		margin-right: 10px;
+	}
+	.slide-4 {
+		background-position: 70% 100% !important;
+	}
+	.slide-4 .testimonial-box {
+		position: relative;
+		top: -50px;
+	}
+	.slide-4 .bigger-text {
+		font-size: 1rem;
 	}
 }
