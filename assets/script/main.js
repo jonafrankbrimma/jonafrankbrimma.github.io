@@ -11,8 +11,8 @@ $(document).ready(function() {
 		}
 	});
 
-	$('.big-text').textillate({ in: { effect: 'fadeInLeftBig' } });
-	$('.small-text').textillate({ in: { effect: 'fadeInLeftBig' } });
+	// $('.big-text').textillate({ in: { effect: 'fadeInLeftBig' } });
+	// $('.small-text').textillate({ in: { effect: 'fadeInLeftBig' } });
 });
 
 function menuToggle() {

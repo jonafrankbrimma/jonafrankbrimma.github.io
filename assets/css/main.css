@@ -181,6 +181,17 @@ a {
     filter: invert(65%);
 }
 
+.facebook {
+	background: url("../icon/facebook.png") no-repeat;
+	background-size: 95%;
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	margin: 5px;
+	-webkit-filter: invert(65%);
+    filter: invert(65%);
+}
+
 .scroll-btn {
 	position: absolute;
 	cursor: pointer;
@@ -377,6 +388,9 @@ a {
 	.content-box, .testimonial-box {
 		background: rgba(0, 0, 0, 0.5);
 		padding: 30px 10px;
+	}
+	.big-text {
+		font-size: 2.2rem;
 	}
 	.slide-1 {
 		background-position: 87% 100% !important;
