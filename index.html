@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="format-detection" content="telephone=no">
   <meta name="msapplication-tap-highlight" content="no">
-  <link rel="icon" type="image/x-icon" href="assets/icon/favicon.png">
+  <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
 
@@ -18,6 +18,7 @@
 
   <!-- Fullpage.js -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.css" />
+  <script type="text/javascript" src="assets/script/scrolloverflow.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.js"></script>
   <!-- End Fullpage.js -->
 
@@ -50,19 +51,19 @@
     <div class="title animated fadeInLeft" onclick="menuToggle()"></div>
     <div class="menu-box">
       <ul class="menu">
-        <li class="mobile-view">
-          <span class="animated fadeInLeft">Home</span>
+        <li class="mobile-view" data-visual-label="Home" data-url="#Home">
+          <span class="animated fadeInLeft" >Home</span>
         </li>
-        <li>
+        <li data-visual-label="Our Offerings" data-url="#Our-Offerings" onclick="location.href = '#Our-Offerings'">
           <span class="animated fadeInLeft">Our Offerings</span>
         </li>
-        <li>
+        <li data-visual-label="About Us" data-url="#About-Us" onclick="location.href = '#About-Us'">
           <span class="animated fadeInLeft">About Us</span>
         </li>
-        <li>
+        <li data-visual-label="Careers" data-url="#Careers" onclick="location.href = '#Careers'">
           <span class="animated fadeInLeft">Careers</span>
         </li>
-        <li>
+        <li data-visual-label="Contact Us" data-url="#Contact-Us" onclick="location.href = '#Contact-Us'">
           <span class="animated fadeInLeft">Contact Us</span>
         </li>
       </ul>
@@ -112,9 +113,129 @@
           </div>
         </div>
       </div>
+      <div class="section page-2">
+      </div>
+      <div class="section page-3 fp-auto-height">
+        <div class="block-1">
+          <div class="sub-block-1"></div>
+          <div class="sub-block-2">
+            <div class="upper-sec"></div>
+            <div class="lower-sec">
+              "We are a passionate and complete lifecycle software product development and technology services company."
+            </div>
+          </div>
+          <div class="sub-block-3"></div>
+        </div>
+        <div class="block-2">
+          <div class="about-us">
+            <div class="about-us-left">
+              <div>About Us</div>
+            </div>
+            <div class="about-us-right">
+              <p>So it doesn't matter whether you're a startup (just like us) or a large enterprise, we'll be your
+              preferred <strong>design and delivery</strong> partner throughout your digital landscape :</p>
+              <ul>
+                  <li>Architecture and Design</li>
+                  <li>UX strategy and Design</li>
+                  <li>Development</li>
+                  <li>Testing and performance Engineering</li>
+                  <li>Reengineering</li>
+                  <li>Implementation and Sustenance Engineering</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="block-3">
+          <div class="our-strengths">
+            <div class="our-strengths-title">Our Strengths</div>
+            <div class="our-strengths-content">
+              <strong>20+ years of expertise in Fintech</strong> | Understanding inherent complexity in the mortgage domain | Understanding your requirements | <strong>Rapid prototyping</strong> | Solving complex technology needs | <strong>On-time delivery</strong> | Multiple delivery centers in Raleigh, USA and Chennai, India | One of the youngest <strong>Ellie Mae PRO SELECT partners</strong>
+            </div>
+          </div>
+        </div>
+        <div class="block-4">
+          <div class="about-team">
+            <div class="about-team-title">About the Team</div>
+            <div class="about-team-content">
+              What do you get from a tribe that comprises self-driven engineers, UX/UI designers, and content strategists?
+              <strong>Creativity</strong>. Nothing more, nothing less. And, it’s obvious our teamwork is splendid, for we’re all either beer nuts or caffeine addicts.
+              And, when we’re are not working, we’re partying. Why? Because we believe in tribal leadership and because life’s great at Brimma Tech!
+            </div>
+            <div class="about-team-team">
+              <div class="team-member">
+                <div class="member-pic"></div>
+                <div class="member-name">Supree Periyasamy</div>
+                <div class="member-title">The Tribal Chief</div>
+              </div>
+              <div class="team-member">
+                <div class="member-pic"></div>
+                <div class="member-name">Deepan Kumar</div>
+                <div class="member-title">The Scrum Master</div>
+              </div>
+              <div class="team-member">
+                <div class="member-pic"></div>
+                <div class="member-name">Divya Gupta</div>
+                <div class="member-title">Passionate Developer</div>
+              </div>
+              <div class="team-member">
+                <div class="member-pic"></div>
+                <div class="member-name">Jona Frank</div>
+                <div class="member-title">The Superhero</div>
+              </div>
+              <div class="team-member">
+                <div class="member-pic"></div>
+                <div class="member-name">Gopakumar Venugopal</div>
+                <div class="member-title">The wise old storyteller</div>
+              </div>
+              <div class="team-member">
+                <div class="member-pic"></div>
+                <div class="member-name">Periyasamy Thirumalaivelsamy</div>
+                <div class="member-title">Passionate Developer</div>
+              </div>
+              <div class="team-member">
+                <div class="member-pic"></div>
+                <div class="member-name">Kevin John</div>
+                <div class="member-title">The Fresher</div>
+              </div>
+              <div class="team-member">
+                <div class="member-pic"></div>
+                <div class="member-name">Kirubakaran</div>
+                <div class="member-title">The Fresher</div>
+              </div>
+              <div class="team-member">
+                <div class="member-pic"></div>
+                <div class="member-name">Pavithra</div>
+                <div class="member-title">The Fresher</div>
+              </div>
+              <div class="team-member">
+                <div class="member-pic"></div>
+                <div class="member-name">You</div>
+                <div class="member-title">Newest Tribe Member ?</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block-5">
+          <div class="vision">
+            <div class="vision-title">Vision &amp; Values</div>
+            <p>Our vision is simple:</p>
+            <ul>
+              <li>To be your preferred end-to-end partner of choice for your digital landscape</li>
+            </ul>
+            <p>Our mission to achieve our vision is even simpler:</p>
+            <ul>
+              <li>Deliver reliability and excellence to every customer consistently</li>
+            </ul>
+            <p>Our values, which’ll help us achieve our mission, are the simplest:</p>
+            <ul>
+              <li>Employees First - Every Brimma Tech employee is a partner.</li>
+              <li>Stage 5 Tribal Leadership - Our team is made of Stage 5 Tribal Leadership aspirants and our motto is “Life is great”.</li> 
+            </ul>
+          </div>
+      </div>
     </div>
   </div>
-  <div class="scroll-btn animated fadeInLeft"></div>
+  <div class="scroll-btn animated fadeInLeft" onclick="$.fn.fullpage.moveSectionDown();"></div>
 </body>
 
 </html>
