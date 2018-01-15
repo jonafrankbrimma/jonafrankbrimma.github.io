@@ -881,6 +881,21 @@ p, ul {
 	.menu-box, .fp-controlArrow, .connect, .scroll-btn, .large-screen {
 		display: none;
 	}
+
+	.logo {
+		position: absolute;
+    margin-left: 7px;
+    margin-top: -11px;
+	}
+
+	.color-outer {
+	  background-color: #5a90ce;
+	}
+
+	.color-inner {
+	  background-color: #f3a74a
+	}
+
 	.menu-box {
 		position: absolute;
 		height: 100vh;
