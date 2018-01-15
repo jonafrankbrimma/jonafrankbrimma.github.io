@@ -1,26 +1,26 @@
 @font-face {
-  font-family: 'Lato';
-  src: url('../fonts/Lato-Regular.ttf');
+	font-family: 'Lato';
+	src: url('../fonts/Lato-Regular.ttf');
 }
 
 @font-face {
-  font-family: 'Lato-Black';
-  src: url('../fonts/Lato-Black.ttf');
+	font-family: 'Lato-Black';
+	src: url('../fonts/Lato-Black.ttf');
 }
 
 @font-face {
-  font-family: 'Lato-Bold';
-  src: url('../fonts/Lato-Bold.ttf');
+	font-family: 'Lato-Bold';
+	src: url('../fonts/Lato-Bold.ttf');
 }
 
 @font-face {
-  font-family: 'Lato-Light';
-  src: url('../fonts/Lato-Light.ttf');
+	font-family: 'Lato-Light';
+	src: url('../fonts/Lato-Light.ttf');
 }
 
 @font-face {
-  font-family: 'tahoma';
-  src: url('../fonts/tahoma.ttf');
+	font-family: 'tahoma';
+	src: url('../fonts/tahoma.ttf');
 }
 
 body {
@@ -70,15 +70,15 @@ p, ul {
 
 .close-btn {
 	position: absolute;
-    top: 20px;
-    right: 20px;
-    background: url(../icon/close.png) no-repeat;
-    height: 25px;
-    width: 25px;
-    background-size: contain;
-    -webkit-filter: invert(100%);
-    filter: invert(80%);
-    cursor: pointer;
+	top: 20px;
+	right: 20px;
+	background: url(../icon/close.png) no-repeat;
+	height: 25px;
+	width: 25px;
+	background-size: contain;
+	-webkit-filter: invert(100%);
+	filter: invert(80%);
+	cursor: pointer;
 }
 
 .copyright {
@@ -141,13 +141,13 @@ p, ul {
 
 .connect span::before {
 	content: '';
-    height: 3px;
-    width: 0%;
-    position: absolute;
-    top: 110%;
-    left: 30px;
-    background-color: white;
-    transition: all 1s;
+	height: 3px;
+	width: 0%;
+	position: absolute;
+	top: 110%;
+	left: 30px;
+	background-color: white;
+	transition: all 1s;
 }
 
 .connect span:hover::before {
@@ -173,7 +173,7 @@ p, ul {
 	display: inline-block;
 	margin: 5px;
 	-webkit-filter: invert(100%);
-    filter: invert(65%);
+	filter: invert(65%);
 }
 
 .twitter {
@@ -184,7 +184,7 @@ p, ul {
 	display: inline-block;
 	margin: 5px;
 	-webkit-filter: invert(100%);
-    filter: invert(65%);
+	filter: invert(65%);
 }
 
 .facebook {
@@ -195,7 +195,7 @@ p, ul {
 	display: inline-block;
 	margin: 5px;
 	-webkit-filter: invert(65%);
-    filter: invert(65%);
+	filter: invert(65%);
 }
 
 .scroll-btn {
@@ -218,32 +218,32 @@ p, ul {
 	width: 100%;
 	padding: 30px 10px 30px 10px;
 	position: absolute;
-	top:0;
-	left:0;
+	top: 0;
+	left: 0;
 	transition: 1s all;
 }
 
 .header-invert {
-	background-color: rgb(50,51,52);
+	background-color: rgb(50, 51, 52);
 }
 
 .title {
 	background: url('../icon/logo_bw.png') no-repeat;
 	background-size: 75%;
-    background-position: left;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    left: 20px;
-    top:2vh;
-    z-index: 1;
-    cursor: pointer;
+	background-position: left;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: 20px;
+	top: 2vh;
+	z-index: 1;
+	cursor: pointer;
 }
 
 .title:hover {
 	background: url('../icon/logo_color.png') no-repeat;
 	background-size: 76%;
-    background-position: left;
+	background-position: left;
 }
 
 .menu {
@@ -277,17 +277,17 @@ p, ul {
 	content: attr(data-visual-label);
 	position: absolute;
 	top: 5px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    background-color: #f35d19;
-    transition: transform .3s cubic-bezier(.645,.045,.355,1);
-    font-family: 'Lato-Bold', sans-serif;
-    font-size: 0.8rem;
-    z-index: 2;
-    line-height: 1.8;
-    transform: perspective(50vh) rotateX(-90deg) translateY(100%);
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	background-color: #f35d19;
+	transition: transform .3s cubic-bezier(.645, .045, .355, 1);
+	font-family: 'Lato-Bold', sans-serif;
+	font-size: 0.8rem;
+	z-index: 2;
+	line-height: 1.8;
+	transform: perspective(50vh) rotateX(-90deg) translateY(100%);
 }
 
 .menu li:hover::before, .active-menu::before {
@@ -398,7 +398,7 @@ p, ul {
 
 .page-3 .block-2 {
 	height: 300px;
-	background: rgb(245,246,247);
+	background: rgb(245, 246, 247);
 }
 
 .page-3 .block-3 {
@@ -420,7 +420,7 @@ p, ul {
 	width: 55%;
 	background: url('../images/bg_sec_3_1.jpg') no-repeat;
 	background-size: cover;
-    filter: grayscale(100%) brightness(110%) contrast(90%);
+	filter: grayscale(100%) brightness(110%) contrast(90%);
 }
 
 .page-3 .block-1 .sub-block-2 {
@@ -436,7 +436,7 @@ p, ul {
 
 .page-3 .block-1 .sub-block-2 .lower-sec {
 	height: 60%;
-	background: rgb(255,166,37);
+	background: rgb(255, 166, 37);
 	font-size: 1.1rem;
 	font-style: italic;
 	font-family: 'Lato-Light';
@@ -478,7 +478,7 @@ p, ul {
 	font-family: 'Lato-Bold';
 	margin: 30px 30px 30px 10px;
 	font-size: 3rem;
-	border-top: 3px solid rgb(56,131,212);
+	border-top: 3px solid rgb(56, 131, 212);
 }
 
 .about-us-left div {
@@ -610,21 +610,17 @@ p, ul {
 	font-size: 1.2rem;
 }
 
-
-
-
 /* Page 2 - Our Offerings  */
-
-
 .page-2 .block-1 {
 	margin-top: 89px;
 	display: flex;
 	flex-flow: row;
 	position: relative;
 }
-.offerings-bar{
-  border-top: 5px solid #588DD6;
-  width: 180px!important;
+
+.offerings-bar {
+	border-top: 5px solid #588DD6;
+	width: 180px !important;
 }
 
 .offerings {
@@ -638,23 +634,35 @@ p, ul {
 }
 
 /* Offerings Left CSS  */
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> master
 .offerings-left {
 	width: 350px;
 	position: relative;
 	color: #333333;
 	margin: 30px 12px 30px 10px;
-	/* border-top: 3px solid rgb(56,131,212); */
 }
+<<<<<<< HEAD
 .ourofferings{
   font-family: 'Lato';
   font-weight: 700;
   font-size: 3rem;
+=======
+
+.ourofferings {
+	font-family: 'Lato';
+	font-weight: 700;
+	font-size: 2.2rem;
+>>>>>>> master
 }
+
 .offerings-left div {
 	margin-top: 10px;
 }
+<<<<<<< HEAD
 .ourofferings-leftcontent {
     margin-top: 50px!important;
 }
@@ -678,6 +686,29 @@ p, ul {
   font-family: 'Merriweather', sans-serif;
   padding-top: 37%!important;
   text-align: right;
+=======
+
+.left-list {
+	padding-left: 50%;
+	padding-top: 40%;
+	text-align: right;
+	font-size: .9rem;
+}
+
+.image-left {
+	padding-top: 5%;
+	padding-left: 10%;
+}
+
+.image-blue {
+	padding-left: 61%;
+	padding-top: 8%;
+}
+
+.info {
+	padding-top: 2%;
+	text-align: right;
+>>>>>>> master
 }
 .info-right{
   font-family: 'Merriweather',serif;
@@ -701,23 +732,40 @@ p, ul {
     padding-left: 18px;
 }
 .offerings-right p, .offerings-right li {
+<<<<<<< HEAD
   font-family: 'Merriweather', sans-serif;
   font-size: 1rem;
   font-weight: 100;
   margin: 10px 0;
   line-height: 2rem;
   padding-left: 3%;
-}
-.offering-title {
-  font-family: 'Merriweather', sans-serif;
-	font-size: 1.2rem;
-  color: black;
-}
-.offerings-right ul {
-	padding-top: 20px;
-  padding-bottom: 20px;
+=======
+	font-family: 'tahoma', sans-serif;
+	font-size: .85rem;
+	margin: 10px 0;
+>>>>>>> master
 }
 
+.offering-title {
+<<<<<<< HEAD
+  font-family: 'Merriweather', sans-serif;
+=======
+	font-family: 'tahoma', sans-serif;
+>>>>>>> master
+	font-size: 1.2rem;
+	color: black;
+}
+
+.offerings-right ul {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.collage-block {
+	position: relative;
+}
+
+<<<<<<< HEAD
 /* Image CSS  */
 
 .image-right {
@@ -744,46 +792,112 @@ p, ul {
   background: url(../images/dashboard.png) no-repeat;
   background-size: cover;
   margin-top: 20px;
+=======
+.image-right {
+	padding-top: 5%;
+	padding-left: 2%;
+}
+
+.collage-block .info {
+	position: absolute;
+    text-align: left;
+    top: 65px;
+    left: 130px;
+    width: 200px;
+}
+
+.image-orange {
+	padding-bottom: 14%;
+	padding-left: 2%;
+}
+
+.image-2 {
+	background: url('../images/home.png') no-repeat;
+	margin-top: 5%;
+}
+
+.orange-image {
+	background-color: #FFA338;
+	height: 50px;
+	width: 50px;
+	left: 55%;
+	bottom: 38.5%;
+	position: absolute;
+>>>>>>> master
 }
 
 
 /* Page 2 - What we do  */
-
 .middle {
-  padding: 8vh 24vw;
-  background-color: #F6F6F6;
+	padding: 8vh 24vw;
+	background-color: #F6F6F6;
 }
+
 .middle-heading {
+<<<<<<< HEAD
   font-weight: 700;
   padding: 5vh 0;
   font-size: 2rem;
   color:#333333;
+=======
+	font-weight: 700;
+	padding: 5vh 0;
+	font-size: 1.5rem;
+	color: #333333;
+>>>>>>> master
 }
+
 .middle-content {
+<<<<<<< HEAD
   color: #666666;
   font-size: 1.3rem;
   padding-top: 5vh;
   line-height: 2.2rem;
   font-weight: 100;
   font-family: 'Merriweather',serif;
+=======
+	color: #666666;
+	font-size: 1.1rem;
+	padding-top: 5vh;
+	line-height: 27px;
+>>>>>>> master
 }
 
 /* Page 2 - Our Customers  */
-
 .our-customers {
+<<<<<<< HEAD
  padding: 5vh 24vw;
+=======
+	padding: 10vh 24vw;
+>>>>>>> master
 }
+
 .our-customers-heading {
+<<<<<<< HEAD
   font-weight: 700;
   font-size: 1.5rem;
   color:#333333;
+=======
+	font-weight: 700;
+	padding: 5vh 0;
+	font-size: 1.5rem;
+	color: #333333;
+>>>>>>> master
 }
+
 .our-customers-content {
+<<<<<<< HEAD
   color: #666666;
   font-size: 1.1rem;
   line-height: 1.9rem;
+=======
+	color: #666666;
+	font-size: 1.1rem;
+>>>>>>> master
 }
+
 .our-customers-content img {
+<<<<<<< HEAD
   padding: 0vh 15vw;
   min-height: 186px;
       margin-top: 5%;
@@ -798,72 +912,96 @@ p, ul {
 }
 .our-customers-content a {
  color: #008DB5!important;
+=======
+	padding: 0vh 15vw;
 }
 
+.our-customers-content p {
+	margin-top: 5% !important;
+	font-family: 'Lato', sans-serif;
+>>>>>>> master
+}
 
 @media screen and (max-width:500px) {
 	.menu-box, .fp-controlArrow, .connect, .scroll-btn, .large-screen {
 		display: none;
 	}
+
 	.menu-box {
 		position: absolute;
 		height: 100vh;
 		width: 100vw;
-		left:0;
+		left: 0;
 		top: 0;
 		background: #0e1922;
 	}
+
 	.menu-box .menu {
 		flex-flow: column;
 		justify-content: center;
 		margin-top: 50%;
 	}
+
 	.menu li span {
 		font-size: 1rem;
 	}
+
 	.mobile-view {
 		display: block !important;
 	}
+
 	.content-box, .testimonial-box {
 		background: rgba(0, 0, 0, 0.5);
 		padding: 30px 10px;
 	}
+
 	.big-text {
 		font-size: 2.2rem;
 	}
+
 	.slide-1 {
 		background-position: 87% 100% !important;
 	}
+
 	.slide-1 .fp-tableCell {
 		position: relative;
 		top: -140px;
 	}
+
 	.slide-2 {
 		background-position: 35% 100% !important;
 	}
+
 	.slide-2 .testimonial-box {
 		margin-right: 10px !important;
 	}
+
 	.mid-text {
 		font-size: 0.8rem;
 	}
+
 	.annotation {
 		font-size: 0.7rem;
 		margin-top: 10px;
 	}
+
 	.slide-3 .testimonial-box {
 		float: right !important;
 		margin-left: 0;
 		margin-right: 10px;
 	}
+
 	.slide-4 {
 		background-position: 70% 100% !important;
 	}
+
 	.slide-4 .testimonial-box {
 		position: relative;
 		top: -50px;
 	}
+
 	.slide-4 .bigger-text {
 		font-size: 1rem;
 	}
+
 }
