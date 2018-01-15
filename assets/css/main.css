@@ -639,6 +639,7 @@ p, ul {
 
 /* Offerings Left CSS  */
 
+
 .offerings-left {
 	width: 350px;
 	position: relative;
@@ -649,13 +650,18 @@ p, ul {
 .ourofferings{
   font-family: 'Lato';
   font-weight: 700;
-  font-size: 2.2rem;
-
+  font-size: 3rem;
 }
 .offerings-left div {
 	margin-top: 10px;
 }
+.ourofferings-leftcontent {
+    margin-top: 50px!important;
+}
 .left-list{
+  font-family: 'Merriweather', serif;
+  letter-spacing: .5px;
+  line-height: 1.5rem;
   padding-left: 50%;
   padding-top: 40%;
   text-align: right;
@@ -663,17 +669,24 @@ p, ul {
 }
 .image-left{
   padding-top: 5%;
-  padding-left: 10%;
+  /* padding-left: 10%; */
 }
-.image-blue {
-  padding-left: 61%;
-  padding-top: 8%;
+.right-text{
+  display:flex;
 }
-.info{
-  padding-top: 10%;
+.info-left{
+  font-family: 'Merriweather', sans-serif;
+  padding-top: 37%!important;
   text-align: right;
 }
-
+.info-right{
+  font-family: 'Merriweather',serif;
+  padding-top: 20%;
+  text-align: left;
+  top: 19.5%;
+  left: 53%;
+  padding-left: 3%;
+}
 /* Offerings Right CSS */
 .offerings-right {
 	width: 600px;
@@ -682,15 +695,21 @@ p, ul {
 	flex-flow: column;
 	justify-content: flex-start;
 }
-
+.offerings-right ul {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 18px;
+}
 .offerings-right p, .offerings-right li {
-  font-family: 'tahoma', sans-serif;
-	font-size: .85rem;
+  font-family: 'Merriweather', sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
   margin: 10px 0;
-
+  line-height: 2rem;
+  padding-left: 3%;
 }
 .offering-title {
-  font-family: 'tahoma', sans-serif;
+  font-family: 'Merriweather', sans-serif;
 	font-size: 1.2rem;
   color: black;
 }
@@ -698,27 +717,35 @@ p, ul {
 	padding-top: 20px;
   padding-bottom: 20px;
 }
+
+/* Image CSS  */
+
 .image-right {
   padding-top: 5%;
   padding-left: 2%;
-  /* margin-bottom: 10%; */
 }
-.image-orange {
-  padding-bottom: 14%;
-  padding-left: 2%;
+.house-dollar {
+    background: url(../images/house-dollar.png) no-repeat;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    margin-left: 85.5%;
 }
-.image-2 {
-  background: url('../images/home.png') no-repeat;
-  margin-top: 5%;
+
+.house-key {
+  background: url(../images/house-key.png) no-repeat;
+  background-size: cover;
+  height: 125px;
+  width: 125px;
+  margin-top: 20px;
 }
-.orange-image {
-  background-color: #FFA338;
-  height: 50px;
-  width: 50px;
-  left: 55%;
-  bottom: 38.5%;
-  position: absolute;
+
+.dashboard {
+  background: url(../images/dashboard.png) no-repeat;
+  background-size: cover;
+  margin-top: 20px;
 }
+
 
 /* Page 2 - What we do  */
 
@@ -729,39 +756,48 @@ p, ul {
 .middle-heading {
   font-weight: 700;
   padding: 5vh 0;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color:#333333;
 }
 .middle-content {
   color: #666666;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   padding-top: 5vh;
-  line-height: 27px;
+  line-height: 2.2rem;
+  font-weight: 100;
+  font-family: 'Merriweather',serif;
 }
 
 /* Page 2 - Our Customers  */
 
 .our-customers {
-  padding: 10vh 24vw;
+ padding: 5vh 24vw;
 }
 .our-customers-heading {
   font-weight: 700;
-  padding: 5vh 0;
   font-size: 1.5rem;
   color:#333333;
 }
 .our-customers-content {
-  /* padding: 5vh 0; */
   color: #666666;
   font-size: 1.1rem;
+  line-height: 1.9rem;
 }
 .our-customers-content img {
   padding: 0vh 15vw;
+  min-height: 186px;
+      margin-top: 5%;
 }
 
 .our-customers-content p {
   margin-top: 5%!important;
-font-family: 'Lato', sans-serif;
+  font-family: 'Merriweather', serif;
+  font-weight: 100;
+  font-size: 1.3rem;
+
+}
+.our-customers-content a {
+ color: #008DB5!important;
 }
 
 
