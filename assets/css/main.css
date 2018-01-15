@@ -634,35 +634,23 @@ p, ul {
 }
 
 /* Offerings Left CSS  */
-<<<<<<< HEAD
 
-
-=======
->>>>>>> master
 .offerings-left {
 	width: 350px;
 	position: relative;
 	color: #333333;
 	margin: 30px 12px 30px 10px;
 }
-<<<<<<< HEAD
 .ourofferings{
   font-family: 'Lato';
   font-weight: 700;
   font-size: 3rem;
-=======
 
-.ourofferings {
-	font-family: 'Lato';
-	font-weight: 700;
-	font-size: 2.2rem;
->>>>>>> master
 }
 
 .offerings-left div {
 	margin-top: 10px;
 }
-<<<<<<< HEAD
 .ourofferings-leftcontent {
     margin-top: 50px!important;
 }
@@ -686,29 +674,7 @@ p, ul {
   font-family: 'Merriweather', sans-serif;
   padding-top: 37%!important;
   text-align: right;
-=======
 
-.left-list {
-	padding-left: 50%;
-	padding-top: 40%;
-	text-align: right;
-	font-size: .9rem;
-}
-
-.image-left {
-	padding-top: 5%;
-	padding-left: 10%;
-}
-
-.image-blue {
-	padding-left: 61%;
-	padding-top: 8%;
-}
-
-.info {
-	padding-top: 2%;
-	text-align: right;
->>>>>>> master
 }
 .info-right{
   font-family: 'Merriweather',serif;
@@ -732,26 +698,16 @@ p, ul {
     padding-left: 18px;
 }
 .offerings-right p, .offerings-right li {
-<<<<<<< HEAD
   font-family: 'Merriweather', sans-serif;
   font-size: 1rem;
   font-weight: 100;
   margin: 10px 0;
   line-height: 2rem;
   padding-left: 3%;
-=======
-	font-family: 'tahoma', sans-serif;
-	font-size: .85rem;
-	margin: 10px 0;
->>>>>>> master
 }
 
 .offering-title {
-<<<<<<< HEAD
   font-family: 'Merriweather', sans-serif;
-=======
-	font-family: 'tahoma', sans-serif;
->>>>>>> master
 	font-size: 1.2rem;
 	color: black;
 }
@@ -765,7 +721,6 @@ p, ul {
 	position: relative;
 }
 
-<<<<<<< HEAD
 /* Image CSS  */
 
 .image-right {
@@ -792,38 +747,6 @@ p, ul {
   background: url(../images/dashboard.png) no-repeat;
   background-size: cover;
   margin-top: 20px;
-=======
-.image-right {
-	padding-top: 5%;
-	padding-left: 2%;
-}
-
-.collage-block .info {
-	position: absolute;
-    text-align: left;
-    top: 65px;
-    left: 130px;
-    width: 200px;
-}
-
-.image-orange {
-	padding-bottom: 14%;
-	padding-left: 2%;
-}
-
-.image-2 {
-	background: url('../images/home.png') no-repeat;
-	margin-top: 5%;
-}
-
-.orange-image {
-	background-color: #FFA338;
-	height: 50px;
-	width: 50px;
-	left: 55%;
-	bottom: 38.5%;
-	position: absolute;
->>>>>>> master
 }
 
 
@@ -834,70 +757,39 @@ p, ul {
 }
 
 .middle-heading {
-<<<<<<< HEAD
   font-weight: 700;
   padding: 5vh 0;
   font-size: 2rem;
   color:#333333;
-=======
-	font-weight: 700;
-	padding: 5vh 0;
-	font-size: 1.5rem;
-	color: #333333;
->>>>>>> master
 }
 
 .middle-content {
-<<<<<<< HEAD
   color: #666666;
   font-size: 1.3rem;
   padding-top: 5vh;
   line-height: 2.2rem;
   font-weight: 100;
   font-family: 'Merriweather',serif;
-=======
-	color: #666666;
-	font-size: 1.1rem;
-	padding-top: 5vh;
-	line-height: 27px;
->>>>>>> master
 }
 
 /* Page 2 - Our Customers  */
 .our-customers {
-<<<<<<< HEAD
  padding: 5vh 24vw;
-=======
-	padding: 10vh 24vw;
->>>>>>> master
 }
 
 .our-customers-heading {
-<<<<<<< HEAD
   font-weight: 700;
   font-size: 1.5rem;
   color:#333333;
-=======
-	font-weight: 700;
-	padding: 5vh 0;
-	font-size: 1.5rem;
-	color: #333333;
->>>>>>> master
 }
 
 .our-customers-content {
-<<<<<<< HEAD
   color: #666666;
   font-size: 1.1rem;
   line-height: 1.9rem;
-=======
-	color: #666666;
-	font-size: 1.1rem;
->>>>>>> master
 }
 
 .our-customers-content img {
-<<<<<<< HEAD
   padding: 0vh 15vw;
   min-height: 186px;
       margin-top: 5%;
@@ -912,14 +804,6 @@ p, ul {
 }
 .our-customers-content a {
  color: #008DB5!important;
-=======
-	padding: 0vh 15vw;
-}
-
-.our-customers-content p {
-	margin-top: 5% !important;
-	font-family: 'Lato', sans-serif;
->>>>>>> master
 }
 
 @media screen and (max-width:500px) {
