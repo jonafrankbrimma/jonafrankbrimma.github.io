@@ -89,6 +89,82 @@ p, ul {
 	left: 10px;
 }
 
+.logo {
+	position: absolute;
+	margin-left: 20px;
+}
+
+/* Variables to edit for the logo ===== Start */
+
+.size {
+  width: 35px;
+  height: 35px;
+}
+
+.color-outer {
+  background-color: white;
+}
+
+.color-inner {
+  background-color: white;
+}
+
+.color-outer:hover {
+  background-color: #5a90ce;
+}
+
+.color-outer:hover .color-inner {
+  background-color: #f3a74a
+}
+
+.negative-color {
+  background-color: #0e1722;
+}
+
+/* Variables to edit for the logo ===== End */
+
+/* Start =====  Css code for the logo - Avoid changing it */
+.drop {
+  transform: rotate(-45deg);
+  border-radius: 50% 0 50% 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: all 1s;
+  /*overflow: hidden;*/
+}
+
+.outer-circle {
+  padding: 32%;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.inner-circle {
+  /*padding: 20%;*/
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+  position: absolute;
+  transition: all 2s;
+}
+
+.b-line {
+  padding: 10% 38%;
+  transform: rotate(-45deg);
+  margin-left: -9.5%;
+  margin-top: -60%;
+  margin-right: 0;
+  margin-bottom: 0;
+  border-radius: 50% 0 0 0;
+}
+
+/* End ======= Css code for the logo - Avoid changing it */
+
+
 .animated {
 	animation-duration: 1s !important;
 	-webkit-animation-duration: 1s !important;
