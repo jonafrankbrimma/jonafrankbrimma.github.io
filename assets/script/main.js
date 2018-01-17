@@ -29,6 +29,14 @@ $(document).ready(function() {
 
 	$('.menu li').removeClass('active-menu');
 	$("[data-url='"+currentHref+"']").addClass('active-menu');
+    
+$("video").each(function () {
+    this.loop = false;
+    this.onended = function () {
+        this.load();
+    };
+    this.play();
+});
 });
 
 function menuToggle() {
