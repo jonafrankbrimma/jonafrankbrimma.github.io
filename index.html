@@ -65,8 +65,8 @@
         <li data-visual-label="About Us" data-url="#About-Us" onclick="location.href = '#About-Us'">
           <span class="animated fadeInLeft">About Us</span>
         </li>
-        <li data-visual-label="Careers" data-url="#Careers" onclick="location.href = '#Careers'">
-          <span class="animated fadeInLeft">Careers</span>
+        <li data-visual-label="Tribal-Leadership" data-url="#Tribal-Leadership" onclick="location.href = '#Tribal-Leadership'">
+          <span class="animated fadeInLeft">Tribal Leadership</span>
         </li>
         <li data-visual-label="Contact Us" data-url="#Contact-Us" onclick="location.href = '#Contact-Us'">
           <span class="animated fadeInLeft">Contact Us</span>
@@ -83,6 +83,9 @@
   </div>
   <div class="landing-page">
     <div id="fullpage">
+      <video loop="loop" muted="muted" autoplay="autoplay" preload="true" id="campFire">
+        <source src="assets/videos/campfire.mp4" type="video/mp4">
+      </video>
       <div class="section page-1">
         <div class="connect">
           <span><a class="animated fadeInLeft" href="" target="_blank">Twitter</a></span>
@@ -302,8 +305,58 @@
           </div>
         </div>
       </div>
+    <div class="section page-4 fp-auto-height">
+        <div class="block-1">
+          <div class="triballeadership">
+            <div class="tribal-left">
+              <div class="ourofferings">
+                <div class="tribal-bar"></div>
+                <div>Tribal<br>Leadership</div>
+              </div>
+          </div>
+            <div class="tribal-right">
+              <div class="list">
+                <span class="tribal-title">And,we're already there.But we have this constant
+                  hunger to grow and outdo ourselves again and again.</span>
+
+                  <div class="tribal-content">
+                  We truly believe in the philosophy of <a href="#">Tribal Leadership</a>
+                  elaborated in the New York bestseller by the same name!
+                  The book is a result of a study conducted by the authors on 
+                  24,000 employees across 24 organizations</div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-4 block-2">
+          <div class="our-customers">
+            <div class="our-customers-heading">
+              Our Take on it
+            </div>
+            <div class="our-customers-content">
+              <p>
+                  We believe that tribes are everywhere, even in organizations!<br>
+                Tribes are made up of small groups of people, who have someting in common that binds them<br>
+                together.All trie have leaders. Each tribe has their own language, behavior, and operate at a
+                certain stage.
+              </p>
+            </div>
+          </div>
+        </div>        
+ 
+        </div>
+      </div>
+
     </div>
     <div class="scroll-btn animated fadeInLeft" onclick="$.fn.fullpage.moveSectionDown();"></div>
 </body>
-
+<script>
+$("video").each(function () {
+    this.loop = false;
+    this.onended = function () {
+        this.load();
+    };
+    this.play();
+});
+</script>
 </html>
