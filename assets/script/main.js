@@ -22,13 +22,21 @@ $(document).ready(function() {
 			$('.menu li').removeClass('active-menu');
 			$($('.menu li')[nextIndex - 1]).addClass('active-menu');
 		},
-		anchors:['Home', 'Our-Offerings', 'About-Us']
+		anchors:['Home', 'Our-Offerings', 'About-Us', 'Tribal-Leadership']
 	});
 
 	var currentHref = window.location.hash.substr(0);
 
 	$('.menu li').removeClass('active-menu');
 	$("[data-url='"+currentHref+"']").addClass('active-menu');
+    
+$("video").each(function () {
+    this.loop = false;
+    this.onended = function () {
+        this.load();
+    };
+    this.play();
+});
 });
 
 function menuToggle() {

@@ -382,8 +382,19 @@ p, ul {
 	position: relative;
 }
 
+#campFire {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    transform: rotateY(180deg);
+    -webkit-transform:rotateY(180deg); /* Safari and Chrome */
+    -moz-transform:rotateY(180deg); /* Firefox */
+}
+
 .slide-1 {
-	background: url('../images/bg_1.jpg') no-repeat;
+  background:linear-gradient(to right, rgba(15, 23, 34,1)26%, rgba(255, 255, 255, 0), 75%,rgba(15, 23, 34, 0), rgba(255, 255, 255, 0));
 }
 
 .slide-2 {
@@ -693,7 +704,7 @@ p, ul {
 
 
 .page-2 .block-1 {
-	margin-top: 89px;
+	margin-top: 107px;
 	display: flex;
 	flex-flow: row;
 	position: relative;
@@ -705,7 +716,7 @@ p, ul {
 
 .offerings {
 	color: #666666;
-	width: 800px;
+	width: 960px;
 	height: 100%;
 	display: flex;
 	flex-flow: row;
@@ -721,7 +732,6 @@ p, ul {
 	position: relative;
 	color: #333333;
 	margin: 30px 12px 30px 10px;
-	/* border-top: 3px solid rgb(56,131,212); */
 }
 .ourofferings{
   font-family: 'Lato';
@@ -826,12 +836,11 @@ p, ul {
 /* Page 2 - What we do  */
 
 .middle {
-  padding: 8vh 24vw;
+  padding: 60px 24vw;
   background-color: #F6F6F6;
 }
 .middle-heading {
   font-weight: 700;
-  padding: 5vh 0;
   font-size: 2rem;
   color:#333333;
 }
@@ -847,7 +856,7 @@ p, ul {
 /* Page 2 - Our Customers  */
 
 .our-customers {
- padding: 5vh 24vw;
+ padding: 60px 24vw;
 }
 .our-customers-heading {
   font-weight: 700;
@@ -876,6 +885,66 @@ p, ul {
  color: #008DB5!important;
 }
 
+
+
+/*Tribal Leaddership CSS */
+.page-4 .block-1 {
+    margin-top: 60px;
+	display: flex;
+	flex-flow: row;
+	position: relative;
+}
+
+.page-4 .block-2 {
+	background: rgb(245,246,247);
+}
+.tribal-title {
+  font-family: 'Merriweather', sans-serif;
+  font-size: 1.2rem;
+  color: black;
+  font-weight: 100;
+  letter-spacing: 5%;
+}
+
+
+.triballeadership {
+	color: #666666;
+	width: 960px;
+	height: 100%;
+	display: flex;
+	flex-flow: row;
+	margin: auto;
+	justify-content: center;
+    margin-bottom: 60px;
+}
+
+.tribal-left {
+    width: 350px;
+	position: relative;
+	color: #333333;
+	margin: 0px 12px 30px 10px;
+}
+
+.tribal-content {
+  padding-top: 8%;
+  font-family: 'Merriweather', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 100;
+  letter-spacing: 5%;
+}
+
+.tribal-right {
+	width: 600px;
+	display: flex;
+	flex-flow: column;
+	justify-content: flex-start;
+}
+
+.tribal-bar {
+  border-top: 5px solid #588DD6;
+  width: 180px!important;
+
+}
 
 @media screen and (max-width:500px) {
 	.menu-box, .fp-controlArrow, .connect, .scroll-btn, .large-screen {
@@ -958,3 +1027,5 @@ p, ul {
 		font-size: 1rem;
 	}
 }
+
+
