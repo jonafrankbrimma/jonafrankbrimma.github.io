@@ -46,7 +46,7 @@
 <body>
   <div class="header">
     <!-- <div class="title animated fadeInLeft" onclick="menuToggle()"></div> -->
-    <div class="logo drop size color-outer" onclick="menuToggle()">
+    <div class="logo drop size color-outer" onclick="menuButton()">
         <span class="outer-circle negative-color">
           <span class="inner-circle color-inner">
           </span>
@@ -56,19 +56,19 @@
 
     <div class="menu-box">
       <ul class="menu">
-        <li class="mobile-view" data-visual-label="Home" data-url="#Home">
+        <li class="mobile-view" data-visual-label="Home" onclick="location.href = '#Home';menuToggle();" data-url="#Home">
           <span class="animated fadeInLeft">Home</span>
         </li>
-        <li data-visual-label="Our Offerings" data-url="#Our-Offerings" onclick="location.href = '#Our-Offerings'">
+        <li data-visual-label="Our Offerings" data-url="#Our-Offerings" onclick="location.href = '#Our-Offerings';menuToggle();">
           <span class="animated fadeInLeft">Our Offerings</span>
         </li>
-        <li data-visual-label="About Us" data-url="#About-Us" onclick="location.href = '#About-Us'">
+        <li data-visual-label="About Us" data-url="#About-Us" onclick="location.href = '#About-Us';menuToggle();">
           <span class="animated fadeInLeft">About Us</span>
         </li>
-        <li data-visual-label="Tribal-Leadership" data-url="#Tribal-Leadership" onclick="location.href = '#Tribal-Leadership'">
+        <li data-visual-label="Tribal-Leadership" data-url="#Tribal-Leadership" onclick="location.href = '#Tribal-Leadership';menuToggle();">
           <span class="animated fadeInLeft">Tribal Leadership</span>
         </li>
-        <li data-visual-label="Contact Us" data-url="#Contact-Us" onclick="location.href = '#Contact-Us'">
+        <li data-visual-label="Contact Us" data-url="#Contact-Us" onclick="location.href = '#Contact-Us';menuToggle();">
           <span class="animated fadeInLeft">Contact Us</span>
         </li>
       </ul>
@@ -83,7 +83,7 @@
   </div>
   <div class="landing-page">
     <div id="fullpage">
-      <video loop="loop" muted="muted" autoplay="autoplay" preload="true" id="campFire">
+      <video loop="loop" muted="muted" autoplay="autoplay" preload="true" id="campFire" poster="assets/images/poster.png">
         <source src="assets/videos/campfire.mp4" type="video/mp4">
       </video>
       <div class="section page-1">
@@ -188,17 +188,8 @@
           </div>
         </div>
       </div>
-      <div class="section page-3 fp-auto-height">
-        <div class="block-1">
-          <div class="sub-block-1"></div>
-          <div class="sub-block-2">
-            <div class="upper-sec"></div>
-            <div class="lower-sec">
-              "We are a passionate and complete lifecycle software product development and technology services company."
-            </div>
-          </div>
-          <div class="sub-block-3"></div>
-        </div>
+      <div class="section page-3 fp-auto-height-responsive">
+        <div class="block-1"></div>
         <div class="block-2">
           <div class="about-us">
             <div class="about-us-left">
@@ -233,53 +224,167 @@
               <strong>Creativity</strong>. Nothing more, nothing less. And, it’s obvious our teamwork is splendid, for we’re all either beer nuts or caffeine addicts. And, when we’re are not working, we’re partying. Why? Because we believe in tribal leadership and because life’s great at Brimma Tech!
             </div>
             <div class="about-team-team">
-              <div class="team-member">
-                <div class="member-pic"></div>
+              <div class="team-member" onmouseover="showDesc(this)" onmouseleave="hideDesc(this)" onclick="toggleDesc(this)">
+                <div class="member-pic supree"></div>
                 <div class="member-name">Supree Periyasamy</div>
                 <div class="member-title">The Tribal Chief</div>
               </div>
-              <div class="team-member">
-                <div class="member-pic"></div>
+              <div class="member-desc" onmouseover="showDesc(this.previousElementSibling)" onmouseleave="hideDesc(this.previousElementSibling)">
+                <h3>Our founder | The tribal chief</h3>
+                <p>Our chief, Supree Periasamy, has 25+ years of progressive software development experience. 
+                He’s led and implemented product development for multiple mortgage loan origination products since the last 2 decades for some of the top 10 mortgage lenders in the US:</p>
+                <ul>
+                  <li>Before Brimma Tech, he served as the VP - Application Engineering, Ellie Mae, Inc. During his tenure there, he led the development of the NextGen suite of lending solutions for the US mortgage industry.</li> 
+                  <li>Prior to Ellie Mae, he served as the Global Head for Engineering and Delivery, Wipro Gallagher, where he led the development and delivery of NetOxygen LOS (Loan Origination System).</li>
+                  <li>Prior to Wipro Gallagher, he was one of the core team members at Palisades Technology, which was acquired by IBM in 2006. There, he contributed to building the Impact platform, which is a ﬂagship LOS.</li>
+                </ul>
+              </div>
+              <div class="team-member" onmouseover="showDesc(this)" onmouseleave="hideDesc(this)" onclick="toggleDesc(this)">
+                <div class="member-pic deepan"></div>
                 <div class="member-name">Deepan Kumar</div>
                 <div class="member-title">The Scrum Master</div>
               </div>
-              <div class="team-member">
-                <div class="member-pic"></div>
+              <div class="member-desc" onmouseover="showDesc(this.previousElementSibling)" onmouseleave="hideDesc(this.previousElementSibling)">
+                <h3>Certified Scrum Master | The right hand</h3>
+                <p>Deepan Kumar has more than a decade of experience as a software developer. He’s extremely passionate about refactoring and TDD (Test Driven Development).<br>Likes to be known as the Agile Evangelist in our team, as he’s a Certified Scrum Master.
+                </p>
+                <ul>
+                  <li>Prior to Brimma Tech, he worked at Cognizant as a senior associate and led a team to fix application security issues as per OWASP guidelines for a reputed client.</li> 
+                  <li>Prior to Cognizant, he worked at Ericsson as a senior software engineer (Media domain - IPTV & Broadcasting). At Ericsson, he:
+                    <ul>
+                      <li>Was the scrum evangelist for multiple projects and mentored teams on Agile 
+                      <li>Orchestrated and integrated multiple applications using apache camel/ Mule ESB for BBC playout services.</li>
+                      <li>Designed and implemented the customization of Ericsson’s CMS watch point SDK </li>
+                      <li>Won awards, such as:</li>
+                        <ul>
+                          <li>ACE Award</li>
+                          <li>Extra Miler Award</li>
+                          <li>Power Award</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  <li>Prior to Ericsson, he worked at IBM as an application developer for clients such as AT&amp;T.</li>
+                </ul>
+              </div>
+              <div class="team-member" onmouseover="showDesc(this)" onmouseleave="hideDesc(this)" onclick="toggleDesc(this)">
+                <div class="member-pic divya"></div>
                 <div class="member-name">Divya Gupta</div>
                 <div class="member-title">Passionate Developer</div>
               </div>
-              <div class="team-member">
-                <div class="member-pic"></div>
+              <div class="member-desc" onmouseover="showDesc(this.previousElementSibling)" onmouseleave="hideDesc(this.previousElementSibling)">
+                <h3>Passionate Developer | The ‘cool’ agony aunt </h3>
+                <p>Divya Gupta, has 3+ years of experience in web development and web application lifecycle. She has a good eye for good design… Has developed UX designs and logos for many products at a design agency called Ad5.</p>
+                <ul>
+                  <li>She is a passionate developer with a love for awesome products and a thirst to create more. She also has significant experience to develop and guide in languages and frameworks, such as Javascript, Angular, Ionic, HTML, CSS, Vue, Quasar, Protractor, Node, Neo4j, jQuery, and React.</li>
+                  <li>Prior to Brimma Tech, she was a web developer at Zoho for two years. There, she developed many cool features and functionalities for Zoho Show, an online presentation tool.</li>
+                </ul>
+              </div>
+              <div class="team-member" onmouseover="showDesc(this)" onmouseleave="hideDesc(this)" onclick="toggleDesc(this)">
+                <div class="member-pic jona"></div>
                 <div class="member-name">Jona Frank</div>
                 <div class="member-title">The Superhero</div>
               </div>
-              <div class="team-member">
-                <div class="member-pic"></div>
+              <div class="member-desc" onmouseover="showDesc(this.previousElementSibling)" onmouseleave="hideDesc(this.previousElementSibling)">
+                <h3>The Perpetual Philomath | The Super Hero</h3>
+                <p>Jona Frank has 5+ years of experience in full stack web development and product management.</p>
+                <p>He’s a very passionate polyglot developer with significant experience in developing and architecting full stack web applications with multiple programming languages and frameworks, such as Javascript, Node.js, Angular, Vue, Ember, jQuery, Java, Python, PHP, HTML, CSS, VB.NET, Ionic, Quasar, etc ! Phew...!!</p>
+                <ul>
+                  <li>In his own words, <i>“I am a savvy, sassy, and sedulous personality!” </i> Go figure!</li>
+                  <li>Prior to joining Brimma Tech, he has <i>ideated, architected, led, and implemented</i> several core modules and functionalities in the Manage Engine Service Desk product at Zoho.</li>
+                </ul>
+              </div>
+              <div class="team-member" onmouseover="showDesc(this)" onmouseleave="hideDesc(this)" onclick="toggleDesc(this)">
+                <div class="member-pic gops"></div>
                 <div class="member-name">Gopakumar Venugopal</div>
                 <div class="member-title">The wise old storyteller</div>
               </div>
-              <div class="team-member">
-                <div class="member-pic"></div>
+              <div class="member-desc" onmouseover="showDesc(this.previousElementSibling)" onmouseleave="hideDesc(this.previousElementSibling)">
+                <h3>Our founder | The tribal chief</h3>
+                <p>Our chief, Supree Periasamy, has 25+ years of progressive software development experience. 
+                He’s led and implemented product development for multiple mortgage loan origination products since the last 2 decades for some of the top 10 mortgage lenders in the US:</p>
+                <ul>
+                  <li>Before Brimma Tech, he served as the VP - Application Engineering, Ellie Mae, Inc. During his tenure there, he led the development of the NextGen suite of lending solutions for the US mortgage industry.</li> 
+                  <li>Prior to Ellie Mae, he served as the Global Head for Engineering and Delivery, Wipro Gallagher, where he led the development and delivery of NetOxygen LOS (Loan Origination System).</li>
+                  <li>Prior to Wipro Gallagher, he was one of the core team members at Palisades Technology, which was acquired by IBM in 2006. There, he contributed to building the Impact platform, which is a ﬂagship LOS.</li>
+                </ul>
+              </div>
+               <div class="team-member" onmouseover="showDesc(this)" onmouseleave="hideDesc(this)" onclick="toggleDesc(this)">
+                <div class="member-pic abhi"></div>
+                <div class="member-name">Abhilash Warrier</div>
+                <div class="member-title">The Shaman</div>
+              </div>
+              <div class="member-desc" onmouseover="showDesc(this.previousElementSibling)" onmouseleave="hideDesc(this.previousElementSibling)">
+                <h3>Our founder | The tribal chief</h3>
+                <p>Our chief, Supree Periasamy, has 25+ years of progressive software development experience. 
+                He’s led and implemented product development for multiple mortgage loan origination products since the last 2 decades for some of the top 10 mortgage lenders in the US:</p>
+                <ul>
+                  <li>Before Brimma Tech, he served as the VP - Application Engineering, Ellie Mae, Inc. During his tenure there, he led the development of the NextGen suite of lending solutions for the US mortgage industry.</li> 
+                  <li>Prior to Ellie Mae, he served as the Global Head for Engineering and Delivery, Wipro Gallagher, where he led the development and delivery of NetOxygen LOS (Loan Origination System).</li>
+                  <li>Prior to Wipro Gallagher, he was one of the core team members at Palisades Technology, which was acquired by IBM in 2006. There, he contributed to building the Impact platform, which is a ﬂagship LOS.</li>
+                </ul>
+              </div>
+              <div class="team-member" onmouseover="showDesc(this)" onmouseleave="hideDesc(this)" onclick="toggleDesc(this)">
+                <div class="member-pic peri"></div>
                 <div class="member-name">Periyasamy Thirumalaivelsamy</div>
                 <div class="member-title">Passionate Developer</div>
               </div>
-              <div class="team-member">
-                <div class="member-pic"></div>
+              <div class="member-desc" onmouseover="showDesc(this.previousElementSibling)" onmouseleave="hideDesc(this.previousElementSibling)">
+                <h3>Our founder | The tribal chief</h3>
+                <p>Our chief, Supree Periasamy, has 25+ years of progressive software development experience. 
+                He’s led and implemented product development for multiple mortgage loan origination products since the last 2 decades for some of the top 10 mortgage lenders in the US:</p>
+                <ul>
+                  <li>Before Brimma Tech, he served as the VP - Application Engineering, Ellie Mae, Inc. During his tenure there, he led the development of the NextGen suite of lending solutions for the US mortgage industry.</li> 
+                  <li>Prior to Ellie Mae, he served as the Global Head for Engineering and Delivery, Wipro Gallagher, where he led the development and delivery of NetOxygen LOS (Loan Origination System).</li>
+                  <li>Prior to Wipro Gallagher, he was one of the core team members at Palisades Technology, which was acquired by IBM in 2006. There, he contributed to building the Impact platform, which is a ﬂagship LOS.</li>
+                </ul>
+              </div>
+              <div class="team-member" onmouseover="showDesc(this)" onmouseleave="hideDesc(this)" onclick="toggleDesc(this)">
+                <div class="member-pic kevin"></div>
                 <div class="member-name">Kevin John</div>
                 <div class="member-title">The Fresher</div>
               </div>
-              <div class="team-member">
-                <div class="member-pic"></div>
+              <div class="member-desc" onmouseover="showDesc(this.previousElementSibling)" onmouseleave="hideDesc(this.previousElementSibling)">
+                <h3>Our founder | The tribal chief</h3>
+                <p>Our chief, Supree Periasamy, has 25+ years of progressive software development experience. 
+                He’s led and implemented product development for multiple mortgage loan origination products since the last 2 decades for some of the top 10 mortgage lenders in the US:</p>
+                <ul>
+                  <li>Before Brimma Tech, he served as the VP - Application Engineering, Ellie Mae, Inc. During his tenure there, he led the development of the NextGen suite of lending solutions for the US mortgage industry.</li> 
+                  <li>Prior to Ellie Mae, he served as the Global Head for Engineering and Delivery, Wipro Gallagher, where he led the development and delivery of NetOxygen LOS (Loan Origination System).</li>
+                  <li>Prior to Wipro Gallagher, he was one of the core team members at Palisades Technology, which was acquired by IBM in 2006. There, he contributed to building the Impact platform, which is a ﬂagship LOS.</li>
+                </ul>
+              </div>
+              <div class="team-member" onmouseover="showDesc(this)" onmouseleave="hideDesc(this)" onclick="toggleDesc(this)">
+                <div class="member-pic kirupa"></div>
                 <div class="member-name">Kirubakaran</div>
                 <div class="member-title">The Fresher</div>
               </div>
-              <div class="team-member">
-                <div class="member-pic"></div>
+              <div class="member-desc" onmouseover="showDesc(this.previousElementSibling)" onmouseleave="hideDesc(this.previousElementSibling)">
+                <h3>Our founder | The tribal chief</h3>
+                <p>Our chief, Supree Periasamy, has 25+ years of progressive software development experience. 
+                He’s led and implemented product development for multiple mortgage loan origination products since the last 2 decades for some of the top 10 mortgage lenders in the US:</p>
+                <ul>
+                  <li>Before Brimma Tech, he served as the VP - Application Engineering, Ellie Mae, Inc. During his tenure there, he led the development of the NextGen suite of lending solutions for the US mortgage industry.</li> 
+                  <li>Prior to Ellie Mae, he served as the Global Head for Engineering and Delivery, Wipro Gallagher, where he led the development and delivery of NetOxygen LOS (Loan Origination System).</li>
+                  <li>Prior to Wipro Gallagher, he was one of the core team members at Palisades Technology, which was acquired by IBM in 2006. There, he contributed to building the Impact platform, which is a ﬂagship LOS.</li>
+                </ul>
+              </div>
+              <div class="team-member" onmouseover="showDesc(this)" onmouseleave="hideDesc(this)" onclick="toggleDesc(this)">
+                <div class="member-pic pavi"></div>
                 <div class="member-name">Pavithra</div>
                 <div class="member-title">The Fresher</div>
               </div>
+              <div class="member-desc" onmouseover="showDesc(this.previousElementSibling)" onmouseleave="hideDesc(this.previousElementSibling)">
+                <h3>Our founder | The tribal chief</h3>
+                <p>Our chief, Supree Periasamy, has 25+ years of progressive software development experience. 
+                He’s led and implemented product development for multiple mortgage loan origination products since the last 2 decades for some of the top 10 mortgage lenders in the US:</p>
+                <ul>
+                  <li>Before Brimma Tech, he served as the VP - Application Engineering, Ellie Mae, Inc. During his tenure there, he led the development of the NextGen suite of lending solutions for the US mortgage industry.</li> 
+                  <li>Prior to Ellie Mae, he served as the Global Head for Engineering and Delivery, Wipro Gallagher, where he led the development and delivery of NetOxygen LOS (Loan Origination System).</li>
+                  <li>Prior to Wipro Gallagher, he was one of the core team members at Palisades Technology, which was acquired by IBM in 2006. There, he contributed to building the Impact platform, which is a ﬂagship LOS.</li>
+                </ul>
+              </div>
               <div class="team-member">
-                <div class="member-pic"></div>
+                <div class="member-pic you"></div>
                 <div class="member-name">You</div>
                 <div class="member-title">Newest Tribe Member ?</div>
               </div>
