@@ -830,7 +830,7 @@ p, ul {
 
 /* Page 2 - What we do  */
 .middle {
-	padding: 60px 24vw;
+	padding: 60px 17vw;
 	background-color: #F6F6F6;
 }
 
@@ -851,7 +851,7 @@ p, ul {
 
 /* Page 2 - Our Customers  */
 .our-customers {
-	padding: 60px 24vw;
+  padding: 60px 17vw;
 }
 
 .our-customers-heading {
