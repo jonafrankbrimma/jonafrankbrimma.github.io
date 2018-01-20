@@ -57,14 +57,20 @@ function isMobile() {
 function toggleDesc(element) {
 	$(element).find('.member-desc').css({ left : ( $(element.parentElement).offset().left - $(element).offset().left ) });
 	$(element).find('.member-desc').stop( true, true ).slideToggle('slow');
+	$(element).find('.member-pic').toggleClass('member-active');
+	$(element).siblings().toggleClass('fade-member');
 }
 
 function showDesc(element) {
 	$(element).find('.member-desc').css({ left : ( $(element.parentElement).offset().left - $(element).offset().left ) });
 	$(element).find('.member-desc').stop( true, true ).delay(800).slideDown('slow');
+	$(element).find('.member-pic').addClass('member-active');
+	$(element).siblings().addClass('fade-member');
 }
 
 function hideDesc(element) {
 	$(element).find('.member-desc').stop( true, true ).delay(800).slideUp('slow');
+	$(element).find('.member-pic').removeClass('member-active');
+	$(element).siblings().removeClass('fade-member');
 }
 

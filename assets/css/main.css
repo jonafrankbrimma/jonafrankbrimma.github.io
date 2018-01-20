@@ -616,6 +616,11 @@ p, ul {
 	flex-flow: column;
 	justify-content: center;
 	align-self: flex-start;
+	transition: all 1s;
+}
+
+.fade-member {
+	opacity: 0.6;
 }
 
 .member-pic {
@@ -651,6 +656,7 @@ p, ul {
 	right: 0px;
 	background: white;
 	width: 55vw;
+	line-height: 1.9rem;
 }
 
 .member-desc ul {
