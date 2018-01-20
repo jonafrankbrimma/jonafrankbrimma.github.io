@@ -501,7 +501,7 @@ p, ul {
 .about-us {
 	color: #666666;
 	height: 100%;
-	max-width: 55%;
+	max-width: 55vw;
 	display: flex;
 	flex-flow: row;
 	margin: auto;
@@ -535,6 +535,7 @@ p, ul {
 	font-family: 'Merriweather', serif;
 	font-weight: 100;
 	font-size: 1.3rem;
+	line-height: 1.9rem;
 }
 
 .about-us-right ul {
@@ -542,7 +543,7 @@ p, ul {
 }
 
 .our-strengths {
-	max-width: 55%;
+	max-width: 55vw;
 	margin: auto;
 	height: 100%;
 	display: flex;
@@ -564,10 +565,11 @@ p, ul {
 	font-weight: 100;
 	font-size: 1.3rem;
 	padding: 10px 10px 60px 10px;
+	line-height: 1.9rem;
 }
 
 .about-team {
-	max-width: 55%;
+	max-width: 55vw;
 	margin: auto;
 	height: 100%;
 	position: relative;
@@ -588,6 +590,7 @@ p, ul {
 	font-family: 'Merriweather', serif;
 	font-weight: 100;
 	padding: 10px 10px 20px 10px;
+	line-height: 1.9rem;
 }
 
 .about-team-team {
@@ -596,7 +599,14 @@ p, ul {
 	display: flex;
 	flex-flow: row;
 	flex-wrap: wrap;
+	justify-content: space-between;
 	position: relative;
+}
+
+.about-team-team::after {
+	content: '';
+	width: 25%;
+	min-width: 180px;
 }
 
 .team-member {
@@ -605,12 +615,13 @@ p, ul {
 	display: flex;
 	flex-flow: column;
 	justify-content: center;
+	align-self: flex-start;
 }
 
 .member-pic {
 	width: 180px;
 	height: 180px;
-	background: #333333;
+	background: transparent;
 	filter: grayscale(100%);
 }
 
@@ -633,12 +644,13 @@ p, ul {
 .member-desc {
 	display: none;
 	position: relative;
-	width: 100%;
-	left: 0;
 	z-index: 1;
 	padding: 15px 25px;
-	margin: 15px 0px;
+	margin-bottom: 10px;
+	top:-10px;
+	right: 0px;
 	background: white;
+	width: 55vw;
 }
 
 .member-desc ul {
@@ -654,7 +666,7 @@ p, ul {
 }
 
 .vision {
-	max-width: 55%;
+	max-width: 55vw;
 	margin: auto;
 	height: 100%;
 	position: relative;
@@ -676,6 +688,7 @@ p, ul {
 	font-family: 'Merriweather', serif;
 	font-weight: 100;
 	font-size: 1.3rem;
+	line-height: 1.9rem;
 }
 
 .vision li {
@@ -684,6 +697,7 @@ p, ul {
 	color: #666666;
 	font-size: 1.3rem;
 	padding-bottom: 10px;
+	line-height: 1.9rem;
 }
 
 /* Page 2 - Our Offerings  */
@@ -1115,7 +1129,7 @@ p, ul {
 
 	.about-us, .our-strengths, .about-team, .vision {
 		flex-wrap: wrap;
-		max-width: 85%;
+		max-width: 85vw;
 		justify-content: flex-start;
 	}
 
@@ -1142,6 +1156,10 @@ p, ul {
 
 	.member-title, .member-name {
 		text-align: center;
+	}
+
+	.member-desc {
+		width: 85vw;
 	}
 
 }
