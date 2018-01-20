@@ -17,7 +17,6 @@
   <!-- Fullpage.js -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.css" />
   <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700" rel="stylesheet">
-
   <script type="text/javascript" src="assets/script/scrolloverflow.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.js"></script>
   <!-- End Fullpage.js -->
@@ -47,13 +46,12 @@
   <div class="header">
     <!-- <div class="title animated fadeInLeft" onclick="menuToggle()"></div> -->
     <div class="logo drop size color-outer" onclick="menuButton()">
-        <span class="outer-circle negative-color">
+      <span class="outer-circle negative-color">
           <span class="inner-circle color-inner">
           </span>
-        </span>
-        <span class="b-line negative-color"></span>
+      </span>
+      <span class="b-line negative-color"></span>
     </div>
-
     <div class="menu-box">
       <ul class="menu">
         <li class="mobile-view" data-visual-label="Home" onclick="location.href = '#Home';menuToggle();" data-url="#Home">
@@ -83,7 +81,7 @@
   </div>
   <div class="landing-page">
     <div id="fullpage">
-      <video loop="loop" muted="muted" autoplay="autoplay" preload="true" id="campFire" data-keepplaying poster="assets/images/poster.png">
+      <video loop="loop" muted="muted" preload="auto" autoplay="autoplay" id="campFire" data-keepplaying poster="assets/images/poster.png">
         <source src="assets/videos/campfire.mp4" type="video/mp4">
       </video>
       <div class="section page-1">
@@ -127,40 +125,43 @@
             <div class="offerings-left">
               <div class="ourofferings">
                 <div class="offerings-bar"></div>
-                <div>Our<br>Offerings</div>
+                <div>Our
+                  <br>Offerings</div>
               </div>
               <div class="ourofferings-leftcontent">
-              <div class="left-list">
-                Passionate Engineers<br> UX/UI designers<br> Content Strategists
+                <div class="left-list">
+                  Passionate Engineers
+                  <br> UX/UI designers
+                  <br> Content Strategists
+                </div>
+                <img src="assets/images/glass.png" class="image-left"></img>
+                <!-- <img src="assets/images/house-dollar.png" class="image-blue"></img> -->
+                <div class="house-dollar"></div>
+                <div class="info-left">Tech solutions that help you navigate
+                  <br>your digital landscape</div>
               </div>
-              <img src="assets/images/glass.png" class="image-left"></img>
-              <!-- <img src="assets/images/house-dollar.png" class="image-blue"></img> -->
-              <div class="house-dollar"></div>
-              <div class="info-left">Tech solutions that help you navigate <br>your digital landscape</div>
-
             </div>
-          </div>
             <div class="offerings-right">
               <div class="list">
                 <span class="offering-title">Are you looking for a trusted engineering partner who'll</span>
                 <ul>
                   <li>Consitently deliver excellence in bringing digital innovation?</li>
                   <li>Enable you to gain business process effeciency and provide delightful customer experience</li>
-              </ul>
-              <span class="offering-title">Well, look no further.</span>
-            </div>
-            <div class="image-right">
-            <img src="assets/images/people.png"></img>
-            <div class="right-text">
-            <div class="house-key"></div>
-            <!-- <img src="assets/images/house-key.png" width="15%" height="15%"></img> -->
-            <span class="info-right">Tons of experience in the FinTech/Mortgage domain</span>
-          </div>
-          <div class="dashboard"></div>
-          <img src="assets/images/dashboard.png"></img>
-          </div>
-            <div class="text-1">
-            </div>
+                </ul>
+                <span class="offering-title">Well, look no further.</span>
+              </div>
+              <div class="image-right">
+                <img src="assets/images/people.png"></img>
+                <div class="right-text">
+                  <div class="house-key"></div>
+                  <!-- <img src="assets/images/house-key.png" width="15%" height="15%"></img> -->
+                  <span class="info-right">Tons of experience in the FinTech/Mortgage domain</span>
+                </div>
+                <div class="dashboard"></div>
+                <img src="assets/images/dashboard.png"></img>
+              </div>
+              <div class="text-1">
+              </div>
             </div>
           </div>
         </div>
@@ -230,32 +231,31 @@
                 <div class="member-title">The Tribal Chief</div>
                 <div class="member-desc" onmouseover="showDesc(this.parentElement)" onmouseleave="hideDesc(this.parentElement)">
                   <h3>Our founder | The tribal chief</h3>
-                  <p>Our chief, Supree Periasamy, has 25+ years of progressive software development experience. 
-                  He’s led and implemented product development for multiple mortgage loan origination products since the last 2 decades for some of the top 10 mortgage lenders in the US:</p>
+                  <p>Our chief, Supree Periasamy, has 25+ years of progressive software development experience. He’s led and implemented product development for multiple mortgage loan origination products since the last 2 decades for some of the top 10 mortgage lenders in the US:</p>
                   <ul>
-                    <li>Before Brimma Tech, he served as the VP - Application Engineering, Ellie Mae, Inc. During his tenure there, he led the development of the NextGen suite of lending solutions for the US mortgage industry.</li> 
+                    <li>Before Brimma Tech, he served as the VP - Application Engineering, Ellie Mae, Inc. During his tenure there, he led the development of the NextGen suite of lending solutions for the US mortgage industry.</li>
                     <li>Prior to Ellie Mae, he served as the Global Head for Engineering and Delivery, Wipro Gallagher, where he led the development and delivery of NetOxygen LOS (Loan Origination System).</li>
                     <li>Prior to Wipro Gallagher, he was one of the core team members at Palisades Technology, which was acquired by IBM in 2006. There, he contributed to building the Impact platform, which is a ﬂagship LOS.</li>
                   </ul>
                 </div>
               </div>
-              
               <div class="team-member" onmouseover="showDesc(this)" onmouseleave="hideDesc(this)" onclick="toggleDesc(this)">
                 <div class="member-pic deepan"></div>
                 <div class="member-name">Deepan Kumar</div>
                 <div class="member-title">The Scrum Master</div>
                 <div class="member-desc" onmouseover="showDesc(this.parentElement)" onmouseleave="hideDesc(this.parentElement)">
                   <h3>Certified Scrum Master | The right hand</h3>
-                  <p>Deepan Kumar has more than a decade of experience as a software developer. He’s extremely passionate about refactoring and TDD (Test Driven Development).<br>Likes to be known as the Agile Evangelist in our team, as he’s a Certified Scrum Master.
+                  <p>Deepan Kumar has more than a decade of experience as a software developer. He’s extremely passionate about refactoring and TDD (Test Driven Development).
+                    <br>Likes to be known as the Agile Evangelist in our team, as he’s a Certified Scrum Master.
                   </p>
                   <ul>
-                    <li>Prior to Brimma Tech, he worked at Cognizant as a senior associate and led a team to fix application security issues as per OWASP guidelines for a reputed client.</li> 
+                    <li>Prior to Brimma Tech, he worked at Cognizant as a senior associate and led a team to fix application security issues as per OWASP guidelines for a reputed client.</li>
                     <li>Prior to Cognizant, he worked at Ericsson as a senior software engineer (Media domain - IPTV & Broadcasting). At Ericsson, he:
                       <ul>
-                        <li>Was the scrum evangelist for multiple projects and mentored teams on Agile 
-                        <li>Orchestrated and integrated multiple applications using apache camel/ Mule ESB for BBC playout services.</li>
-                        <li>Designed and implemented the customization of Ericsson’s CMS watch point SDK </li>
-                        <li>Won awards, such as:</li>
+                        <li>Was the scrum evangelist for multiple projects and mentored teams on Agile
+                          <li>Orchestrated and integrated multiple applications using apache camel/ Mule ESB for BBC playout services.</li>
+                          <li>Designed and implemented the customization of Ericsson’s CMS watch point SDK </li>
+                          <li>Won awards, such as:</li>
                           <ul>
                             <li>ACE Award</li>
                             <li>Extra Miler Award</li>
@@ -263,7 +263,7 @@
                           </ul>
                         </li>
                       </ul>
-                    <li>Prior to Ericsson, he worked at IBM as an application developer for clients such as AT&amp;T.</li>
+                      <li>Prior to Ericsson, he worked at IBM as an application developer for clients such as AT&amp;T.</li>
                   </ul>
                 </div>
               </div>
@@ -272,7 +272,7 @@
                 <div class="member-name">Divya Gupta</div>
                 <div class="member-title">Passionate Developer</div>
                 <div class="member-desc" onmouseover="showDesc(this.parentElement)" onmouseleave="hideDesc(this.parentElement)">
-                  <h3>Passionate Developer | The ‘cool’ agony aunt </h3>
+                  <h3>Passionate Developer | The ‘cool’ agony aunt</h3>
                   <p>Divya Gupta, has 3+ years of experience in web development and web application lifecycle. She has a good eye for good design… Has developed UX designs and logos for many products at a design agency called Ad5.</p>
                   <ul>
                     <li>She is a passionate developer with a love for awesome products and a thirst to create more. She also has significant experience to develop and guide in languages and frameworks, such as Javascript, Angular, Ionic, HTML, CSS, Vue, Quasar, Protractor, Node, Neo4j, jQuery, and React.</li>
@@ -286,7 +286,7 @@
                 <div class="member-title">The Superhero</div>
                 <div class="member-desc" onmouseover="showDesc(this.parentElement)" onmouseleave="hideDesc(this.parentElement)">
                   <h3>The Perpetual Philomath | The Super Hero</h3>
-                  <p>Jona Frank has 5+ years of experience in full stack web development, product management and client interaction.</p> 
+                  <p>Jona Frank has 5+ years of experience in full stack web development, product management and client interaction.</p>
                   <ul>
                     <li>In his own words, <i>“I am a savvy, sassy, and sedulous personality!” </i> Go figure!</li>
                     <li>Prior to joining Brimma Tech, he has <i>ideated, architected, led, and implemented</i> several core modules and functionalities in the Manage Engine Service Desk product at Zoho.</li>
@@ -317,25 +317,23 @@
                 <div class="member-title">The wise old storyteller</div>
                 <div class="member-desc" onmouseover="showDesc(this.parentElement)" onmouseleave="hideDesc(this.parentElement)">
                   <h3>Our founder | The tribal chief</h3>
-                  <p>Our chief, Supree Periasamy, has 25+ years of progressive software development experience. 
-                  He’s led and implemented product development for multiple mortgage loan origination products since the last 2 decades for some of the top 10 mortgage lenders in the US:</p>
+                  <p>Our chief, Supree Periasamy, has 25+ years of progressive software development experience. He’s led and implemented product development for multiple mortgage loan origination products since the last 2 decades for some of the top 10 mortgage lenders in the US:</p>
                   <ul>
-                    <li>Before Brimma Tech, he served as the VP - Application Engineering, Ellie Mae, Inc. During his tenure there, he led the development of the NextGen suite of lending solutions for the US mortgage industry.</li> 
+                    <li>Before Brimma Tech, he served as the VP - Application Engineering, Ellie Mae, Inc. During his tenure there, he led the development of the NextGen suite of lending solutions for the US mortgage industry.</li>
                     <li>Prior to Ellie Mae, he served as the Global Head for Engineering and Delivery, Wipro Gallagher, where he led the development and delivery of NetOxygen LOS (Loan Origination System).</li>
                     <li>Prior to Wipro Gallagher, he was one of the core team members at Palisades Technology, which was acquired by IBM in 2006. There, he contributed to building the Impact platform, which is a ﬂagship LOS.</li>
                   </ul>
                 </div>
-              </div>     
-               <div class="team-member" onmouseover="showDesc(this)" onmouseleave="hideDesc(this)" onclick="toggleDesc(this)">
+              </div>
+              <div class="team-member" onmouseover="showDesc(this)" onmouseleave="hideDesc(this)" onclick="toggleDesc(this)">
                 <div class="member-pic abhi"></div>
                 <div class="member-name">Abhilash Warrier</div>
                 <div class="member-title">The Shaman</div>
                 <div class="member-desc" onmouseover="showDesc(this.parentElement)" onmouseleave="hideDesc(this.parentElement)">
                   <h3>Our founder | The tribal chief</h3>
-                  <p>Our chief, Supree Periasamy, has 25+ years of progressive software development experience. 
-                  He’s led and implemented product development for multiple mortgage loan origination products since the last 2 decades for some of the top 10 mortgage lenders in the US:</p>
+                  <p>Our chief, Supree Periasamy, has 25+ years of progressive software development experience. He’s led and implemented product development for multiple mortgage loan origination products since the last 2 decades for some of the top 10 mortgage lenders in the US:</p>
                   <ul>
-                    <li>Before Brimma Tech, he served as the VP - Application Engineering, Ellie Mae, Inc. During his tenure there, he led the development of the NextGen suite of lending solutions for the US mortgage industry.</li> 
+                    <li>Before Brimma Tech, he served as the VP - Application Engineering, Ellie Mae, Inc. During his tenure there, he led the development of the NextGen suite of lending solutions for the US mortgage industry.</li>
                     <li>Prior to Ellie Mae, he served as the Global Head for Engineering and Delivery, Wipro Gallagher, where he led the development and delivery of NetOxygen LOS (Loan Origination System).</li>
                     <li>Prior to Wipro Gallagher, he was one of the core team members at Palisades Technology, which was acquired by IBM in 2006. There, he contributed to building the Impact platform, which is a ﬂagship LOS.</li>
                   </ul>
@@ -347,25 +345,23 @@
                 <div class="member-title">Passionate Developer</div>
                 <div class="member-desc" onmouseover="showDesc(this.parentElement)" onmouseleave="hideDesc(this.parentElement)">
                   <h3>Our founder | The tribal chief</h3>
-                  <p>Our chief, Supree Periasamy, has 25+ years of progressive software development experience. 
-                  He’s led and implemented product development for multiple mortgage loan origination products since the last 2 decades for some of the top 10 mortgage lenders in the US:</p>
+                  <p>Our chief, Supree Periasamy, has 25+ years of progressive software development experience. He’s led and implemented product development for multiple mortgage loan origination products since the last 2 decades for some of the top 10 mortgage lenders in the US:</p>
                   <ul>
-                    <li>Before Brimma Tech, he served as the VP - Application Engineering, Ellie Mae, Inc. During his tenure there, he led the development of the NextGen suite of lending solutions for the US mortgage industry.</li> 
+                    <li>Before Brimma Tech, he served as the VP - Application Engineering, Ellie Mae, Inc. During his tenure there, he led the development of the NextGen suite of lending solutions for the US mortgage industry.</li>
                     <li>Prior to Ellie Mae, he served as the Global Head for Engineering and Delivery, Wipro Gallagher, where he led the development and delivery of NetOxygen LOS (Loan Origination System).</li>
                     <li>Prior to Wipro Gallagher, he was one of the core team members at Palisades Technology, which was acquired by IBM in 2006. There, he contributed to building the Impact platform, which is a ﬂagship LOS.</li>
                   </ul>
                 </div>
-              </div>           
+              </div>
               <div class="team-member" onmouseover="showDesc(this)" onmouseleave="hideDesc(this)" onclick="toggleDesc(this)">
                 <div class="member-pic kevin"></div>
                 <div class="member-name">Kevin John</div>
                 <div class="member-title">The Fresher</div>
                 <div class="member-desc" onmouseover="showDesc(this.parentElement)" onmouseleave="hideDesc(this.parentElement)">
                   <h3>Our founder | The tribal chief</h3>
-                  <p>Our chief, Supree Periasamy, has 25+ years of progressive software development experience. 
-                  He’s led and implemented product development for multiple mortgage loan origination products since the last 2 decades for some of the top 10 mortgage lenders in the US:</p>
+                  <p>Our chief, Supree Periasamy, has 25+ years of progressive software development experience. He’s led and implemented product development for multiple mortgage loan origination products since the last 2 decades for some of the top 10 mortgage lenders in the US:</p>
                   <ul>
-                    <li>Before Brimma Tech, he served as the VP - Application Engineering, Ellie Mae, Inc. During his tenure there, he led the development of the NextGen suite of lending solutions for the US mortgage industry.</li> 
+                    <li>Before Brimma Tech, he served as the VP - Application Engineering, Ellie Mae, Inc. During his tenure there, he led the development of the NextGen suite of lending solutions for the US mortgage industry.</li>
                     <li>Prior to Ellie Mae, he served as the Global Head for Engineering and Delivery, Wipro Gallagher, where he led the development and delivery of NetOxygen LOS (Loan Origination System).</li>
                     <li>Prior to Wipro Gallagher, he was one of the core team members at Palisades Technology, which was acquired by IBM in 2006. There, he contributed to building the Impact platform, which is a ﬂagship LOS.</li>
                   </ul>
@@ -377,10 +373,9 @@
                 <div class="member-title">The Fresher</div>
                 <div class="member-desc" onmouseover="showDesc(this.parentElement)" onmouseleave="hideDesc(this.parentElement)">
                   <h3>Our founder | The tribal chief</h3>
-                  <p>Our chief, Supree Periasamy, has 25+ years of progressive software development experience. 
-                  He’s led and implemented product development for multiple mortgage loan origination products since the last 2 decades for some of the top 10 mortgage lenders in the US:</p>
+                  <p>Our chief, Supree Periasamy, has 25+ years of progressive software development experience. He’s led and implemented product development for multiple mortgage loan origination products since the last 2 decades for some of the top 10 mortgage lenders in the US:</p>
                   <ul>
-                    <li>Before Brimma Tech, he served as the VP - Application Engineering, Ellie Mae, Inc. During his tenure there, he led the development of the NextGen suite of lending solutions for the US mortgage industry.</li> 
+                    <li>Before Brimma Tech, he served as the VP - Application Engineering, Ellie Mae, Inc. During his tenure there, he led the development of the NextGen suite of lending solutions for the US mortgage industry.</li>
                     <li>Prior to Ellie Mae, he served as the Global Head for Engineering and Delivery, Wipro Gallagher, where he led the development and delivery of NetOxygen LOS (Loan Origination System).</li>
                     <li>Prior to Wipro Gallagher, he was one of the core team members at Palisades Technology, which was acquired by IBM in 2006. There, he contributed to building the Impact platform, which is a ﬂagship LOS.</li>
                   </ul>
@@ -392,10 +387,9 @@
                 <div class="member-title">The Fresher</div>
                 <div class="member-desc" onmouseover="showDesc(this.parentElement)" onmouseleave="hideDesc(this.parentElement)">
                   <h3>Our founder | The tribal chief</h3>
-                  <p>Our chief, Supree Periasamy, has 25+ years of progressive software development experience. 
-                  He’s led and implemented product development for multiple mortgage loan origination products since the last 2 decades for some of the top 10 mortgage lenders in the US:</p>
+                  <p>Our chief, Supree Periasamy, has 25+ years of progressive software development experience. He’s led and implemented product development for multiple mortgage loan origination products since the last 2 decades for some of the top 10 mortgage lenders in the US:</p>
                   <ul>
-                    <li>Before Brimma Tech, he served as the VP - Application Engineering, Ellie Mae, Inc. During his tenure there, he led the development of the NextGen suite of lending solutions for the US mortgage industry.</li> 
+                    <li>Before Brimma Tech, he served as the VP - Application Engineering, Ellie Mae, Inc. During his tenure there, he led the development of the NextGen suite of lending solutions for the US mortgage industry.</li>
                     <li>Prior to Ellie Mae, he served as the Global Head for Engineering and Delivery, Wipro Gallagher, where he led the development and delivery of NetOxygen LOS (Loan Origination System).</li>
                     <li>Prior to Wipro Gallagher, he was one of the core team members at Palisades Technology, which was acquired by IBM in 2006. There, he contributed to building the Impact platform, which is a ﬂagship LOS.</li>
                   </ul>
@@ -428,26 +422,23 @@
           </div>
         </div>
       </div>
-    <div class="section page-4 fp-auto-height">
+      <div class="section page-4 fp-auto-height">
         <div class="block-1">
           <div class="triballeadership">
             <div class="tribal-left">
               <div class="ourofferings">
                 <div class="tribal-bar"></div>
-                <div>Tribal<br>Leadership</div>
+                <div>Tribal
+                  <br>Leadership</div>
               </div>
-          </div>
+            </div>
             <div class="tribal-right">
               <div class="list">
                 <span class="tribal-title">And,we're already there.But we have this constant
                   hunger to grow and outdo ourselves again and again.</span>
-
-                  <div class="tribal-content">
-                  We truly believe in the philosophy of <a href="#">Tribal Leadership</a>
-                  elaborated in the New York bestseller by the same name!
-                  The book is a result of a study conducted by the authors on 
-                  24,000 employees across 24 organizations</div>
-            </div>
+                <div class="tribal-content">
+                  We truly believe in the philosophy of <a href="#">Tribal Leadership</a> elaborated in the New York bestseller by the same name! The book is a result of a study conducted by the authors on 24,000 employees across 24 organizations</div>
+              </div>
             </div>
           </div>
         </div>
@@ -458,19 +449,17 @@
             </div>
             <div class="our-customers-content">
               <p>
-                  We believe that tribes are everywhere, even in organizations!<br>
-                Tribes are made up of small groups of people, who have someting in common that binds them<br>
-                together.All trie have leaders. Each tribe has their own language, behavior, and operate at a
-                certain stage.
+                We believe that tribes are everywhere, even in organizations!
+                <br> Tribes are made up of small groups of people, who have someting in common that binds them
+                <br> together.All trie have leaders. Each tribe has their own language, behavior, and operate at a certain stage.
               </p>
             </div>
           </div>
-        </div>        
- 
         </div>
       </div>
-
     </div>
-    <div class="scroll-btn animated fadeInLeft" onclick="$.fn.fullpage.moveSectionDown();"></div>
+  </div>
+  <div class="scroll-btn animated fadeInLeft" onclick="$.fn.fullpage.moveSectionDown();"></div>
 </body>
+
 </html>

@@ -382,14 +382,14 @@ p, ul {
 	transform: rotateY(180deg);
 	-webkit-transform: rotateY(180deg); /* Safari and Chrome */
 	-moz-transform: rotateY(180deg); /* Firefox */
-	background: rgba(15, 23, 34, 1);
+	background: rgba(6, 3, 2, 1);
 }
 
 .slide-1 {
-	background: -webkit-gradient(linear, left top, right top, color-stop(26%, rgba(15, 23, 34, 1)), color-stop(rgba(255, 255, 255, 0)), color-stop(75%), color-stop(rgba(15, 23, 34, 0)), to(rgba(255, 255, 255, 0)));
-	background: -webkit-linear-gradient(left, rgba(15, 23, 34, 1)26%, rgba(255, 255, 255, 0), 75%, rgba(15, 23, 34, 0), rgba(255, 255, 255, 0));
-	background: -o-linear-gradient(left, rgba(15, 23, 34, 1)26%, rgba(255, 255, 255, 0), 75%, rgba(15, 23, 34, 0), rgba(255, 255, 255, 0));
-	background: linear-gradient(to right, rgba(15, 23, 34, 1)26%, rgba(255, 255, 255, 0), 75%, rgba(15, 23, 34, 0), rgba(255, 255, 255, 0));
+	background: -webkit-gradient(linear, left top, right top, color-stop(26%, rgba(6, 3, 2, 1)), color-stop(rgba(255, 255, 255, 0)), color-stop(75%), color-stop(rgba(15, 23, 34, 0)), to(rgba(255, 255, 255, 0)));
+	background: -webkit-linear-gradient(left, rgba(6, 3, 2, 1)26%, rgba(255, 255, 255, 0), 75%, rgba(15, 23, 34, 0), rgba(255, 255, 255, 0));
+	background: -o-linear-gradient(left, rgba(6, 3, 2, 1)26%%, rgba(255, 255, 255, 0), 75%, rgba(15, 23, 34, 0), rgba(255, 255, 255, 0));
+	background: linear-gradient(to right, rgba(6, 3, 2, 1)26%, rgba(255, 255, 255, 0), 75%, rgba(15, 23, 34, 0), rgba(255, 255, 255, 0));
 }
 
 .slide-2 {
@@ -647,7 +647,7 @@ p, ul {
 	z-index: 1;
 	padding: 15px 25px;
 	margin-bottom: 10px;
-	top:-10px;
+	top: -10px;
 	right: 0px;
 	background: white;
 	width: 55vw;
@@ -843,7 +843,7 @@ p, ul {
 
 /* Page 2 - What we do  */
 .middle {
-	padding: 60px 24vw;
+	padding: 60px 17vw;
 	background-color: #F6F6F6;
 }
 
@@ -864,7 +864,7 @@ p, ul {
 
 /* Page 2 - Our Customers  */
 .our-customers {
-	padding: 60px 24vw;
+	padding: 60px 17vw;
 }
 
 .our-customers-heading {
