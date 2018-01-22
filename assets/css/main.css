@@ -716,17 +716,19 @@ p, ul {
 
 .offerings-bar {
 	border-top: 5px solid #588DD6;
-	width: 180px !important;
+	width: 230px !important;
 }
 
 .offerings {
+  /* padding-top:60px; */
 	color: #666666;
-	width: 960px;
-	height: 100%;
+	/* width: 100%; */
+	/* height: 100%; */
 	display: flex;
 	flex-flow: row;
 	margin: auto;
 	justify-content: center;
+  padding-bottom: 60px;
 }
 
 /* Offerings Left CSS  */
@@ -734,7 +736,7 @@ p, ul {
 	width: 350px;
 	position: relative;
 	color: #333333;
-	margin: 30px 12px 30px 10px;
+	margin: 30px 0px;
 }
 
 .ourofferings {
@@ -849,19 +851,25 @@ p, ul {
 
 /* Page 2 - What we do  */
 .middle {
-	padding: 60px 17vw;
-	background-color: #F6F6F6;
-}
+  padding-top : 60px;
+  padding-bottom : 60px;
+  width: 960px;
+	margin: auto;
+	height: 100%;
+	display: flex;
+	flex-flow: column;
+	justify-content: flex-start;
+ }
 
 .middle-heading {
 	font-weight: 700;
-	font-size: 2rem;
+	font-size: 1.9rem;
 	color: #333333;
 }
 
 .middle-content {
 	color: #666666;
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 	padding-top: 5vh;
 	line-height: 2.2rem;
 	font-weight: 100;
@@ -870,12 +878,19 @@ p, ul {
 
 /* Page 2 - Our Customers  */
 .our-customers {
-	padding: 60px 17vw;
+	width: 960px;
+  padding-top: 60px;
+	margin: auto;
+	height: 100%;
+	position: relative;
+/*	display: flex;*/
+	flex-flow: column;
+/*	padding-bottom: 60px;*/
 }
 
 .our-customers-heading {
 	font-weight: 700;
-	font-size: 1.5rem;
+	font-size: 1.9rem;
 	color: #333333;
 }
 
@@ -904,19 +919,20 @@ p, ul {
 
 /*Tribal Leaddership CSS */
 .page-4 .block-1 {
-	margin-top: 60px;
+	margin-top: 140px;
 	display: flex;
 	flex-flow: row;
 	position: relative;
-}
 
+}
 .page-4 .block-2 {
-	background: rgb(245, 246, 247);
+background-color: #F6F6F6;
 }
 
 .tribal-title {
-	font-family: 'Merriweather', sans-serif;
-	font-size: 1.2rem;
+	font-family: 'Merriweather', serif;
+	font-size: 1.4rem;
+  font-weight: 400;
 	color: black;
 	font-weight: 100;
 	letter-spacing: 5%;
@@ -925,12 +941,12 @@ p, ul {
 .triballeadership {
 	color: #666666;
 	width: 960px;
-	height: 100%;
 	display: flex;
 	flex-flow: row;
 	margin: auto;
 	justify-content: center;
 	margin-bottom: 60px;
+
 }
 
 .tribal-left {
@@ -939,6 +955,7 @@ p, ul {
 	color: #333333;
 	margin: 0px 12px 30px 10px;
 }
+
 
 .tribal-content {
 	padding-top: 8%;
@@ -957,7 +974,65 @@ p, ul {
 
 .tribal-bar {
 	border-top: 5px solid #588DD6;
-	width: 180px !important;
+	width: 220px !important;
+}
+
+.tribal-content a {
+	color: #3D00F4 !important;
+	font-family: 'Merriweather';
+}
+
+.tribal-content-bottom {
+	color: #666666;
+	font-size: 1.1rem;
+	line-height: 1.9rem;
+}
+
+.tribal-content-bottom a {
+	color:  #3D00F4 !important;
+	font-family: 'Merriweather';
+
+}
+.tribal-content-bottom p {
+	margin-top: 5% !important;
+	font-family: 'Merriweather', serif;
+	font-weight: 100;
+	font-size: 1.3rem;
+}
+
+.page-2 .block-2 {
+	background-color: #F6F6F6;
+}
+
+
+.Tribal-Leadership {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+    padding-bottom: 60px;
+
+}
+
+/*Join our tribe CSS */
+.page-5 .block-1 {
+	margin-top: 60px;
+	display: flex;
+	flex-flow: row;
+	position: relative;
+
+}
+.page-5 {
+    background-color: #424244;
+    color: white;
+}
+
+.joinourtribe {
+	font-family: 'Lato';
+	font-weight: 700;
+	font-size: 3rem;
+    color : white;
 }
 
 .supree {
