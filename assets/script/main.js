@@ -22,7 +22,7 @@ $(document).ready(function() {
 			$('.menu li').removeClass('active-menu');
 			$($('.menu li')[nextIndex - 1]).addClass('active-menu');
 		},
-		anchors:['Home', 'Our-Offerings', 'About-Us', 'Tribal-Leadership']
+		anchors:['Home', 'Our-Offerings', 'About-Us', 'Tribal-Leadership', 'Join-Our-Tribe', 'Contact-Us']
 	});
 
 	var currentHref = window.location.hash.substr(0);

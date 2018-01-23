@@ -220,7 +220,7 @@ p, ul {
 	top: 110%;
 	left: 30px;
 	background-color: white;
-	transition: all 1s;
+	transition: all 0.5s;
 }
 
 .connect span:hover::before {
@@ -252,6 +252,7 @@ p, ul {
 .twitter {
 	background: url("../icon/twitter.png") no-repeat;
 	background-size: 100%;
+	background-position: 0px 4px;
 	width: 25px;
 	height: 25px;
 	display: inline-block;
@@ -342,8 +343,9 @@ p, ul {
 	z-index: 1;
 	position: relative;
 	font-family: 'Lato-Bold', sans-serif;
-	font-size: 0.8rem;
+	font-size: 1rem;
 	font-weight: bold;
+	letter-spacing: 1px;
 }
 
 .menu li::before {
@@ -354,7 +356,7 @@ p, ul {
 	top: 110%;
 	left: 12px;
 	background-color: #f35d19;
-	transition: all 1s;
+	transition: all 0.5s;
 }
 
 .menu li:hover::before, .active-menu::before {
@@ -473,12 +475,50 @@ p, ul {
 
 .page-3 .block-1 {
 	margin-top: 89px;
-	height: 500px;
+	height: 560px;
 	display: flex;
 	flex-flow: row;
 	position: relative;
-	background: url('../images/3_banner_1.png') no-repeat;
+}
+
+.page-3 .block-1 .sub-block-1 {
+	width: 50%;
+	background: url('../images/3_3.png') no-repeat;
 	background-size: cover;
+}
+
+.page-3 .block-1 .sub-block-2 {
+	width: 50%;
+	display: flex;
+	flex-flow: row;
+	min-width: 275px;
+}
+
+.page-3 .block-1 .sub-block-2 .sub-sec-1 {
+	display: flex;
+	flex-flow: column;
+	min-width: 275px;
+	flex-grow: 1;
+}
+
+.page-3 .block-1 .sub-block-2 .sub-sec-2 {
+	width: 50%;
+	background: url('../images/3_6.png') no-repeat;
+	background-size: cover;
+	flex-shrink: 1;
+}
+
+.page-3 .block-1 .sub-block-2 .sub-sec-1 .upper-sec {
+	height: 35%;
+	background: url('../images/3_4.png') no-repeat;
+	background-size: cover;
+}
+
+.page-3 .block-1 .sub-block-2 .sub-sec-1 .lower-sec {
+	height: 65%;
+	background: url('../images/3_5.png') no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 .page-3 .block-2 {
@@ -491,7 +531,7 @@ p, ul {
 
 .page-3 .block-4 {
 	background: url('../images/team-bg.png') no-repeat;
-	background-size: cover;
+	background-size: contain;
 }
 
 .page-3 .block-5 {
@@ -499,9 +539,9 @@ p, ul {
 }
 
 .about-us {
-	color: #666666;
+	color: #333333;
 	height: 100%;
-	max-width: 55vw;
+	max-width: 960px;
 	display: flex;
 	flex-flow: row;
 	margin: auto;
@@ -509,7 +549,7 @@ p, ul {
 }
 
 .about-us-left {
-	min-width: 200px;
+	min-width: 230px;
 	position: relative;
 	color: #333333;
 	font-weight: 700;
@@ -519,31 +559,43 @@ p, ul {
 }
 
 .about-us-left div {
-	width: 80%;
+	width: 70%;
 	margin-top: 10px;
 	white-space: pre-wrap;
 }
 
 .about-us-right {
-	margin: 60px 2.5px;
+	margin: 60px 10px 60px 100px;
 	display: flex;
 	flex-flow: column;
 	justify-content: flex-start;
+	position: relative;
+	top:-10px;
 }
 
-.about-us-right p, .about-us-right li {
+.about-us-right p, .about-us-right li, .about-us-right strong, .about-us-right span {
 	font-family: 'Merriweather', serif;
 	font-weight: 100;
 	font-size: 1.3rem;
-	line-height: 1.9rem;
+	line-height: 2;
+}
+
+.about-us-right strong {
+	font-weight: bold;
 }
 
 .about-us-right ul {
-	padding-top: 20px;
+	padding-top: 30px;
+	padding-left: 20px;
+}
+
+.about-us-right li {
+	padding-left: 3%;
+	font-size: 1rem;
 }
 
 .our-strengths {
-	max-width: 55vw;
+	max-width: 960px;
 	margin: auto;
 	height: 100%;
 	display: flex;
@@ -552,24 +604,29 @@ p, ul {
 }
 
 .our-strengths-title {
-	font-size: 1.5rem;
-	color: #333333;
 	font-weight: 700;
+    font-size: 1.9rem;
+    color: #333333;
 	padding: 10px;
 	padding-top: 60px;
 }
 
 .our-strengths-content {
-	color: #666666;
+	color: #333333;
 	font-family: 'Merriweather', serif;
 	font-weight: 100;
 	font-size: 1.3rem;
+	line-height: 2;
 	padding: 10px 10px 60px 10px;
-	line-height: 1.9rem;
+}
+
+.our-strengths-content strong {
+	font-family: 'Merriweather', serif;
+	font-size: 1.3rem;
 }
 
 .about-team {
-	max-width: 55vw;
+	max-width: 960px;
 	margin: auto;
 	height: 100%;
 	position: relative;
@@ -578,19 +635,24 @@ p, ul {
 }
 
 .about-team-title {
-	font-size: 1.5rem;
-	color: #333333;
-	padding: 60px 10px 10px 10px;
 	font-weight: 700;
+    font-size: 1.9rem;
+    color: #333333;
+	padding: 60px 10px 10px 10px;
 }
 
 .about-team-content {
-	color: #666666;
-	font-size: 1.3rem;
+	color: #333333;
+	padding: 10px 10px 20px 10px;
 	font-family: 'Merriweather', serif;
 	font-weight: 100;
-	padding: 10px 10px 20px 10px;
-	line-height: 1.9rem;
+	font-size: 1.3rem;
+	line-height: 2;
+}
+
+.about-team-content strong {
+	font-size: 1.3rem;
+	font-family: 'Merriweather', serif;
 }
 
 .about-team-team {
@@ -655,8 +717,8 @@ p, ul {
 	top: -10px;
 	right: 0px;
 	background: white;
-	width: 55vw;
-	line-height: 1.9rem;
+	width: 960px;
+	color: #333333;
 }
 
 .member-desc ul {
@@ -665,14 +727,24 @@ p, ul {
 
 .member-desc h3 {
 	margin-top: 0px;
+	margin-bottom: 10px;
+	font-family: 'Merriweather', serif;
 }
 
 .member-desc li {
 	margin-bottom: 5px;
+	padding-left: 3%;
+}
+
+.member-desc p, .member-desc li {
+	font-family: 'Merriweather', serif;
+	font-weight: 100;
+	font-size: 1rem;
+	line-height: 2;
 }
 
 .vision {
-	max-width: 55vw;
+	max-width: 960px;
 	margin: auto;
 	height: 100%;
 	position: relative;
@@ -682,10 +754,10 @@ p, ul {
 }
 
 .vision-title {
-	font-size: 1.5rem;
-	color: #333333;
-	padding: 60px 10px 10px 10px;
 	font-weight: 700;
+    font-size: 1.9rem;
+    color: #333333;
+	padding: 60px 10px 10px 10px;
 }
 
 .vision p {
@@ -695,6 +767,10 @@ p, ul {
 	font-weight: 100;
 	font-size: 1.3rem;
 	line-height: 1.9rem;
+}
+
+.vision ul {
+	padding-bottom: 10px;
 }
 
 .vision li {
@@ -1033,6 +1109,167 @@ background-color: #F6F6F6;
 	font-weight: 700;
 	font-size: 3rem;
     color : white;
+}
+
+/* Contact Us */
+.page-6 .block-1 {
+	height: 550px;
+	background-color: rgb(50, 51, 52);
+	background-image: url("../images/map.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.page-6 .block-3 {
+	background: #f6f6f6;
+	width: 100%;
+	position: relative;
+}
+
+.contact-us {
+	color: #333333;
+	height: 100%;
+	max-width: 960px;
+	display: flex;
+	flex-flow: row;
+	margin: auto;
+	justify-content: center;
+}
+
+.contact-us-left {
+	min-width: 230px;
+	position: relative;
+	color: #333333;
+	font-weight: 700;
+	margin: 60px 30px 30px 10px;
+	font-size: 3rem;
+	border-top: 5px solid #588DD6;
+}
+
+.contact-us-left div {
+	width: 75%;
+	margin-top: 10px;
+	white-space: pre-wrap;
+}
+
+.contact-us-right {
+	margin: 60px 10px 60px 100px;
+	display: flex;
+	flex-flow: column;
+	justify-content: flex-start;
+	position: relative;
+	top:-10px;
+}
+
+.contact-us-right p, .contact-label {
+	font-family: 'Merriweather', serif;
+	font-weight: 100;
+	font-size: 1.3rem;
+	line-height: 2;
+}
+
+.contact-row {
+	width: 100%;
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.contact-row > div {
+	width: 50%;
+}
+
+.contact-row input, .contact-row .contact-label {
+	padding: 10px;
+	width: 95%;
+}
+
+.contact-row .contact-label {
+	padding-left: 0px;
+}
+
+.contact-us-section textarea {
+	width: 100%;
+	height: 200px;
+	resize: none;
+	border: 1px solid #dfdfdf;
+	margin-bottom: 20px;
+}
+
+.contact-submit {
+	width: 100% !important;
+	padding: 10px;
+	background: #f5a74a;
+	color: white;
+	text-align: center;
+}
+
+.contact-us-reach {
+	color: #333333;
+	height: 100%;
+	max-width: 960px;
+	display: flex;
+	flex-flow: column;
+	margin: auto;
+}
+
+.contact-us-reach-title {
+	font-weight: 700;
+    font-size: 1.9rem;
+    color: #333333;
+	padding: 60px 10px 50px 10px;
+}
+
+.contact-us-reach-content {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	padding: 10px;
+	padding-bottom: 60px;
+}
+
+.contact-us-phone, .contact-us-location {
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+}
+
+.contact-email-icon {
+	background: url("../icon/mail.png") no-repeat;
+	height: 50px;
+	width: 50px;
+}
+
+.contact-phone-icon {
+	background: url("../icon/phone.png") no-repeat;
+	height: 50px;
+	width: 50px;
+}
+
+.contact-location-icon {
+	background: url("../icon/location.png") no-repeat;
+	height: 50px;
+	width: 50px;
+}
+
+.contact-india , .contact-usa {
+	padding: 10px;
+}
+
+.contact-us-footer {
+	background-color: rgb(50, 51, 52);
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+}
+
+.contact-us-footer div {
+	padding: 10px;
+	color: #999999;
+	font-size: 0.7rem;
+}
+
+.contact-us-footer .push-down {
+	padding-top: 20px;
 }
 
 .supree {
