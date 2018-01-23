@@ -1183,8 +1183,13 @@ background-color: #F6F6F6;
 	width: 95%;
 }
 
+.contact-row input {
+	border: 1px solid #dfdfdf;
+}
+
 .contact-row .contact-label {
 	padding-left: 0px;
+	white-space: nowrap;
 }
 
 .contact-us-section textarea {
@@ -1445,18 +1450,19 @@ background-color: #F6F6F6;
 		margin-top: 0px;
 	}
 
-	.about-us, .our-strengths, .about-team, .vision {
+	.about-us, .our-strengths, .about-team, .vision, .contact-us, .contact-us-reach {
 		flex-wrap: wrap;
 		max-width: 85vw;
 		justify-content: flex-start;
 	}
 
-	.about-us-left {
+	.about-us-left, .contact-us-left {
 		align-self: flex-start;
 	}
 
-	.about-us-right {
+	.about-us-right, .contact-us-right {
 		margin-top: 10px;
+		margin-left: 10px;
 	}
 
 	.about-team-team {
@@ -1478,6 +1484,18 @@ background-color: #F6F6F6;
 
 	.member-desc {
 		width: 85vw;
+	}
+
+	.contact-us .contact-label {
+		font-size: 1rem;
+	}
+
+	.contact-us-reach-content {
+		flex-flow: column;
+	}
+
+	.contact-us-reach-content div {
+		margin-bottom: 10px;
 	}
 
 }
