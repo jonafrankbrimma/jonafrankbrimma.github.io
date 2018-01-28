@@ -1042,7 +1042,7 @@ background-color: #F6F6F6;
 }
 
 .tribal-right {
-	width: 600px;
+	width: 650px;
 	display: flex;
 	flex-flow: column;
 	justify-content: flex-start;
@@ -1111,6 +1111,69 @@ background-color: #F6F6F6;
     color : white;
 }
 
+.row-1{
+    width: 100%;
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.row-2{
+    width: 100%;
+	display: flex;
+	margin-bottom: 20px;
+   
+}
+
+.row-3{
+    width: 100%;
+	display: flex;
+	margin-bottom: 20px;
+}
+.resume-fields input{
+    background-color: #424244;
+    border: 1px solid #9E9E9F;
+    height: 50px;
+    width: 290px;
+    margin-left: 20px;
+    margin-top:20px;
+}
+.resume-fields label{
+    font-weight: 500;
+    color:white;
+    height: 50px;
+    width: 290px;
+    margin-left: 20px;
+}
+.file{
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.file + label {
+    width: 100%;
+    font-size: 1.25em;
+    font-weight: 700;
+    color: #5886B1;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+}
+
+.send {
+    margin-top:60px;
+    width: 100%;
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-left: 20px;
+    background-color: #FFA658;
+    border: 0px;
+}
 /* Contact Us */
 .page-6 .block-1 {
 	height: 550px;
@@ -1499,3 +1562,4 @@ background-color: #F6F6F6;
 	}
 
 }
+
