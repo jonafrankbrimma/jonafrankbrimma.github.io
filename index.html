@@ -21,7 +21,9 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.js"></script>
   <!-- End Fullpage.js -->
   <!-- Animate Text Dependencies -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"> -->
+  <link href="assets/css/animate.css" rel="stylesheet">
+
   <script type="text/javascript" src="assets/script/jquery.lettering-0.6.1.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"></script>
   <!-- End Animate Text Dependencies -->
@@ -138,7 +140,6 @@
                   <br> Content Strategists
                 </div>
                 <img src="assets/images/glass.png" class="image-left"></img>
-                <!-- <img src="assets/images/house-dollar.png" class="image-blue"></img> -->
                 <div class="house-dollar"></div>
                 <div class="info-left">Tech solutions that help you navigate
                   <br>your digital landscape</div>
@@ -157,7 +158,6 @@
                 <img src="assets/images/people.png"></img>
                 <div class="right-text">
                   <div class="house-key"></div>
-                  <!-- <img src="assets/images/house-key.png" width="15%" height="15%"></img> -->
                   <span class="info-right">Tons of experience in the FinTech/Mortgage domain</span>
                 </div>
                 <div class="dashboard"></div>
@@ -426,7 +426,7 @@
       <div class="section page-4 fp-auto-height">
         <div class="pic-block">
         <div class="people-pic"></div>
-        </div>       
+        </div>
         <div class="block-1">
           <div class="triballeadership">
             <div class="tribal-left">
@@ -481,7 +481,7 @@
       </div>
       <div class="section page-5 fp-auto-height">
         <div class="block-1">
-          <div class="triballeadership">
+          <div class="join-our-tribe">
             <div class="tribal-left">
               <div class="joinourtribe">
                 <div class="tribal-bar"></div>
@@ -512,13 +512,13 @@
                 </div>
                 </div>
                 <div class="row-3">
-                
+
                 <input name="file" class="file" type="file">
                 <label for="file">BROWSE</label>
                 </div>
                 <div class="row-3">
                 <button class="send">SEND</button>
-                </div>                
+                </div>
               </div>
             </div>
           </div>
@@ -550,11 +550,11 @@
             <div class="joinourtribe-content">
               <p>
               If your answer is a resounding yes to all these questions, we
-              would love you to join our tribe. 
+              would love you to join our tribe.
               </p>
             </div>
-            
-            <button class="send-resume">SEND US YOUR RESUME </button>                                     
+
+            <button class="send-resume">SEND US YOUR RESUME </button>
             </div>
           </div>
         </div>
@@ -634,7 +634,7 @@
               </div>
             </div>
           </div>
-        </div>  
+        </div>
         <div class="contact-us-footer">
           <div class="push-down">&copy; Brimma Tech, Inc.</div>
           <div class="push-down">RESOURCES | BLOGS | CASE STUDIES | PRIVACY POLICY</div>
@@ -650,5 +650,21 @@
   </div>
   </div>
 </body>
+<script>
+$(".send-resume").click(function() {
+  $( ".triballeadership-white" ).addClass("animated fadeOut").one(
+    'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+    function(){
+      console.log("animation end");
+      $(".triballeadership-white").css("display","none");
+      $(".join-our-tribe").addClass("animated fadeIn");
+      $(".join-our-tribe").css("display","flex");
 
+    }
+  );
+
+  // $(".triballeadership-white").hide();
+
+});
+</script>
 </html>

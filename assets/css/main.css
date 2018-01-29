@@ -1023,7 +1023,6 @@ background-color: #F6F6F6;
 	margin: auto;
 	justify-content: center;
 	margin-bottom: 60px;
-        
 }
 
 .tribal-left {
@@ -1095,7 +1094,7 @@ background-color: #F6F6F6;
 
 /*Join our tribe CSS */
 .page-5 .block-1 {
-	margin-top: 60px;
+	margin-top: 148px;
 	display: flex;
 	flex-flow: row;
 	position: relative;
@@ -1112,6 +1111,15 @@ background-color: #F6F6F6;
 	font-size: 3rem;
     color : white;
 }
+.join-our-tribe {
+	color: #666666;
+	width: 960px;
+	display: flex;
+	flex-flow: row;
+	margin: auto;
+	justify-content: center;
+	margin-bottom: 60px;
+}
 
 .row-1{
     width: 100%;
@@ -1123,7 +1131,7 @@ background-color: #F6F6F6;
     width: 100%;
 	display: flex;
 	margin-bottom: 20px;
-   
+
 }
 
 .row-3{
@@ -1610,8 +1618,8 @@ background-color: #F6F6F6;
 	margin: auto;
 	justify-content: center;
 	margin-bottom: 60px;
-    padding-top: 60px;
-        
+  padding-top: 60px;
+	/* z-index: 1; */
 }
 
 .tribal-right-white {
@@ -1636,7 +1644,8 @@ background-color: #F6F6F6;
 .people-pic {
     background-image: url('/assets/images/tribal-leadership.png');
     height: 690px;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+		background-size: contain;
 }
 
 .hand-pic {
