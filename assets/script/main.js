@@ -35,6 +35,18 @@ $(document).ready(function() {
 	  this.load();
 	  this.play();
 	});
+	$(".send-resume").click(function() {
+	  $( ".triballeadership-white" ).addClass("animated fadeOut").one(
+	    'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+	    function(){
+	      $(".triballeadership-white").css("display","none");
+	      $(".join-our-tribe").addClass("animated fadeIn");
+	      $(".join-our-tribe").css("display","flex");
+
+	    }
+	  );
+	});
+
 });
 
 function menuButton() {
