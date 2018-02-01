@@ -793,6 +793,7 @@ p, ul {
 .offerings-bar {
 	border-top: 5px solid #588DD6;
 	width: 230px !important;
+    margin-bottom: 18px;
 }
 
 .offerings {
@@ -1022,7 +1023,6 @@ background-color: #F6F6F6;
 	margin: auto;
 	justify-content: center;
 	margin-bottom: 60px;
-
 }
 
 .tribal-left {
@@ -1042,7 +1042,7 @@ background-color: #F6F6F6;
 }
 
 .tribal-right {
-	width: 600px;
+	width: 650px;
 	display: flex;
 	flex-flow: column;
 	justify-content: flex-start;
@@ -1051,6 +1051,7 @@ background-color: #F6F6F6;
 .tribal-bar {
 	border-top: 5px solid #588DD6;
 	width: 220px !important;
+    margin-bottom: 28px;
 }
 
 .tribal-content a {
@@ -1093,7 +1094,7 @@ background-color: #F6F6F6;
 
 /*Join our tribe CSS */
 .page-5 .block-1 {
-	margin-top: 60px;
+	margin-top: 148px;
 	display: flex;
 	flex-flow: row;
 	position: relative;
@@ -1109,6 +1110,157 @@ background-color: #F6F6F6;
 	font-weight: 700;
 	font-size: 3rem;
     color : white;
+}
+.join-our-tribe {
+	color: #666666;
+	width: 960px;
+	display: flex;
+	flex-flow: row;
+	margin: auto;
+	justify-content: center;
+	margin-bottom: 60px;
+}
+
+.row-1{
+    width: 100%;
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.row-2{
+    width: 100%;
+	display: flex;
+	margin-bottom: 20px;
+
+}
+
+.row-3{
+    width: 100%;
+	display: flex;
+	margin-bottom: 20px;
+}
+.resume-fields input{
+    background-color: #424244;
+    border: 1px solid #9E9E9F;
+    height: 50px;
+    width: 290px;
+    margin-left: 20px;
+    margin-top:20px;
+}
+.resume-fields label{
+    font-weight: 500;
+    color:white;
+    height: 50px;
+    width: 290px;
+    margin-left: 20px;
+}
+.file{
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.file + label {
+    width: 100%;
+    font-size: 1.25em;
+    font-weight: 700;
+    color: #5886B1;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+}
+
+.send {
+    margin-top:60px;
+    width: 100%;
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-left: 20px;
+    background-color: #FFA658;
+    border: 0px;
+}
+
+.joinourtribe-content-1 p {
+	font-family: 'Merriweather', serif;
+	font-weight: 100;
+	font-size: 1.3rem;
+}
+
+.joinourtribe-content p {
+	margin-top: 50px !important;
+	font-family: 'Merriweather', serif;
+	font-weight: 100;
+	font-size: 1.3rem;
+}
+.send-resume{
+    width: 300px;
+    height: 60px;
+    margin-top: 75px;
+    background-color: #FFA658;
+    color:white;
+    border: 0px;
+    font-family: 'Lato-Bold';
+    font-size: 16px;
+}
+
+.page-5 .block-2 {
+	background: #fff;
+}
+
+.joinourtribe-white {
+	font-family: 'Lato';
+	font-weight: 700;
+	font-size: 3rem;
+}
+
+.triballeadership-white {
+	color: #666666;
+	width: 960px;
+	display: flex;
+	flex-flow: row;
+	margin: auto;
+	justify-content: center;
+	margin-bottom: 60px;
+  padding-top: 60px;
+	/* z-index: 1; */
+}
+
+.tribal-right-white {
+	width: 650px;
+	display: flex;
+	flex-flow: column;
+	justify-content: flex-start;
+	font-family: 'Merriweather', sans-serif;
+	font-size: 1.2rem;
+	font-weight: 100;
+	letter-spacing: 5%;
+    padding-bottom: 60px;
+
+}
+
+.pic-block {
+    padding-top: 89px;
+    width:100%;
+    height: 690px;
+}
+
+.people-pic {
+    background-image: url('/assets/images/tribal-leadership.png');
+    height: 690px;
+    background-repeat: no-repeat;
+		background-size: contain;
+}
+
+.hand-pic {
+    background-image: url('/assets/images/people-pic.png');
+    width: 477px;
+    height: 690px;
+    background-repeat: no-repeat
 }
 
 /* Contact Us */
