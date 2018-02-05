@@ -35,6 +35,8 @@ $(document).ready(function() {
 	  this.load();
 	  this.play();
 	});
+	$('#campFire')[0].play();
+
 	$(".send-resume").click(function() {
 	  $( ".triballeadership-white" ).addClass("animated fadeOut").one(
 	    'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',

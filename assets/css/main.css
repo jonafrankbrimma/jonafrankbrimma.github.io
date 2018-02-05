@@ -94,74 +94,6 @@ p, ul {
 	margin-left: 20px;
 }
 
-/* Variables to edit for the logo ===== Start */
-.size {
-	width: 35px;
-	height: 35px;
-}
-
-.color-outer {
-	background-color: white;
-}
-
-.color-inner {
-	background-color: white;
-}
-
-.color-outer:hover {
-	background-color: #5a90ce;
-}
-
-.color-outer:hover .color-inner {
-	background-color: #f3a74a
-}
-
-.negative-color {
-	background-color: rgb(50, 51, 52);
-}
-
-/* Variables to edit for the logo ===== End */
-
-/* Start =====  Css code for the logo - Avoid changing it */
-.drop {
-	transform: rotate(-45deg);
-	border-radius: 50% 0 50% 50%;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	transition: all 1s;  /*overflow: hidden;*/
-}
-
-.outer-circle {
-	padding: 32%;
-	border-radius: 50%;
-	position: absolute;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-}
-
-.inner-circle {
-
-	/*padding: 20%;*/
-	width: 30%;
-	height: 30%;
-	border-radius: 50%;
-	position: absolute;
-	transition: all 2s;
-}
-
-.b-line {
-	padding: 10% 38%;
-	transform: rotate(-45deg);
-	margin-left: -9.5%;
-	margin-top: -60%;
-	margin-right: 0;
-	margin-bottom: 0;
-	border-radius: 50% 0 0 0;
-}
-
-/* End ======= Css code for the logo - Avoid changing it */
 .animated {
 	animation-duration: 1s !important;
 	-webkit-animation-duration: 1s !important;
@@ -184,14 +116,12 @@ p, ul {
 	left: unset !important;
 	right: 90px !important;
 	background: url('../icon/left.png') no-repeat;
-	animation: wobble 2s infinite;
 }
 
 .fp-next {
 	left: unset !important;
 	right: 15px !important;
 	background: url('../icon/right.png') no-repeat;
-	animation: wobble 2s infinite;
 }
 
 .connect {
@@ -278,9 +208,25 @@ p, ul {
 	z-index: 1;
 	bottom: 10px;
 	left: 20px;
-	width: 50px;
-	height: 50px;
+	width: 40px;
+	height: 40px;
 	background: url('../icon/scroll.png') no-repeat;
+	background-size: contain;
+	animation-duration: 2.5s;
+	animation-iteration-count: infinite;
+	animation-name: fadeInOut;
+}
+
+@keyframes fadeInOut {
+	0% {
+	    opacity: 0;
+	}
+	50% {
+	    opacity: 1;
+	}
+	100% {
+	    opacity: 0;
+	}
 }
 
 .button-invert {
@@ -290,7 +236,7 @@ p, ul {
 .header {
 	z-index: 1;
 	width: 100%;
-	padding: 30px 10px 30px 10px;
+	padding: 20px 10px 20px 10px;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -309,7 +255,7 @@ p, ul {
 	height: 50px;
 	position: absolute;
 	left: 20px;
-	top: 2vh;
+	top: 1vh;
 	z-index: 1;
 	cursor: pointer;
 }
@@ -342,25 +288,23 @@ p, ul {
 .menu li span {
 	z-index: 1;
 	position: relative;
-	font-family: 'Lato-Bold', sans-serif;
-	font-size: 1rem;
+	font-size: 0.9rem;
 	font-weight: bold;
-	letter-spacing: 1px;
+	letter-spacing: 0.5px;
 }
 
-.menu li::before {
+.menu li span::before {
 	content: '';
-	height: 3px;
+	height: 2px;
 	width: 0%;
 	position: absolute;
-	top: 110%;
-	left: 12px;
+	bottom: -60%;
 	background-color: #f35d19;
 	transition: all 0.5s;
 }
 
-.menu li:hover::before, .active-menu::before {
-	width: 80% !important;
+.menu li span:hover::before, .active-menu span::before {
+	width: 100% !important;
 }
 
 .landing-page {
@@ -376,11 +320,16 @@ p, ul {
 }
 
 #campFire {
-	position: fixed;
+	position: absolute;
+	top:0;
+	left:0;
 	right: 0;
 	bottom: 0;
-	min-width: 100%;
-	min-height: 100%;
+	min-width: 100vw;
+	width: 100vw;
+	min-height: 100vh;
+	z-index: -1;
+	object-fit: fill;
 	transform: rotateY(180deg);
 	-webkit-transform: rotateY(180deg); /* Safari and Chrome */
 	-moz-transform: rotateY(180deg); /* Firefox */
@@ -431,12 +380,13 @@ p, ul {
 	font-size: 3rem;
 	display: block;
 	margin-left: 10vw;
-	font-family: Merriweather;
+	font-family: 'Merriweather';
 }
 
 .bigger-text {
-	font-size: 3rem;
+	font-size: 2.5rem;
 	display: block;
+	font-family: 'Merriweather';
 }
 
 .mid-text {
@@ -444,12 +394,26 @@ p, ul {
 	display: block;
 	font-style: italic;
 	margin-bottom: 15px;
+	font-family: 'Merriweather';
+	font-weight: lighter;
+	line-height: 1.5;
+}
+
+.middle-text {
+	font-size: 1.3rem;
+	display: block;
+	font-style: italic;
+	margin-bottom: 15px;
+	font-family: 'Merriweather';
+	font-weight: lighter;
+	line-height: 1.5;
+	color: #AAAAAA;
 }
 
 .small-text {
-	font-size: 1rem;
+	font-size: 1.15rem;
 	display: block;
-	color: #eaeaea;
+	color: #AAAAAA;
 	margin-left: 10vw;
 }
 
@@ -463,6 +427,8 @@ p, ul {
 	display: block;
 	float: right;
 	margin-top: 30px;
+	font-family: 'Merriweather';
+	font-weight: lighter;
 }
 
 .ellie-mae-logo {
@@ -474,7 +440,7 @@ p, ul {
 }
 
 .page-3 .block-1 {
-	margin-top: 89px;
+	margin-top: 69px;
 	height: 560px;
 	display: flex;
 	flex-flow: row;
@@ -553,7 +519,7 @@ p, ul {
 	position: relative;
 	color: #333333;
 	font-weight: 700;
-	margin: 60px 30px 30px 10px;
+	margin: 60px 30px 30px 0px;
 	font-size: 3rem;
 	border-top: 5px solid #588DD6;
 }
@@ -565,7 +531,7 @@ p, ul {
 }
 
 .about-us-right {
-	margin: 60px 10px 60px 100px;
+	margin: 60px 0px 60px 100px;
 	display: flex;
 	flex-flow: column;
 	justify-content: flex-start;
@@ -607,7 +573,7 @@ p, ul {
 	font-weight: 700;
     font-size: 1.9rem;
     color: #333333;
-	padding: 10px;
+	padding: 10px 0px;
 	padding-top: 60px;
 }
 
@@ -617,7 +583,7 @@ p, ul {
 	font-weight: 100;
 	font-size: 1.3rem;
 	line-height: 2;
-	padding: 10px 10px 60px 10px;
+	padding: 10px 0px 60px 0px;
 }
 
 .our-strengths-content strong {
@@ -638,12 +604,12 @@ p, ul {
 	font-weight: 700;
     font-size: 1.9rem;
     color: #333333;
-	padding: 60px 10px 10px 10px;
+	padding: 60px 0px 10px 0px;
 }
 
 .about-team-content {
 	color: #333333;
-	padding: 10px 10px 20px 10px;
+	padding: 10px 0px 20px 0px;
 	font-family: 'Merriweather', serif;
 	font-weight: 100;
 	font-size: 1.3rem;
@@ -656,7 +622,7 @@ p, ul {
 }
 
 .about-team-team {
-	padding: 10px;
+	padding: 10px 0px;
 	padding-bottom: 60px;
 	display: flex;
 	flex-flow: row;
@@ -668,12 +634,14 @@ p, ul {
 .about-team-team::after {
 	content: '';
 	width: 25%;
-	min-width: 180px;
+	min-width: 230px;
+	max-width: 230px;
 }
 
 .team-member {
 	width: 25%;
-	min-width: 180px;
+	max-width: 230px;
+	min-width: 230px;
 	display: flex;
 	flex-flow: column;
 	justify-content: center;
@@ -686,8 +654,8 @@ p, ul {
 }
 
 .member-pic {
-	width: 180px;
-	height: 180px;
+	width: 230px;
+	height: 230px;
 	background: transparent;
 	filter: grayscale(100%);
 }
@@ -714,7 +682,7 @@ p, ul {
 	z-index: 1;
 	padding: 15px 25px;
 	margin-bottom: 10px;
-	top: -10px;
+	top: -60px;
 	right: 0px;
 	background: white;
 	width: 960px;
@@ -757,11 +725,11 @@ p, ul {
 	font-weight: 700;
     font-size: 1.9rem;
     color: #333333;
-	padding: 60px 10px 10px 10px;
+	padding: 60px 0px 10px 0px;
 }
 
 .vision p {
-	padding: 10px;
+	padding: 10px 0px;
 	color: #666666;
 	font-family: 'Merriweather', serif;
 	font-weight: 100;
@@ -1244,13 +1212,13 @@ background-color: #F6F6F6;
 }
 
 .pic-block {
-    padding-top: 89px;
+    padding-top: 69px;
     width:100%;
     height: 690px;
 }
 
 .people-pic {
-    background-image: url('/assets/images/tribal-leadership.png');
+    background-image: url('../images/tribal-leadership.png');
     height: 690px;
     background-repeat: no-repeat;
 		background-size: contain;
@@ -1265,6 +1233,7 @@ background-color: #F6F6F6;
 
 /* Contact Us */
 .page-6 .block-1 {
+	margin-top: 69px;
 	height: 550px;
 	background-color: rgb(50, 51, 52);
 	background-image: url("../images/map.png");
@@ -1569,13 +1538,13 @@ background-color: #F6F6F6;
 
 	.mid-text {
 		font-size: 0.8rem;
-		font-family: Merriweather;
+		font-family: 'Merriweather', serif;;
 	}
 
 	.annotation {
 		font-size: 0.7rem;
 		margin-top: 10px;
-		font-family: Merriweather;
+		font-family: 'Merriweather', serif;;
 	}
 
 	.slide-3 .testimonial-box {
@@ -1595,7 +1564,7 @@ background-color: #F6F6F6;
 
 	.slide-4 .bigger-text {
 		font-size: 1rem;
-		font-family: Merriweather;
+		font-family: 'Merriweather', serif;;
 	}
 
 	.page-3 .block-1 {
