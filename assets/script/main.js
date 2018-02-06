@@ -68,7 +68,7 @@ $(document).ready(function() {
 
 	setInterval(function () {
         $.fn.fullpage.moveSlideRight();
-    }, 5000);
+    }, 9000);
 });
 
 function menuButton() {
