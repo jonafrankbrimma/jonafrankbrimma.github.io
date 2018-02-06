@@ -81,10 +81,16 @@
           <!-- <span><a class="animated fadeInLeft" href="" target="_blank">Twitter</a></span> -->
           <span><a class="animated fadeInLeft" href="https://www.linkedin.com/company/brimmatech/" target="_blank">LinkedIn</a></span>
         </div>
+        <div class="carousal">
+            <span class="highlight" onclick="goToSlide(event)" data-slide="0">&bull;</span>
+            <span onclick="goToSlide(event)" data-slide="1">&bull;</span>
+            <span onclick="goToSlide(event)" data-slide="2">&bull;</span>
+            <span onclick="goToSlide(event)" data-slide="3">&bull;</span>
+          </div>
         <div class="slide slide-1">
-        <video loop="loop" muted="muted" preload="auto" autoplay="autoplay" id="campFire" data-keepplaying poster="assets/images/poster.png">
-          <source src="assets/videos/campfire.mp4" type="video/mp4"></source>
-        </video>
+          <video loop="loop" muted="muted" preload="auto" autoplay="autoplay" id="campFire" data-keepplaying poster="assets/images/poster.png">
+            <source src="assets/videos/campfire.mp4" type="video/mp4"></source>
+          </video>
           <div class="content-box animated fadeIn">
             <span class="big-text animated fadeInLeft">Tribe Brimma Tech</span>
             <span class="small-text large-screen animated fadeInLeft">We <i>shrink</i> your tech <i>phobias</i>. Let's talk around a campfire.</span>
@@ -579,7 +585,7 @@
                 </div>
               </div>
               <div>
-                <div class="contact-label">We are all ears :</div>
+                <div class="contact-label">WE ARE ALL EARS :</div>
                 <textarea></textarea>
               </div>
               <div class="contact-row">
@@ -598,7 +604,7 @@
               </div>
               <div class="contact-us-phone">
                 <div class="contact-phone-icon"></div>
-                <div class="contact-usa">
+                <div class="contact-usa contact-padding">
                   <div>US</div>
                   <div>+1 201-314-0412</div>
                 </div>
@@ -627,9 +633,14 @@
         </div>
         <div class="contact-us-footer">
           <div class="push-down">&copy; Brimma Tech, Inc.</div>
-          <div class="push-down">RESOURCES | BLOGS | CASE STUDIES | PRIVACY POLICY</div>
+          <div class="push-down">
+            <span>RESOURCES</span>|
+            <span>BLOGS</span>|
+            <span>CASE STUDIES</span>|
+            <span>PRIVACY POLICY</span>
+          </div>
           <div class="large-screen">
-            <a class="animated fadeInLeft twitter" href="" target="_blank"></a>
+            <!-- <a class="animated fadeInLeft twitter" href="" target="_blank"></a> -->
             <!-- <a class="animated fadeInLeft facebook" href="" target="_blank"></a> -->
             <a class="animated fadeInLeft linkedin" href="https://www.linkedin.com/company/brimmatech/" target="_blank"></a>
           </div>

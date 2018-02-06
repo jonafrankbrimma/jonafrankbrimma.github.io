@@ -124,6 +124,25 @@ p, ul {
 	background: url('../icon/right.png') no-repeat;
 }
 
+.carousal {
+	font-size: 1.5rem;
+	position: absolute;
+	margin:auto;
+	color: #AAAAAA;
+	bottom: 2vh;
+	left: calc(50vw - 50px);
+	z-index: 3;
+}
+
+.carousal span {
+	padding: 0px 10px;
+	cursor: pointer;
+}
+
+.carousal .highlight {
+	color: white;
+}
+
 .connect {
 	position: absolute;
 	right: 50px;
@@ -390,7 +409,7 @@ p, ul {
 }
 
 .mid-text {
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 	display: block;
 	font-style: italic;
 	margin-bottom: 15px;
@@ -400,7 +419,7 @@ p, ul {
 }
 
 .middle-text {
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 	display: block;
 	font-style: italic;
 	margin-bottom: 15px;
@@ -449,7 +468,8 @@ p, ul {
 
 .page-3 .block-1 .sub-block-1 {
 	width: 50%;
-	background: url('../images/3_3.png') no-repeat;
+	background-image : url('../images/3_3.png');
+	background-repeat: no-repeat;
 	background-size: cover;
 }
 
@@ -543,7 +563,7 @@ p, ul {
 	font-family: 'Merriweather', serif;
 	font-weight: 100;
 	font-size: 1.3rem;
-	line-height: 2;
+	line-height: 1.7;
 }
 
 .about-us-right strong {
@@ -555,9 +575,10 @@ p, ul {
 	padding-left: 20px;
 }
 
-.about-us-right li {
-	padding-left: 3%;
+.about-us-right li, .about-us-right li span {
+	padding-left: 1.5%;
 	font-size: 1rem;
+	line-height: 2;
 }
 
 .our-strengths {
@@ -582,7 +603,7 @@ p, ul {
 	font-family: 'Merriweather', serif;
 	font-weight: 100;
 	font-size: 1.3rem;
-	line-height: 2;
+	line-height: 1.7;
 	padding: 10px 0px 60px 0px;
 }
 
@@ -613,7 +634,7 @@ p, ul {
 	font-family: 'Merriweather', serif;
 	font-weight: 100;
 	font-size: 1.3rem;
-	line-height: 2;
+	line-height: 1.7;
 }
 
 .about-team-content strong {
@@ -681,7 +702,6 @@ p, ul {
 	position: relative;
 	z-index: 1;
 	padding: 15px 25px;
-	margin-bottom: 10px;
 	top: -60px;
 	right: 0px;
 	background: white;
@@ -708,7 +728,7 @@ p, ul {
 	font-family: 'Merriweather', serif;
 	font-weight: 100;
 	font-size: 1rem;
-	line-height: 2;
+	line-height: 1.7;
 }
 
 .vision {
@@ -734,7 +754,7 @@ p, ul {
 	font-family: 'Merriweather', serif;
 	font-weight: 100;
 	font-size: 1.3rem;
-	line-height: 1.9rem;
+	line-height: 1.7rem;
 }
 
 .vision ul {
@@ -745,9 +765,10 @@ p, ul {
 	font-family: 'Merriweather', serif;
 	font-weight: 100;
 	color: #666666;
-	font-size: 1.3rem;
+	font-size: 1rem;
 	padding-bottom: 10px;
-	line-height: 1.9rem;
+	line-height: 2rem;
+	padding-left: 1.5%;
 }
 
 /* Page 2 - Our Offerings  */
@@ -1300,7 +1321,7 @@ background-color: #F6F6F6;
 }
 
 .contact-row input, .contact-row .contact-label {
-	padding: 10px;
+	padding: 20px 10px;
 	width: 95%;
 }
 
@@ -1308,8 +1329,10 @@ background-color: #F6F6F6;
 	border: 1px solid #dfdfdf;
 }
 
-.contact-row .contact-label {
+.contact-us .contact-label {
 	padding-left: 0px;
+	font-family: 'Lato';
+	padding-bottom: 0px;
 	white-space: nowrap;
 }
 
@@ -1378,7 +1401,11 @@ background-color: #F6F6F6;
 }
 
 .contact-india , .contact-usa {
-	padding: 10px;
+	padding: 10px 0px;
+}
+
+.contact-padding {
+	padding-bottom: 30px;
 }
 
 .contact-us-footer {
@@ -1396,6 +1423,11 @@ background-color: #F6F6F6;
 
 .contact-us-footer .push-down {
 	padding-top: 20px;
+}
+
+.contact-us-footer .push-down span {
+	padding: 0px 10px;
+	cursor: pointer;
 }
 
 .supree {
