@@ -125,7 +125,7 @@ p, ul {
 }
 
 .carousal {
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 	position: absolute;
 	margin:auto;
 	color: #AAAAAA;
@@ -135,7 +135,7 @@ p, ul {
 }
 
 .carousal span {
-	padding: 0px 10px;
+	padding: 0px 5px;
 	cursor: pointer;
 }
 
@@ -239,12 +239,15 @@ p, ul {
 @keyframes fadeInOut {
 	0% {
 	    opacity: 0;
+	    transform: translateY(0);
 	}
 	50% {
 	    opacity: 1;
+	    transform: translateY(8px);
 	}
 	100% {
 	    opacity: 0;
+	    transform: translateY(0);
 	}
 }
 
@@ -277,11 +280,12 @@ p, ul {
 	top: 1vh;
 	z-index: 1;
 	cursor: pointer;
+	transition: 1s all ease-in-out;
 }
 
 .title:hover {
 	background: url('../icon/logo_color.png') no-repeat;
-	background-size: 76%;
+	background-size: 75%;
 	background-position: left;
 }
 
@@ -308,7 +312,6 @@ p, ul {
 	z-index: 1;
 	position: relative;
 	font-size: 0.9rem;
-	font-weight: bold;
 	letter-spacing: 0.5px;
 }
 
@@ -421,7 +424,6 @@ p, ul {
 .middle-text {
 	font-size: 1.2rem;
 	display: block;
-	font-style: italic;
 	margin-bottom: 15px;
 	font-family: 'Merriweather';
 	font-weight: lighter;

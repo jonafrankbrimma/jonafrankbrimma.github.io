@@ -75,7 +75,7 @@ function menuButton() {
 	if (isMobile()) {
 		menuToggle();
 	} else {
-		$.fn.fullpage.moveTo(1);
+		$.fn.fullpage.moveTo(1,0);
 	}
 }
 
