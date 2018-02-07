@@ -286,7 +286,7 @@ p, ul {
 }
 
 .title {
-	background: url('../icon/logo_bw.png') no-repeat;
+	background: url('../images/logo_white.svg') no-repeat;
 	background-position: left;
 	background-size: 75%;
 	width: 50px;
@@ -300,7 +300,7 @@ p, ul {
 }
 
 .title-color {
-	background: url('../icon/logo_color.png') no-repeat;
+	background: url('../images/logo_color.svg') no-repeat;
 	background-position: left;
 	background-size: 75%;
 }
@@ -423,7 +423,7 @@ p, ul {
 }
 
 .bigger-text {
-	font-size: 3rem;
+	font-size: 2rem;
 	display: block;
 	font-family: 'Merriweather';
 	font-weight: lighter;
