@@ -423,9 +423,10 @@ p, ul {
 }
 
 .bigger-text {
-	font-size: 2.5rem;
+	font-size: 3rem;
 	display: block;
 	font-family: 'Merriweather';
+	font-weight: lighter;
 }
 
 .mid-text {
