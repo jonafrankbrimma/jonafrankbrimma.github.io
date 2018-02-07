@@ -125,17 +125,17 @@ p, ul {
 }
 
 .carousal {
-	font-size: 1.7rem;
+	font-size: 1.9rem;
 	position: absolute;
 	margin:auto;
-	color: #AAAAAA;
+	color: #666666;
 	bottom: 2vh;
-	left: calc(50vw - 50px);
+	right: 50px;
 	z-index: 3;
 }
 
 .carousal span {
-	padding: 0px 5px;
+	padding: 0px 2px;
 	cursor: pointer;
 }
 
@@ -161,23 +161,18 @@ p, ul {
 	position: relative;
 }
 
-.connect span::before {
+.connect span a::before {
 	content: '';
-	height: 3px;
+	height: 2px;
 	width: 0%;
+	top: 20px;
 	position: absolute;
-	top: 110%;
-	left: 30px;
 	background-color: white;
 	transition: all 0.5s;
 }
 
-.connect span:hover::before {
+.connect span a:hover::before {
 	width: 45%;
-}
-
-.connect span:first-of-type:hover::before {
-	width: 42%;
 }
 
 .connect-mobile {
@@ -225,29 +220,50 @@ p, ul {
 	position: absolute;
 	cursor: pointer;
 	z-index: 1;
-	bottom: 10px;
+	bottom: calc(2vh + 8px);
 	left: 20px;
-	width: 40px;
-	height: 40px;
-	background: url('../icon/scroll.png') no-repeat;
-	background-size: contain;
+	width: 20px;
+	height: 35px;
+	border-radius: 30px;
+	border: 1.5px solid #bfbfbf;
+	display: flex;
+	justify-content: center;
+}
+
+.scroll-btn span {
+	color: #bfbfbf;
 	animation-duration: 2.5s;
+	text-align: center;
 	animation-iteration-count: infinite;
 	animation-name: fadeInOut;
+	display: inline-block;
+	font-size: 0.9rem;
+}
+
+.fadeInLeftCustom {
+	animation-name: fadeInLeftCustom;
+	animation-duration: 1s;
+}
+
+@keyframes fadeInLeftCustom {
+	0% {
+	    opacity: 0;
+	    transform: translate3d(-100px, 0, 0);
+	}
+	100% {
+	    opacity: 1;
+	    transform: translate3d(0, 0, 0);
+	}
 }
 
 @keyframes fadeInOut {
 	0% {
 	    opacity: 0;
-	    transform: translateY(0);
-	}
-	50% {
-	    opacity: 1;
-	    transform: translateY(8px);
+	    transform: translateY(-10px);
 	}
 	100% {
-	    opacity: 0;
-	    transform: translateY(0);
+	    opacity: 1;
+	    transform: translateY(10px);
 	}
 }
 
@@ -271,8 +287,8 @@ p, ul {
 
 .title {
 	background: url('../icon/logo_bw.png') no-repeat;
-	background-size: 75%;
 	background-position: left;
+	background-size: 75%;
 	width: 50px;
 	height: 50px;
 	position: absolute;
@@ -280,13 +296,13 @@ p, ul {
 	top: 1vh;
 	z-index: 1;
 	cursor: pointer;
-	transition: 1s all ease-in-out;
+	transition: 0.25s all ease-in-out;
 }
 
-.title:hover {
+.title-color {
 	background: url('../icon/logo_color.png') no-repeat;
-	background-size: 75%;
 	background-position: left;
+	background-size: 75%;
 }
 
 .menu {
@@ -403,6 +419,7 @@ p, ul {
 	display: block;
 	margin-left: 10vw;
 	font-family: 'Merriweather';
+	font-weight: lighter;
 }
 
 .bigger-text {
@@ -443,12 +460,11 @@ p, ul {
 }
 
 .annotation {
-	color: #f35d19;
+	color: #faa74a;
 	font-size: 1rem;
 	display: block;
 	float: right;
 	margin-top: 30px;
-	font-family: 'Merriweather';
 	font-weight: lighter;
 }
 

@@ -17,6 +17,7 @@
   <!-- Fullpage.js -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.css" />
   <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300i,400" rel="stylesheet">
   <script type="text/javascript" src="assets/script/scrolloverflow.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.js"></script>
   <!-- End Fullpage.js -->
@@ -43,7 +44,7 @@
 
 <body>
   <div class="header">
-    <div class="title animated fadeInLeft" onclick="menuButton()"></div>
+    <div class="title animated fadeInLeft" onmouseover="colorize()" onmouseleave="colorize()" onclick="menuButton()"></div>
     <div class="menu-box">
       <ul class="menu">
         <li class="mobile-view" data-visual-label="Home" onclick="location.href = '#Home';menuToggle();" data-url="#Home">
@@ -92,8 +93,8 @@
             <source src="assets/videos/campfire.mp4" type="video/mp4"></source>
           </video>
           <div class="content-box animated fadeIn">
-            <span class="big-text animated fadeInLeft">Tribe Brimma Tech</span>
-            <span class="small-text large-screen animated fadeInLeft">We <i>shrink</i> your tech <i>phobias</i>. Let's talk around a campfire.</span>
+            <span class="big-text animated fadeInLeftCustom">Tribe Brimma Tech</span>
+            <span class="small-text large-screen animated fadeInLeftCustom">We <i>shrink</i> your tech <i>phobias</i>. Let's talk around a campfire.</span>
             <span class="small-text mobile-view">We <i>shrink</i> your tech <i>phobias.</i></span>
             <span class="small-text mobile-view">Let's talk around a campfire.</span>
           </div>
@@ -647,7 +648,9 @@
         </div>
       </div>
     </div>
-    <div class="scroll-btn" onclick="$.fn.fullpage.moveSectionDown();"></div>
+    <div class="scroll-btn" onclick="$.fn.fullpage.moveSectionDown();">
+      <span>&bull;</span>
+    </div>
   </div>
   </div>
 </body>

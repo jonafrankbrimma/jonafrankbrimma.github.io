@@ -5,6 +5,8 @@ $(document).ready(function() {
 		easing: 'easeInOutCubic',
 		scrollingSpeed: 1000,
 		scrollOverflow: true,
+		css3: true,
+		fitToSection:false,
 		onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){
 			if(direction == 'right') {
 				let className = '.slide-' + Number(slideIndex + 2) + ' ';
@@ -16,10 +18,10 @@ $(document).ready(function() {
 		onLeave: function(index, nextIndex, direction){
 			if(nextIndex > 1 && !isMobile()) {
 				$('.header').addClass('header-invert');
-				$('.scroll-btn').addClass('button-invert');
+				$('.scroll-btn').fadeOut();
 			} else {
 				$('.header').removeClass('header-invert');
-				$('.scroll-btn').removeClass('button-invert');
+				$('.scroll-btn').fadeIn();
 			}
 
 			$('.menu li').removeClass('active-menu');
@@ -68,7 +70,7 @@ $(document).ready(function() {
 
 	setInterval(function () {
         $.fn.fullpage.moveSlideRight();
-    }, 9000);
+    }, 30000);
 });
 
 function menuButton() {
@@ -114,4 +116,8 @@ function goToSlide(event) {
 	$(element).siblings().removeClass('highlight');
 	$(element).addClass('highlight');
 	$.fn.fullpage.moveTo(1, event.target.getAttribute("data-slide"));
+}
+
+function colorize() {
+	$('.title').stop( true, true ).delay(1000).toggleClass('title-color');
 }
