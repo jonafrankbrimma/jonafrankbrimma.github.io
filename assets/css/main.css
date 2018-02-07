@@ -775,36 +775,37 @@ p, ul {
 
 /* Page 2 - Our Offerings  */
 .page-2 .block-1 {
-	margin-top: 107px;
+	margin-top: 120px;
 	display: flex;
 	flex-flow: row;
 	position: relative;
 }
 
 .offerings-bar {
-	border-top: 5px solid #588DD6;
+	border-top: 4px solid #588DD6;
 	width: 230px !important;
     margin-bottom: 18px;
 }
 
 .offerings {
-  /* padding-top:60px; */
+	/* padding-top: 30px; */
 	color: #666666;
 	/* width: 100%; */
 	/* height: 100%; */
+	width: 960px;
 	display: flex;
 	flex-flow: row;
 	margin: auto;
 	justify-content: center;
-  padding-bottom: 60px;
+  padding-bottom: 50px;
 }
 
 /* Offerings Left CSS  */
 .offerings-left {
-	width: 350px;
+	width: 360px;
 	position: relative;
 	color: #333333;
-	margin: 30px 0px;
+	/* margin: 30px 0px; */
 }
 
 .ourofferings {
@@ -814,7 +815,7 @@ p, ul {
 }
 
 .offerings-left div {
-	margin-top: 10px;
+	/* margin-top: 10px; */
 }
 
 .ourofferings-leftcontent {
@@ -833,6 +834,7 @@ p, ul {
 
 .image-left {
 	padding-top: 5%;
+    margin-left: 4%;
 }
 
 .right-text {
@@ -841,7 +843,7 @@ p, ul {
 
 .info-left {
 	font-family: 'Merriweather', sans-serif;
-	padding-top: 37% !important;
+	padding-top: 27% !important;
 	text-align: right;
 }
 
@@ -857,10 +859,11 @@ p, ul {
 /* Offerings Right CSS */
 .offerings-right {
 	width: 600px;
-	margin: 30px 0px;
+	/* margin: 30px 0px; */
 	display: flex;
 	flex-flow: column;
 	justify-content: flex-start;
+    margin-left: 25px;
 }
 
 .offerings-right ul {
@@ -873,7 +876,6 @@ p, ul {
 	font-family: 'Merriweather', sans-serif;
 	font-size: 1rem;
 	font-weight: 100;
-	margin: 10px 0;
 	line-height: 2rem;
 	padding-left: 3%;
 }
@@ -892,7 +894,6 @@ p, ul {
 /* Image CSS  */
 .image-right {
 	padding-top: 5%;
-	padding-left: 2%;
 }
 
 .house-dollar {
@@ -900,7 +901,8 @@ p, ul {
 	background-size: cover;
 	height: 50px;
 	width: 50px;
-	margin-left: 85.5%;
+	margin-left: 86%;
+    margin-top: 5%;
 }
 
 .house-key {
@@ -919,9 +921,9 @@ p, ul {
 
 /* Page 2 - What we do  */
 .middle {
-  padding-top : 60px;
-  padding-bottom : 60px;
-  width: 960px;
+    padding-top : 50px;
+    padding-bottom : 50px;
+    width: 960px;
 	margin: auto;
 	height: 100%;
 	display: flex;
@@ -947,13 +949,12 @@ p, ul {
 /* Page 2 - Our Customers  */
 .our-customers {
 	width: 960px;
-  padding-top: 60px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 	margin: auto;
 	height: 100%;
 	position: relative;
-/*	display: flex;*/
 	flex-flow: column;
-/*	padding-bottom: 60px;*/
 }
 
 .our-customers-heading {
@@ -964,30 +965,46 @@ p, ul {
 
 .our-customers-content {
 	color: #666666;
+/*
 	font-size: 1.1rem;
 	line-height: 1.9rem;
+*/
 }
 
 .our-customers-content img {
-	padding: 0vh 15vw;
-	min-height: 186px;
 	margin-top: 5%;
+    display: block;
+    margin: auto;
+    padding-top: 5%;
 }
 
 .our-customers-content p {
 	margin-top: 5% !important;
-	font-family: 'Merriweather', serif;
+	font-size: 1.2rem;
+	line-height: 2.2rem;
 	font-weight: 100;
-	font-size: 1.3rem;
+	font-family: 'Merriweather', serif;
 }
 
 .our-customers-content a {
-	color: #008DB5 !important;
+	color: #0645AD !important;
+    font-family: 'Merriweather', serif; 
+    text-decoration: underline !important;
+
 }
+
+.our-customers-content a:hover {
+	color: #008DB5 !important;
+    font-family: 'Merriweather', serif; 
+    text-decoration: underline !important;
+
+}
+
 
 /*Tribal Leaddership CSS */
 .page-4 .block-1 {
-	margin-top: 140px;
+	margin-top: 50px;
+    margin-bottom: 50px;
 	display: flex;
 	flex-flow: row;
 	position: relative;
@@ -999,10 +1016,10 @@ background-color: #F6F6F6;
 
 .tribal-title {
 	font-family: 'Merriweather', serif;
-	font-size: 1.4rem;
-  font-weight: 400;
+	font-size: 1.2rem;
+    line-height: 2.2rem;
+    font-weight: 100;
 	color: black;
-	font-weight: 100;
 	letter-spacing: 5%;
 }
 
@@ -1013,23 +1030,23 @@ background-color: #F6F6F6;
 	flex-flow: row;
 	margin: auto;
 	justify-content: center;
-	margin-bottom: 60px;
 }
 
 .tribal-left {
 	width: 350px;
 	position: relative;
 	color: #333333;
-	margin: 0px 12px 30px 10px;
+    font-weight: 100;
+	margin: 0px 12px 30px 0px;
 }
 
 
 .tribal-content {
-	padding-top: 8%;
+	padding-top: 5%;
 	font-family: 'Merriweather', sans-serif;
-	font-size: 1.2rem;
-	font-weight: 100;
-	letter-spacing: 5%;
+    font-size: 1.2rem;
+    font-weight: 100;
+    line-height: 2.2rem;
 }
 
 .tribal-right {
@@ -1040,38 +1057,62 @@ background-color: #F6F6F6;
 }
 
 .tribal-bar {
-	border-top: 5px solid #588DD6;
-	width: 220px !important;
+	border-top: 4px solid #588DD6;
+	width: 242px !important;
     margin-bottom: 28px;
 }
 
 .tribal-content a {
-	color: #3D00F4 !important;
+	color: #0645AD !important;
 	font-family: 'Merriweather';
 }
-
+.tribal-content a:hover {
+	color: #0645AD !important;
+	font-family: 'Merriweather';
+    text-decoration: underline !important;
+}
 .tribal-content-bottom {
 	color: #666666;
-	font-size: 1.1rem;
-	line-height: 1.9rem;
+	font-size: 1.2rem;
+	line-height: 2.2rem;
+    margin-top: 50px !important;
+
 }
 
 .tribal-content-bottom a {
-	color:  #3D00F4 !important;
+	color:  #0645AD !important;
 	font-family: 'Merriweather';
-
+}
+.tribal-content-bottom a:hover {
+	color:  #0645AD !important;
+	font-family: 'Merriweather';
+    text-decoration: underline !important;
 }
 .tribal-content-bottom p {
-	margin-top: 5% !important;
 	font-family: 'Merriweather', serif;
 	font-weight: 100;
-	font-size: 1.3rem;
+	font-size: 1.2rem;
+}
+.tribal-content-bottom li {
+	font-family: 'Merriweather', sans-serif;
+	font-size: 1rem;
+	font-weight: 100;
+	line-height: 2rem;
+	padding-left: 3%;
 }
 
 .page-2 .block-2 {
 	background-color: #F6F6F6;
 }
 
+.our-take {
+	width: 960px;
+    padding-top: 50px;
+	margin: auto;
+	height: 100%;
+	position: relative;
+	flex-flow: column;
+}
 
 .Tribal-Leadership {
 	width: 100%;
@@ -1216,8 +1257,8 @@ background-color: #F6F6F6;
 	flex-flow: row;
 	margin: auto;
 	justify-content: center;
-	margin-bottom: 60px;
-  padding-top: 60px;
+	margin-bottom: 50px;
+  padding-top: 50px;
 	/* z-index: 1; */
 }
 
@@ -1230,19 +1271,19 @@ background-color: #F6F6F6;
 	font-size: 1.2rem;
 	font-weight: 100;
 	letter-spacing: 5%;
-    padding-bottom: 60px;
+  padding-bottom: 60px;
 
 }
 
 .pic-block {
     padding-top: 69px;
     width:100%;
-    height: 690px;
+    height: 100%;
 }
 
 .people-pic {
     background-image: url('../images/tribal-leadership.png');
-    height: 690px;
+    height: 518px;
     background-repeat: no-repeat;
 		background-size: contain;
 }
