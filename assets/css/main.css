@@ -398,6 +398,13 @@ p, ul {
 	top: -25px;
 }
 
+.testimonial-content {
+	max-width: 65vw;
+	position: relative;
+	text-align: center;
+	padding-top: 15px;
+}
+
 .expanded-box {
 	max-width: 45vw !important;
 }
@@ -410,6 +417,11 @@ p, ul {
 .float-left {
 	float: left;
 	margin-left: 8vw;
+}
+
+.float-center {
+	margin: auto;
+	text-align: center;
 }
 
 .big-text {
@@ -428,13 +440,13 @@ p, ul {
 }
 
 .mid-text {
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	display: block;
 	font-style: italic;
 	margin-bottom: 15px;
 	font-family: 'Merriweather';
-	font-weight: lighter;
 	line-height: 1.5;
+	color: #AAAAAA;
 }
 
 .middle-text {
@@ -458,13 +470,38 @@ p, ul {
 	display: none !important;
 }
 
-.annotation {
-	color: #faa74a;
-	font-size: 0.9rem;
+.annotation-1 {
+	color: white;
+	font-size: 1.2rem;
 	display: block;
-	float: right;
-	margin-top: 30px;
+	margin-top: 25px;
+	text-align: center;
 	font-weight: lighter;
+}
+
+.annotation-2 {
+	color: white;
+	font-size: 0.7rem;
+	display: block;
+	margin-top: 5px;
+	text-align: center;
+	font-weight: lighter;
+}
+
+.mugshot-steve {
+	width: 150px;
+	height: 150px;
+	margin: auto;
+	background: url('../images/steve.png') no-repeat;
+	background-size: cover;
+}
+
+.mugshot-devin {
+	width: 150px;
+	height: 150px;
+	margin: auto;
+	background: url('../images/devin.png') no-repeat;
+	background-size: cover;
 }
 
 .ellie-mae-logo {

@@ -11,6 +11,9 @@ $(document).ready(function() {
 			if(direction == 'right') {
 				let className = '.slide-' + Number(slideIndex + 2) + ' ';
 				$( className + '.testimonial-box').toggleClass('fadeIn');
+				$( className + '.testimonial-content').toggleClass('fadeIn');
+				$( className + '.mugshot-steve').toggleClass('fadeIn');
+				$( className + '.mugshot-devin').toggleClass('fadeIn');
 			}
 			$('.carousal').children().removeClass('highlight');
 			$($('.carousal').children()[nextSlideIndex]).addClass('highlight');
