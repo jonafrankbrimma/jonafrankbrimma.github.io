@@ -438,13 +438,13 @@ p, ul {
 }
 
 .mid-text {
-	font-size: 1.1rem;
+	font-size: 1.3rem;
 	display: block;
 	font-style: italic;
 	margin-bottom: 15px;
 	font-family: 'Merriweather';
 	line-height: 1.5;
-	color: #AAAAAA;
+	color: #e0e0e0;
 }
 
 .middle-text {
@@ -470,16 +470,16 @@ p, ul {
 
 .annotation-1 {
 	color: white;
-	font-size: 1.2rem;
+	font-size: 1.25rem;
 	display: block;
-	margin-top: 20px;
+	margin-top: 15px;
 	text-align: center;
-	font-weight: lighter;
+	font-weight: bold;
 }
 
 .annotation-2 {
 	color: white;
-	font-size: 0.7rem;
+	font-size: 0.9rem;
 	display: block;
 	margin-top: 5px;
 	text-align: center;
@@ -507,6 +507,7 @@ p, ul {
 	width: 150px;
 	height: 150px;
 	display: block;
+	margin: auto;
 	background-size: 100%;
 }
 
