@@ -397,7 +397,7 @@ p, ul {
 }
 
 .testimonial-content {
-	max-width: 65vw;
+	max-width: 960px;
 	position: relative;
 	text-align: center;
 	padding-top: 15px;
