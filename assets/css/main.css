@@ -373,10 +373,8 @@ p, ul {
 }
 
 .slide-1 {
-	background: -webkit-gradient(linear, left top, right top, color-stop(26%, rgba(6, 3, 2, 1)), color-stop(rgba(255, 255, 255, 0)), color-stop(75%), color-stop(rgba(15, 23, 34, 0)), to(rgba(255, 255, 255, 0)));
-	background: -webkit-linear-gradient(left, rgba(6, 3, 2, 1)26%, rgba(255, 255, 255, 0), 75%, rgba(15, 23, 34, 0), rgba(255, 255, 255, 0));
-	background: -o-linear-gradient(left, rgba(6, 3, 2, 1)26%%, rgba(255, 255, 255, 0), 75%, rgba(15, 23, 34, 0), rgba(255, 255, 255, 0));
-	background: linear-gradient(to right, rgba(6, 3, 2, 1)26%, rgba(255, 255, 255, 0), 75%, rgba(15, 23, 34, 0), rgba(255, 255, 255, 0));
+	background-position: bottom right;
+	background: url('../images/bg_1.jpg') no-repeat;
 }
 
 .slide-2 {
