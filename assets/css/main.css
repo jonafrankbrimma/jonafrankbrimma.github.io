@@ -450,7 +450,7 @@ p, ul {
 .middle-text {
 	font-size: 1.2rem;
 	display: block;
-	margin-bottom: 15px;
+	margin: 15px 0px;
 	font-family: 'Merriweather';
 	font-weight: lighter;
 	line-height: 1.5;
@@ -504,8 +504,8 @@ p, ul {
 
 .ellie-mae-logo {
 	background: url('../images/elimae_logo.png') no-repeat;
-	width: 150px;
-	height: 150px;
+	width: 206px;
+	height: 189px;
 	display: block;
 	margin: auto;
 	background-size: 100%;
