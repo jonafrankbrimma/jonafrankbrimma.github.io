@@ -43,7 +43,7 @@ body {
 	-webkit-text-size-adjust: none;
 	-moz-text-size-adjust: none;
 	-ms-text-size-adjust: none;
-	text-size-adjust: none;
+	font-size-adjust: none;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
@@ -64,7 +64,8 @@ a {
 	text-decoration: unset !important;
 }
 
-p, ul {
+p,
+ul {
 	margin: 0px !important;
 }
 
@@ -127,7 +128,7 @@ p, ul {
 .carousal {
 	font-size: 1.9rem;
 	position: absolute;
-	margin:auto;
+	margin: auto;
 	color: #666666;
 	bottom: 2vh;
 	right: 50px;
@@ -247,23 +248,23 @@ p, ul {
 
 @keyframes fadeInLeftCustom {
 	0% {
-	    opacity: 0;
-	    transform: translate3d(-100px, 0, 0);
+		opacity: 0;
+		transform: translate3d(-100px, 0, 0);
 	}
 	100% {
-	    opacity: 1;
-	    transform: translate3d(0, 0, 0);
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
 	}
 }
 
 @keyframes fadeInOut {
 	0% {
-	    opacity: 0;
-	    transform: translateY(-10px);
+		opacity: 0;
+		transform: translateY(-10px);
 	}
 	100% {
-	    opacity: 1;
-	    transform: translateY(10px);
+		opacity: 1;
+		transform: translateY(10px);
 	}
 }
 
@@ -339,7 +340,8 @@ p, ul {
 	transition: all 0.5s;
 }
 
-.menu li span:hover::before, .active-menu span::before {
+.menu li span:hover::before,
+.active-menu span::before {
 	width: 100% !important;
 }
 
@@ -357,8 +359,8 @@ p, ul {
 
 #campFire {
 	position: absolute;
-	top:0;
-	left:0;
+	top: 0;
+	left: 0;
 	right: 0;
 	bottom: 0;
 	min-width: 100vw;
@@ -367,8 +369,10 @@ p, ul {
 	z-index: -1;
 	object-fit: fill;
 	transform: rotateY(180deg);
-	-webkit-transform: rotateY(180deg); /* Safari and Chrome */
-	-moz-transform: rotateY(180deg); /* Firefox */
+	-webkit-transform: rotateY(180deg);
+	/* Safari and Chrome */
+	-moz-transform: rotateY(180deg);
+	/* Firefox */
 	background: rgba(6, 3, 2, 1);
 }
 
@@ -521,7 +525,7 @@ p, ul {
 
 .page-3 .block-1 .sub-block-1 {
 	width: 50%;
-	background-image : url('../images/3_3.png');
+	background-image: url('../images/3_3.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -609,10 +613,13 @@ p, ul {
 	flex-flow: column;
 	justify-content: flex-start;
 	position: relative;
-	top:-10px;
+	top: -10px;
 }
 
-.about-us-right p, .about-us-right li, .about-us-right strong, .about-us-right span {
+.about-us-right p,
+.about-us-right li,
+.about-us-right strong,
+.about-us-right span {
 	font-family: 'Merriweather', serif;
 	font-weight: 100;
 	font-size: 1.3rem;
@@ -628,7 +635,8 @@ p, ul {
 	padding-left: 20px;
 }
 
-.about-us-right li, .about-us-right li span {
+.about-us-right li,
+.about-us-right li span {
 	padding-left: 1.5%;
 	font-size: 1rem;
 	line-height: 2;
@@ -645,8 +653,8 @@ p, ul {
 
 .our-strengths-title {
 	font-weight: 700;
-    font-size: 1.9rem;
-    color: #333333;
+	font-size: 1.9rem;
+	color: #333333;
 	padding: 10px 0px;
 	padding-top: 60px;
 }
@@ -676,8 +684,8 @@ p, ul {
 
 .about-team-title {
 	font-weight: 700;
-    font-size: 1.9rem;
-    color: #333333;
+	font-size: 1.9rem;
+	color: #333333;
 	padding: 60px 0px 10px 0px;
 }
 
@@ -734,7 +742,8 @@ p, ul {
 	filter: grayscale(100%);
 }
 
-.member-pic:hover, .member-active {
+.member-pic:hover,
+.member-active {
 	filter: grayscale(0%);
 }
 
@@ -777,7 +786,8 @@ p, ul {
 	padding-left: 3%;
 }
 
-.member-desc p, .member-desc li {
+.member-desc p,
+.member-desc li {
 	font-family: 'Merriweather', serif;
 	font-weight: 100;
 	font-size: 1rem;
@@ -796,8 +806,8 @@ p, ul {
 
 .vision-title {
 	font-weight: 700;
-    font-size: 1.9rem;
-    color: #333333;
+	font-size: 1.9rem;
+	color: #333333;
 	padding: 60px 0px 10px 0px;
 }
 
@@ -825,6 +835,7 @@ p, ul {
 }
 
 /* Page 2 - Our Offerings  */
+
 .page-2 .block-1 {
 	margin-top: 120px;
 	display: flex;
@@ -835,7 +846,7 @@ p, ul {
 .offerings-bar {
 	border-top: 4px solid #588DD6;
 	width: 230px !important;
-    margin-bottom: 18px;
+	margin-bottom: 18px;
 }
 
 .offerings {
@@ -848,10 +859,11 @@ p, ul {
 	flex-flow: row;
 	margin: auto;
 	justify-content: center;
-  padding-bottom: 50px;
+	padding-bottom: 50px;
 }
 
 /* Offerings Left CSS  */
+
 .offerings-left {
 	width: 360px;
 	position: relative;
@@ -885,7 +897,7 @@ p, ul {
 
 .image-left {
 	padding-top: 5%;
-    margin-left: 4%;
+	margin-left: 4%;
 }
 
 .right-text {
@@ -908,13 +920,14 @@ p, ul {
 }
 
 /* Offerings Right CSS */
+
 .offerings-right {
 	width: 600px;
 	/* margin: 30px 0px; */
 	display: flex;
 	flex-flow: column;
 	justify-content: flex-start;
-    margin-left: 25px;
+	margin-left: 25px;
 }
 
 .offerings-right ul {
@@ -923,7 +936,8 @@ p, ul {
 	padding-left: 18px;
 }
 
-.offerings-right p, .offerings-right li {
+.offerings-right p,
+.offerings-right li {
 	font-family: 'Merriweather', sans-serif;
 	font-size: 1rem;
 	font-weight: 100;
@@ -943,6 +957,7 @@ p, ul {
 }
 
 /* Image CSS  */
+
 .image-right {
 	padding-top: 5%;
 }
@@ -953,7 +968,7 @@ p, ul {
 	height: 50px;
 	width: 50px;
 	margin-left: 86%;
-    margin-top: 5%;
+	margin-top: 5%;
 }
 
 .house-key {
@@ -971,16 +986,17 @@ p, ul {
 }
 
 /* Page 2 - What we do  */
+
 .middle {
-    padding-top : 50px;
-    padding-bottom : 50px;
-    width: 960px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	width: 960px;
 	margin: auto;
 	height: 100%;
 	display: flex;
 	flex-flow: column;
 	justify-content: flex-start;
- }
+}
 
 .middle-heading {
 	font-weight: 700;
@@ -998,10 +1014,11 @@ p, ul {
 }
 
 /* Page 2 - Our Customers  */
+
 .our-customers {
 	width: 960px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	margin: auto;
 	height: 100%;
 	position: relative;
@@ -1016,7 +1033,7 @@ p, ul {
 
 .our-customers-content {
 	color: #666666;
-/*
+	/*
 	font-size: 1.1rem;
 	line-height: 1.9rem;
 */
@@ -1024,9 +1041,9 @@ p, ul {
 
 .our-customers-content img {
 	margin-top: 5%;
-    display: block;
-    margin: auto;
-    padding-top: 5%;
+	display: block;
+	margin: auto;
+	padding-top: 5%;
 }
 
 .our-customers-content p {
@@ -1039,37 +1056,35 @@ p, ul {
 
 .our-customers-content a {
 	color: #0645AD !important;
-    font-family: 'Merriweather', serif; 
-    text-decoration: underline !important;
-
+	font-family: 'Merriweather', serif;
+	text-decoration: underline !important;
 }
 
 .our-customers-content a:hover {
 	color: #008DB5 !important;
-    font-family: 'Merriweather', serif; 
-    text-decoration: underline !important;
-
+	font-family: 'Merriweather', serif;
+	text-decoration: underline !important;
 }
 
-
 /*Tribal Leaddership CSS */
+
 .page-4 .block-1 {
 	margin-top: 50px;
-    margin-bottom: 50px;
+	margin-bottom: 50px;
 	display: flex;
 	flex-flow: row;
 	position: relative;
-
 }
+
 .page-4 .block-2 {
-background-color: #F6F6F6;
+	background-color: #F6F6F6;
 }
 
 .tribal-title {
 	font-family: 'Merriweather', serif;
 	font-size: 1.2rem;
-    line-height: 2.2rem;
-    font-weight: 100;
+	line-height: 2.2rem;
+	font-weight: 100;
 	color: black;
 	letter-spacing: 5%;
 }
@@ -1087,17 +1102,16 @@ background-color: #F6F6F6;
 	width: 350px;
 	position: relative;
 	color: #333333;
-    font-weight: 100;
+	font-weight: 100;
 	margin: 0px 12px 30px 0px;
 }
-
 
 .tribal-content {
 	padding-top: 5%;
 	font-family: 'Merriweather', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 100;
-    line-height: 2.2rem;
+	font-size: 1.2rem;
+	font-weight: 100;
+	line-height: 2.2rem;
 }
 
 .tribal-right {
@@ -1110,40 +1124,44 @@ background-color: #F6F6F6;
 .tribal-bar {
 	border-top: 4px solid #588DD6;
 	width: 242px !important;
-    margin-bottom: 28px;
+	margin-bottom: 28px;
 }
 
 .tribal-content a {
 	color: #0645AD !important;
 	font-family: 'Merriweather';
 }
+
 .tribal-content a:hover {
 	color: #0645AD !important;
 	font-family: 'Merriweather';
-    text-decoration: underline !important;
+	text-decoration: underline !important;
 }
+
 .tribal-content-bottom {
 	color: #666666;
 	font-size: 1.2rem;
 	line-height: 2.2rem;
-    margin-top: 50px !important;
-
+	margin-top: 50px !important;
 }
 
 .tribal-content-bottom a {
-	color:  #0645AD !important;
+	color: #0645AD !important;
 	font-family: 'Merriweather';
 }
+
 .tribal-content-bottom a:hover {
-	color:  #0645AD !important;
+	color: #0645AD !important;
 	font-family: 'Merriweather';
-    text-decoration: underline !important;
+	text-decoration: underline !important;
 }
+
 .tribal-content-bottom p {
 	font-family: 'Merriweather', serif;
 	font-weight: 100;
 	font-size: 1.2rem;
 }
+
 .tribal-content-bottom li {
 	font-family: 'Merriweather', sans-serif;
 	font-size: 1rem;
@@ -1158,7 +1176,7 @@ background-color: #F6F6F6;
 
 .our-take {
 	width: 960px;
-    padding-top: 50px;
+	padding-top: 50px;
 	margin: auto;
 	height: 100%;
 	position: relative;
@@ -1171,29 +1189,30 @@ background-color: #F6F6F6;
 	display: flex;
 	flex-flow: row;
 	justify-content: center;
-    padding-bottom: 60px;
-
+	padding-bottom: 60px;
 }
 
 /*Join our tribe CSS */
+
 .page-5 .block-1 {
 	margin-top: 148px;
 	display: flex;
 	flex-flow: row;
 	position: relative;
-
 }
+
 .page-5 {
-    background-color: #424244;
-    color: white;
+	background-color: #424244;
+	color: white;
 }
 
 .joinourtribe {
 	font-family: 'Lato';
 	font-weight: 700;
 	font-size: 3rem;
-    color : white;
+	color: white;
 }
+
 .join-our-tribe {
 	color: #666666;
 	width: 960px;
@@ -1204,40 +1223,42 @@ background-color: #F6F6F6;
 	margin-bottom: 60px;
 }
 
-.row-1{
-    width: 100%;
+.row-1 {
+	width: 100%;
 	display: flex;
 	margin-bottom: 20px;
 }
 
-.row-2{
-    width: 100%;
-	display: flex;
-	margin-bottom: 20px;
-
-}
-
-.row-3{
-    width: 100%;
+.row-2 {
+	width: 100%;
 	display: flex;
 	margin-bottom: 20px;
 }
-.resume-fields input{
-    background-color: #424244;
-    border: 1px solid #9E9E9F;
-    height: 50px;
-    width: 290px;
-    margin-left: 20px;
-    margin-top:20px;
+
+.row-3 {
+	width: 100%;
+	display: flex;
+	margin-bottom: 20px;
 }
-.resume-fields label{
-    font-weight: 500;
-    color:white;
-    height: 50px;
-    width: 290px;
-    margin-left: 20px;
+
+.resume-fields input {
+	background-color: #424244;
+	border: 1px solid #9E9E9F;
+	height: 50px;
+	width: 290px;
+	margin-left: 20px;
+	margin-top: 20px;
 }
-.file{
+
+.resume-fields label {
+	font-weight: 500;
+	color: white;
+	height: 50px;
+	width: 290px;
+	margin-left: 20px;
+}
+
+.file {
 	width: 0.1px;
 	height: 0.1px;
 	opacity: 0;
@@ -1245,27 +1266,28 @@ background-color: #F6F6F6;
 	position: absolute;
 	z-index: -1;
 }
-.file + label {
-    width: 100%;
-    font-size: 1.25em;
-    font-weight: 700;
-    color: #5886B1;
-    text-align: center;
-    padding: 10px;
-    background-color: white;
+
+.file+label {
+	width: 100%;
+	font-size: 1.25em;
+	font-weight: 700;
+	color: #5886B1;
+	text-align: center;
+	padding: 10px;
+	background-color: white;
 }
 
 .send {
-    margin-top:60px;
-    width: 100%;
-    font-size: 1.25em;
-    font-weight: 700;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-left: 20px;
-    background-color: #FFA658;
-    border: 0px;
+	margin-top: 60px;
+	width: 100%;
+	font-size: 1.25em;
+	font-weight: 700;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	margin-left: 20px;
+	background-color: #FFA658;
+	border: 0px;
 }
 
 .joinourtribe-content-1 p {
@@ -1280,15 +1302,16 @@ background-color: #F6F6F6;
 	font-weight: 100;
 	font-size: 1.3rem;
 }
-.send-resume{
-    width: 300px;
-    height: 60px;
-    margin-top: 75px;
-    background-color: #FFA658;
-    color:white;
-    border: 0px;
-    font-family: 'Lato-Bold';
-    font-size: 16px;
+
+.send-resume {
+	width: 300px;
+	height: 60px;
+	margin-top: 75px;
+	background-color: #FFA658;
+	color: white;
+	border: 0px;
+	font-family: 'Lato-Bold';
+	font-size: 16px;
 }
 
 .page-5 .block-2 {
@@ -1309,7 +1332,7 @@ background-color: #F6F6F6;
 	margin: auto;
 	justify-content: center;
 	margin-bottom: 50px;
-  padding-top: 50px;
+	padding-top: 50px;
 	/* z-index: 1; */
 }
 
@@ -1322,31 +1345,31 @@ background-color: #F6F6F6;
 	font-size: 1.2rem;
 	font-weight: 100;
 	letter-spacing: 5%;
-  padding-bottom: 60px;
-
+	padding-bottom: 60px;
 }
 
 .pic-block {
-    padding-top: 69px;
-    width:100%;
-    height: 100%;
+	padding-top: 69px;
+	width: 100%;
+	height: 100%;
 }
 
 .people-pic {
-    background-image: url('../images/tribal-leadership.png');
-    height: 518px;
-    background-repeat: no-repeat;
-		background-size: contain;
+	background-image: url('../images/tribal-leadership.png');
+	height: 518px;
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 .hand-pic {
-    background-image: url('/assets/images/people-pic.png');
-    width: 477px;
-    height: 690px;
-    background-repeat: no-repeat
+	background-image: url('/assets/images/people-pic.png');
+	width: 477px;
+	height: 690px;
+	background-repeat: no-repeat
 }
 
 /* Contact Us */
+
 .page-6 .block-1 {
 	margin-top: 69px;
 	height: 550px;
@@ -1394,10 +1417,11 @@ background-color: #F6F6F6;
 	flex-flow: column;
 	justify-content: flex-start;
 	position: relative;
-	top:-10px;
+	top: -10px;
 }
 
-.contact-us-right p, .contact-label {
+.contact-us-right p,
+.contact-label {
 	font-family: 'Merriweather', serif;
 	font-weight: 100;
 	font-size: 1.3rem;
@@ -1410,11 +1434,12 @@ background-color: #F6F6F6;
 	margin-bottom: 20px;
 }
 
-.contact-row > div {
+.contact-row>div {
 	width: 50%;
 }
 
-.contact-row input, .contact-row .contact-label {
+.contact-row input,
+.contact-row .contact-label {
 	padding: 20px 10px;
 	width: 95%;
 }
@@ -1457,8 +1482,8 @@ background-color: #F6F6F6;
 
 .contact-us-reach-title {
 	font-weight: 700;
-    font-size: 1.9rem;
-    color: #333333;
+	font-size: 1.9rem;
+	color: #333333;
 	padding: 60px 10px 50px 10px;
 }
 
@@ -1470,7 +1495,8 @@ background-color: #F6F6F6;
 	padding-bottom: 60px;
 }
 
-.contact-us-phone, .contact-us-location {
+.contact-us-phone,
+.contact-us-location {
 	display: flex;
 	flex-flow: column;
 	justify-content: space-between;
@@ -1494,7 +1520,8 @@ background-color: #F6F6F6;
 	width: 50px;
 }
 
-.contact-india , .contact-usa {
+.contact-india,
+.contact-usa {
 	padding: 10px 0px;
 }
 
@@ -1580,24 +1607,24 @@ background-color: #F6F6F6;
 }
 
 @media screen and (max-width:500px) {
-	.menu-box, .fp-controlArrow, .connect, .scroll-btn, .large-screen {
+	.menu-box,
+	.fp-controlArrow,
+	.connect,
+	.scroll-btn,
+	.large-screen {
 		display: none;
 	}
-
 	.logo {
 		position: absolute;
 		margin-left: 7px;
 		margin-top: -11px;
 	}
-
 	.color-outer {
 		background-color: #5a90ce;
 	}
-
 	.color-inner {
 		background-color: #f3a74a
 	}
-
 	.menu-box {
 		position: absolute;
 		height: 100vh;
@@ -1606,143 +1633,125 @@ background-color: #F6F6F6;
 		top: 0;
 		background: #0e1922;
 	}
-
 	.menu-box .menu {
 		flex-flow: column;
 		justify-content: center;
 		margin-top: 50% !important;
 	}
-
 	.menu li::before {
 		top: 100%;
 		left: 30%;
 	}
-
-	.menu li:hover::before, .active-menu::before {
+	.menu li:hover::before,
+	.active-menu::before {
 		width: 40% !important;
 	}
-
 	.menu li span {
 		font-size: 1rem;
 	}
-
 	.mobile-view {
 		display: block !important;
 	}
-
-	.content-box, .testimonial-box {
+	.content-box,
+	.testimonial-box {
 		background: rgba(0, 0, 0, 0.5);
 		padding: 30px 10px;
 	}
-
 	.big-text {
 		font-size: 2.2rem;
 	}
-
 	#campFire {
 		-webkit-transform: rotateY(180deg) translateX(-200px);
 		transform: rotateY(180deg) translateX(-200px);
 	}
-
 	.slide-1 {
 		background-position: 87% 100% !important;
 		background: transparent;
 	}
-
 	.slide-1 .fp-tableCell {
 		position: relative;
 		top: -140px;
 	}
-
 	.slide-2 {
 		background-position: 35% 100% !important;
 	}
-
 	.slide-2 .testimonial-box {
 		margin-right: 10px !important;
 	}
-
 	.mid-text {
 		font-size: 0.8rem;
-		font-family: 'Merriweather', serif;;
+		font-family: 'Merriweather', serif;
+		;
 	}
-
 	.annotation {
 		font-size: 0.7rem;
 		margin-top: 10px;
-		font-family: 'Merriweather', serif;;
+		font-family: 'Merriweather', serif;
+		;
 	}
-
 	.slide-3 .testimonial-box {
 		float: right !important;
 		margin-left: 0;
 		margin-right: 10px;
 	}
-
 	.slide-4 {
 		background-position: 70% 100% !important;
 	}
-
 	.slide-4 .testimonial-box {
 		position: relative;
 		top: -50px;
 	}
-
 	.slide-4 .bigger-text {
 		font-size: 1rem;
-		font-family: 'Merriweather', serif;;
+		font-family: 'Merriweather', serif;
+		;
 	}
-
 	.page-3 .block-1 {
 		margin-top: 0px;
 	}
-
-	.about-us, .our-strengths, .about-team, .vision, .contact-us, .contact-us-reach {
+	.about-us,
+	.our-strengths,
+	.about-team,
+	.vision,
+	.contact-us,
+	.contact-us-reach {
 		flex-wrap: wrap;
 		max-width: 85vw;
 		justify-content: flex-start;
 	}
-
-	.about-us-left, .contact-us-left {
+	.about-us-left,
+	.contact-us-left {
 		align-self: flex-start;
 	}
-
-	.about-us-right, .contact-us-right {
+	.about-us-right,
+	.contact-us-right {
 		margin-top: 10px;
 		margin-left: 10px;
 	}
-
 	.about-team-team {
 		justify-content: center;
 		padding-top: 15px;
 	}
-
 	.team-member {
 		width: 100%;
 	}
-
 	.member-pic {
 		align-self: center;
 	}
-
-	.member-title, .member-name {
+	.member-title,
+	.member-name {
 		text-align: center;
 	}
-
 	.member-desc {
 		width: 85vw;
 	}
-
 	.contact-us .contact-label {
 		font-size: 1rem;
 	}
-
 	.contact-us-reach-content {
 		flex-flow: column;
 	}
-
 	.contact-us-reach-content div {
 		margin-bottom: 10px;
 	}
-
 }
