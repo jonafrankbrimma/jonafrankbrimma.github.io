@@ -698,6 +698,17 @@ ul {
 	line-height: 1.7;
 }
 
+.about-team-content a {
+	color: blue !important;
+	font-family: 'Merriweather', serif;
+	font-weight: 100;
+	font-size: 1.3rem;
+}
+
+.about-team-content a:hover {
+	text-decoration: underline;
+}
+
 .about-team-content strong {
 	font-size: 1.3rem;
 	font-family: 'Merriweather', serif;
@@ -751,6 +762,7 @@ ul {
 	font-family: 'Lato-Bold';
 	font-size: 13px;
 	padding-top: 5px;
+	padding-bottom: 25px;
 }
 
 .member-title {
@@ -787,11 +799,15 @@ ul {
 }
 
 .member-desc p,
-.member-desc li {
+.member-desc li,.member-desc a {
 	font-family: 'Merriweather', serif;
 	font-weight: 100;
 	font-size: 1rem;
 	line-height: 1.7;
+}
+
+.member-desc a {
+	color: blue !important;
 }
 
 .vision {
@@ -1421,7 +1437,7 @@ ul {
 }
 
 .contact-us-right p,
-.contact-label {
+.contact-label,.contact-us-right i {
 	font-family: 'Merriweather', serif;
 	font-weight: 100;
 	font-size: 1.3rem;
