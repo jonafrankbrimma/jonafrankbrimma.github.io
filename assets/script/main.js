@@ -38,12 +38,6 @@ $(document).ready(function () {
 	$('.menu li').removeClass('active-menu');
 	$("[data-url='" + currentHref + "']").addClass('active-menu');
 
-	$('#campFire').on('ended', function () {
-		this.load();
-		this.play();
-	});
-	$('#campFire')[0].play();
-
 	$(".send-resume").click(function () {
 		$(".triballeadership-white").addClass("animated fadeOut").one(
 			'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
@@ -51,7 +45,6 @@ $(document).ready(function () {
 				$(".triballeadership-white").css("display", "none");
 				$(".join-our-tribe").addClass("animated fadeIn");
 				$(".join-our-tribe").css("display", "flex");
-
 			}
 		);
 	});
