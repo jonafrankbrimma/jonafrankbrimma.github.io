@@ -45,6 +45,10 @@ $(document).ready(function () {
 				$(".triballeadership-white").css("display", "none");
 				$(".join-our-tribe").addClass("animated fadeIn");
 				$(".join-our-tribe").css("display", "flex");
+				$(".page-5 .block-1").css("padding-top", "60px");
+				$(".page-5 .block-2").css("padding-top", "0px");
+				$(".page-5 .block-2").css("padding-bottom", "0px");
+
 			}
 		);
 	});
