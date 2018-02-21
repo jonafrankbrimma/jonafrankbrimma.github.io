@@ -7,6 +7,7 @@ $(document).ready(function () {
 		autoScrolling: false,
 		css3: true,
 		fitToSection: false,
+		autoScrolling:false,
 		onSlideLeave: function (anchorLink, index, slideIndex, direction, nextSlideIndex) {
 			if (direction == 'right') {
 				let className = '.slide-' + Number(slideIndex + 2) + ' ';
@@ -45,6 +46,9 @@ $(document).ready(function () {
 				$(".triballeadership-white").css("display", "none");
 				$(".join-our-tribe").addClass("animated fadeIn");
 				$(".join-our-tribe").css("display", "flex");
+				$(".page-5 .block-1").css("margin-top", "60px");
+				$(".page-5 .block-1").css("padding-top", "60px");
+
 			}
 		);
 	});
