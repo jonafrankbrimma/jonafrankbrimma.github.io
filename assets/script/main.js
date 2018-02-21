@@ -4,7 +4,7 @@ $(document).ready(function () {
 		controlArrows: false,
 		easing: 'easeInOutCubic',
 		scrollingSpeed: 1000,
-		scrollOverflow: true,
+		autoScrolling: false,
 		css3: true,
 		fitToSection: false,
 		onSlideLeave: function (anchorLink, index, slideIndex, direction, nextSlideIndex) {
