@@ -1,4 +1,10 @@
 $(document).ready(function () {
+	$('input[type="file"]').change(function(){
+		var filename = $('input[type=file]').val().replace(/.*(\/|\\)/, '');
+		console.log(filename);
+		$("#file").empty();
+		$("#file").append(filename);
+	});
 	$(".join-our-tribe").css("display", "none");
 	$('#fullpage').fullpage({
 		controlArrows: false,

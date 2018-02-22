@@ -146,7 +146,7 @@ ul {
 .connect {
 	position: absolute;
 	right: 50px;
-	top: 60%;
+	top: 55%;
 	display: flex;
 	flex-flow: row;
 	color: white;
@@ -515,7 +515,6 @@ ul {
 }
 
 .page-3 .block-1 {
-	margin-top: 69px;
 	height: 560px;
 	display: flex;
 	flex-flow: row;
@@ -619,10 +618,11 @@ ul {
 .about-us-right li,
 .about-us-right strong,
 .about-us-right span {
+	color: #666666;
 	font-family: 'Merriweather', serif;
+	font-size: 1.2rem;
+	line-height: 2.2rem;
 	font-weight: 100;
-	font-size: 1.3rem;
-	line-height: 1.7;
 }
 
 .about-us-right strong {
@@ -651,25 +651,28 @@ ul {
 }
 
 .our-strengths-title {
-	font-weight: 700;
+	text-align: center;
+	font-weight: 400;
 	font-size: 1.9rem;
 	color: #333333;
-	padding: 10px 0px;
-	padding-top: 60px;
+	padding-top: 50px;
 }
 
 .our-strengths-content {
-	color: #333333;
+	color: #666666;
 	font-family: 'Merriweather', serif;
+	font-size: 1.2rem;
+	line-height: 2.2rem;
 	font-weight: 100;
-	font-size: 1.3rem;
-	line-height: 1.7;
-	padding: 10px 0px 60px 0px;
+	text-align: center;
+	padding: 34.5px 0px 50px 0px;
 }
 
 .our-strengths-content strong {
 	font-family: 'Merriweather', serif;
-	font-size: 1.3rem;
+	font-size: 1.2rem;
+	line-height: 2.2rem;
+	font-weight: 400;
 }
 
 .about-team {
@@ -682,40 +685,46 @@ ul {
 }
 
 .about-team-title {
-	font-weight: 700;
+	font-weight: 400;
 	font-size: 1.9rem;
 	color: #333333;
-	padding: 60px 0px 10px 0px;
+	padding: 50px 0px 0px 0px;
+	text-align: center;
+
 }
 
 .about-team-content {
-	color: #333333;
-	padding: 10px 0px 20px 0px;
+	color: #666666;
+	padding: 34.5px 0px 50px 0px;
 	font-family: 'Merriweather', serif;
+	font-size: 1.2rem;
+	line-height: 2.2rem;
 	font-weight: 100;
-	font-size: 1.3rem;
-	line-height: 1.7;
+	text-align: center;
+
 }
 
 .about-team-content a {
 	color: blue !important;
 	font-family: 'Merriweather', serif;
 	font-weight: 100;
-	font-size: 1.3rem;
+	font-size: 1.2rem;
+	line-height: 2.2rem;
 }
 
 .about-team-content a:hover {
-	text-decoration: underline;
+	text-decoration: underline !important;
 }
 
 .about-team-content strong {
-	font-size: 1.3rem;
 	font-family: 'Merriweather', serif;
+	font-size: 1.2rem;
+	line-height: 2.2rem;
+	font-weight: 400;
 }
 
 .about-team-team {
-	padding: 10px 0px;
-	padding-bottom: 60px;
+	padding-bottom: 40px;
 	display: flex;
 	flex-flow: row;
 	flex-wrap: wrap;
@@ -758,10 +767,13 @@ ul {
 }
 
 .member-name {
-	font-family: 'Lato-Bold';
-	font-size: 13px;
-	padding-top: 5px;
-	padding-bottom: 25px;
+	font-family: 'Lato';
+	font-size: 1rem;
+	letter-spacing: 0.03rem;
+	line-height: 2.2rem;
+	font-weight: 100;
+	color: #666666;
+	padding-bottom: 20px;
 }
 
 .member-title {
@@ -785,7 +797,8 @@ ul {
 .member-desc h3 {
 	margin-top: 0px;
 	margin-bottom: 10px;
-	font-family: 'Merriweather', serif;
+	font-family: 'Lato';
+	color: #666666
 }
 
 .member-desc p, .member-desc a {
@@ -793,8 +806,12 @@ ul {
 	font-weight: 100;
 	font-size: 1rem;
 	line-height: 1.7;
+	color: #666666
 }
 
+.member-desc a:hover {
+	text-decoration: underline !important;
+}
 .member-desc p {
 	padding-bottom: 15px;
 }
@@ -810,23 +827,23 @@ ul {
 	position: relative;
 	display: flex;
 	flex-flow: column;
-	padding-bottom: 60px;
+	padding-bottom: 50px;
 }
 
 .vision-title {
-	font-weight: 700;
+	text-align: center;
+	font-weight: 400;
 	font-size: 1.9rem;
 	color: #333333;
-	padding: 60px 0px 10px 0px;
+	padding: 50px 0px 34.5px 0px;
 }
 
 .vision p {
-	padding: 10px 0px;
 	color: #666666;
 	font-family: 'Merriweather', serif;
 	font-weight: 100;
-	font-size: 1.3rem;
-	line-height: 1.7rem;
+	font-size: 1.2rem;
+	line-height: 2.2rem;
 }
 
 .vision ul {
@@ -897,16 +914,16 @@ ul {
 .left-list {
 	font-family: 'Merriweather', serif;
 	letter-spacing: .5px;
-	line-height: 1.5rem;
-	padding-left: 50%;
+	line-height: 2rem;
+	padding-left: 49%;
 	padding-top: 40%;
 	text-align: right;
-	font-size: .9rem;
+	font-size: 1rem;
 }
 
 .image-left {
 	padding-top: 5%;
-	margin-left: 4%;
+	margin-left: 5.6px;
 }
 
 .right-text {
@@ -915,17 +932,25 @@ ul {
 
 .info-left {
 	font-family: 'Merriweather', sans-serif;
-	padding-top: 27% !important;
+	line-height: 1.5rem;
+	font-size: 1rem;
+	letter-spacing: .5px;
+	padding-top: 20% !important;
 	text-align: right;
 }
 
 .info-right {
 	font-family: 'Merriweather', serif;
-	padding-top: 20%;
+	font-size: 1rem;
+	letter-spacing: .5px;
+	line-height: 1.5rem;
+	padding-top: 102px;
 	text-align: left;
 	top: 19.5%;
 	left: 53%;
 	padding-left: 3%;
+	width: 400px;
+	color: #333333;
 }
 
 /* Offerings Right CSS */
@@ -1008,18 +1033,21 @@ ul {
 }
 
 .middle-heading {
-	font-weight: 700;
+	font-weight: 400;
 	font-size: 1.9rem;
 	color: #333333;
+	text-align: center;
 }
 
 .middle-content {
 	color: #666666;
 	font-size: 1.2rem;
-	padding-top: 5vh;
+  padding-top: 34.5px;
 	line-height: 2.2rem;
 	font-weight: 100;
 	font-family: 'Merriweather', serif;
+	text-align: center;
+
 }
 
 /* Page 2 - Our Customers  */
@@ -1028,6 +1056,7 @@ ul {
 	width: 960px;
 	padding-top: 50px;
 	padding-bottom: 50px;
+
 	margin: auto;
 	height: 100%;
 	position: relative;
@@ -1035,9 +1064,10 @@ ul {
 }
 
 .our-customers-heading {
-	font-weight: 700;
+	font-weight: 400;
 	font-size: 1.9rem;
 	color: #333333;
+	text-align: center;
 }
 
 .our-customers-content {
@@ -1061,16 +1091,17 @@ ul {
 	line-height: 2.2rem;
 	font-weight: 100;
 	font-family: 'Merriweather', serif;
+	text-align: center;
 }
 
 .our-customers-content a {
-	color: #0645AD !important;
+	color: blue !important;
 	font-family: 'Merriweather', serif;
-	text-decoration: underline !important;
 }
 
+
 .our-customers-content a:hover {
-	color: #008DB5 !important;
+	color: blue !important;
 	font-family: 'Merriweather', serif;
 	text-decoration: underline !important;
 }
@@ -1090,12 +1121,10 @@ ul {
 }
 
 .tribal-title {
-	font-family: 'Merriweather', serif;
+	font-family: 'Merriweather';
 	font-size: 1.2rem;
 	line-height: 2.2rem;
 	font-weight: 100;
-	color: black;
-	letter-spacing: 5%;
 }
 
 .triballeadership {
@@ -1116,8 +1145,8 @@ ul {
 }
 
 .tribal-content {
-	padding-top: 5%;
-	font-family: 'Merriweather', sans-serif;
+	padding-top: 34.5px;
+	font-family: 'Merriweather';
 	font-size: 1.2rem;
 	font-weight: 100;
 	line-height: 2.2rem;
@@ -1137,12 +1166,12 @@ ul {
 }
 
 .tribal-content a {
-	color: #0645AD !important;
+	color: blue !important;
 	font-family: 'Merriweather';
 }
 
 .tribal-content a:hover {
-	color: #0645AD !important;
+	color: blue !important;
 	font-family: 'Merriweather';
 	text-decoration: underline !important;
 }
@@ -1151,7 +1180,8 @@ ul {
 	color: #666666;
 	font-size: 1.2rem;
 	line-height: 2.2rem;
-	margin-top: 50px !important;
+	margin-top: 34.5px !important;
+	/* text-align: center; */
 }
 
 .tribal-content-bottom a {
@@ -1169,6 +1199,8 @@ ul {
 	font-family: 'Merriweather', serif;
 	font-weight: 100;
 	font-size: 1.2rem;
+	line-height: 2.2rem;
+
 }
 
 .tribal-content-bottom li {
@@ -1185,8 +1217,8 @@ ul {
 
 .our-take {
 	width: 960px;
-	padding-top: 60px;
-	padding-bottom: 60px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	margin: auto;
 	height: 100%;
 	position: relative;
@@ -1205,12 +1237,13 @@ ul {
 /*Join our tribe CSS */
 
 .page-5 .block-1 {
+
 }
 
 .page-5 .block-2 {
 	background: #fff;
-	padding-top: 60px;
-	padding-bottom: 60px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 
@@ -1239,19 +1272,18 @@ ul {
 .row-1 {
 	width: 100%;
 	display: flex;
-	margin-bottom: 20px;
+	margin-bottom: 34.5px;
 }
 
 .row-2 {
 	width: 100%;
 	display: flex;
-	margin-bottom: 20px;
+	margin-bottom: 34.5px;
 }
 
 .row-3 {
 	width: 100%;
 	display: flex;
-	margin-bottom: 20px;
 }
 
 .resume-fields input {
@@ -1263,14 +1295,39 @@ ul {
 	margin-top: 20px;
 	color: white;
 	font-size: 1.2rem;
+	padding: 10px;
 }
 
+.upload{
+	color: white;
+	padding-bottom: 20px;
+	width: 290px;
+	margin-left: 20px;
+	font-size: 1rem;
+	letter-spacing: 0.03rem;
+
+}
+
+.resume-fields select {
+	background-color: #424244;
+	border: 1px solid #9E9E9F;
+	height: 50px;
+	width: 290px;
+	margin-left: 20px;
+	margin-top: 20px;
+	color: white;
+	font-size: 1.2rem;
+	padding: 10px;
+}
+
+
 .resume-fields label {
-	font-weight: 500;
 	color: white;
 	height: 50px;
 	width: 290px;
 	margin-left: 20px;
+	font-size: 1rem;
+	letter-spacing: 0.03rem;
 }
 
 .file {
@@ -1283,25 +1340,29 @@ ul {
 
 .file+label {
 	width: 100%;
-	font-size: 1.25em;
-	font-weight: 700;
-	color: #5886B1;
+	font-family: 'Lato-Bold';
+	font-size: 1rem;
+	letter-spacing: 0.03rem;
+	color: #6699CC;
+	font-weight: 400;
 	text-align: center;
-	padding: 10px;
+	padding: 15px;
 	background-color: white;
 }
 
 .send {
 	margin-top: 60px;
 	width: 100%;
-	font-size: 1.25em;
-	font-weight: 700;
+	font-family: 'Lato-Bold';
+	font-size: 1rem;
+	letter-spacing: 0.03rem;
 	color: white;
 	text-align: center;
 	padding: 10px;
 	margin-left: 20px;
 	background-color: #FFA658;
 	border: 0px;
+	height: 50px;
 }
 
 .joinourtribe-content-1 p {
@@ -1312,7 +1373,7 @@ ul {
 }
 
 .joinourtribe-content p {
-	margin-top: 50px !important;
+	margin-top: 34.5px !important;
 	font-family: 'Merriweather', serif;
 	font-weight: 100;
 	font-size: 1.2rem;
@@ -1322,12 +1383,13 @@ ul {
 .send-resume {
 	width: 300px;
 	height: 60px;
-	margin-top: 75px;
+  margin-top: 50px;
 	background-color: #FFA658;
 	color: white;
 	border: 0px;
 	font-family: 'Lato-Bold';
-	font-size: 16px;
+  font-size: 1rem;
+	letter-spacing: 0.03rem;
 }
 
 
@@ -1358,15 +1420,18 @@ ul {
 }
 
 .pic-block {
-	width: 100%;
-	height: 100%;
+	/* width: 100%; */
+	display: flex;
+	flex-flow: row;
+	position: relative;
+	height: 689px;
 }
 
 .people-pic {
-	background-image: url('../images/tribal-leadership.png');
-	height: 518px;
+	background-image: url('../images/tribal.png');
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: cover;
+	width: 100%;
 }
 
 .hand-pic {
@@ -1408,7 +1473,7 @@ ul {
 	position: relative;
 	color: #333333;
 	font-weight: 700;
-	margin: 60px 30px 30px 10px;
+	margin: 50px 30px 30px 10px;
 	font-size: 3rem;
 	border-top: 5px solid #588DD6;
 }
@@ -1420,7 +1485,7 @@ ul {
 }
 
 .contact-us-right {
-	margin: 60px 10px 60px 100px;
+	margin: 60px 10px 60px 80px;
 	display: flex;
 	flex-flow: column;
 	justify-content: flex-start;
@@ -1430,6 +1495,11 @@ ul {
 
 .contact-us-right p,
 .contact-label,.contact-us-right i {
+	font-family: 'Merriweather', serif;
+	font-weight: 100;
+	font-size: 1.2rem;
+}
+.contact-us-right p {
 	font-family: 'Merriweather', serif;
 	font-weight: 100;
 	font-size: 1.2rem;
@@ -1449,40 +1519,89 @@ ul {
 .contact-row .contact-label {
 	width: 95%;
 }
-
+/* .resume-fields input {
+	background-color: #424244;
+	border: 1px solid #9E9E9F;
+	height: 50px;
+	width: 290px;
+	margin-left: 20px;
+	margin-top: 20px;
+	color: white;
+	font-size: 1.2rem;
+	padding: 10px;
+} */
 .contact-row input {
 	border: 1px solid #999999;
 	padding: 10px 10px;
+	height: 50px;
+	width: 290px;
+	margin-left: 20px;
+	margin-top: 20px;
 }
 
+/* .resume-fields label {
+	color: white;
+	height: 50px;
+	width: 290px;
+	margin-left: 20px;
+	font-size: 1rem;
+	letter-spacing: 0.03rem;
+} */
 .contact-us .contact-label {
-	padding-left: 0px;
+	font-family: 'Lato-Bold';
+	font-size: 1rem;
+	letter-spacing: 0.03rem;
+	padding-bottom: 0px;
+	/* white-space: nowrap; */
+	margin-top: 20px;
+	font-weight: 400;
+	margin-left: 20px;
+}
+
+.contact-us .contact-label-1 {
 	font-family: 'Lato';
 	font-size: 1rem;
+	letter-spacing: 0.03rem;
 	padding-bottom: 0px;
 	white-space: nowrap;
 	margin-top: 20px;
-	margin-bottom: 5px;
-	font-weight: bold;
+	font-weight: 400;
 }
 
 .contact-us-section textarea {
-	width: 98%;
+	width: 600px;
 	height: 200px;
 	resize: none;
 	border: 1px solid #999999;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	padding: 10px 10px;
+	margin-left: 20px;
+	margin-top: 20px;
 }
+.contact-us-section {
+margin-left: -20px;
+}
+/* width: 300px;
+height: 60px;
+margin-top: 50px;
+background-color: #FFA658;
+color: white;
+border: 0px;
+font-family: 'Lato-Bold';
+font-size: 1rem;
+letter-spacing: 0.03rem; */
 
 .contact-submit {
-	width: 98% !important;
-	padding: 10px;
-	background: #f5a74a;
+	width: 600px !important;
+	padding: 15px;
+	background-color: #FFA658;
 	color: white;
 	text-align: center;
-	font-size: 1.2rem;
-	font-weight: 600;
+	font-family: 'Lato-Bold';
+	font-size: 1rem;
+	letter-spacing: 0.03rem;
+	margin-left:20px;
+	height: 50px;
 }
 
 .contact-us-reach {
@@ -1495,10 +1614,10 @@ ul {
 }
 
 .contact-us-reach-title {
-	font-weight: 700;
+	font-weight: 400;
 	font-size: 1.9rem;
 	color: #333333;
-	padding: 60px 10px 50px 10px;
+	padding: 50px 10px 34.5px 10px;
 }
 
 .contact-us-reach-content {
@@ -1506,11 +1625,15 @@ ul {
 	flex-flow: row;
 	justify-content: space-between;
 	padding: 10px;
-	padding-bottom: 60px;
+	padding-bottom: 50px;
+	font-family: 'Merriweather', serif !important;
+	font-size: 1.2rem;
 }
 
 .contact-us-phone,
 .contact-us-location {
+	font-family: 'Merriweather', serif !important;
+
 	display: flex;
 	flex-flow: column;
 	justify-content: space-between;
@@ -1536,6 +1659,7 @@ ul {
 
 .contact-india,
 .contact-usa {
+	font-family: 'Merriweather', serif !important;
 	padding: 10px 0px;
 }
 
@@ -1548,12 +1672,15 @@ ul {
 	display: flex;
 	flex-flow: row;
 	justify-content: space-between;
+	height: 70px;
+	letter-spacing: 0.03rem;
+	padding-top: 10px;
 }
 
 .contact-us-footer div {
 	padding: 10px;
-	color: #999999;
-	font-size: 0.7rem;
+	color: #CCCCCC;
+	font-size: 0.8rem;
 }
 
 .contact-us-footer .push-down {
@@ -1618,6 +1745,22 @@ ul {
 .you {
 	background: url("../images/color/you.png") no-repeat;
 	background-size: cover;
+}
+
+@media screen and (max-width:1440px) {
+	.people-pic {
+	    background-image: url(../images/tribal.png);
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    width: 100%;
+	}
+	.pic-block {
+    /* width: 100%; */
+    display: flex;
+    flex-flow: row;
+    position: relative;
+    height: 505px;
+}
 }
 
 @media screen and (max-width:500px) {
