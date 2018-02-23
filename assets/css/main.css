@@ -1629,15 +1629,17 @@ letter-spacing: 0.03rem; */
 	font-family: 'Merriweather', serif !important;
 	font-size: 1.2rem;
 }
-
+.reach-title{
+	font-family: 'Merriweather', serif !important;
+}
+/* .contact-us-email,
 .contact-us-phone,
 .contact-us-location {
 	font-family: 'Merriweather', serif !important;
-
 	display: flex;
 	flex-flow: column;
 	justify-content: space-between;
-}
+} */
 
 .contact-email-icon {
 	background: url("../icon/mail.png") no-repeat;
@@ -1657,8 +1659,11 @@ letter-spacing: 0.03rem; */
 	width: 50px;
 }
 
-.contact-india,
 .contact-usa {
+	font-family: 'Merriweather', serif !important;
+}
+
+.contact-india,{
 	font-family: 'Merriweather', serif !important;
 	padding: 10px 0px;
 }
