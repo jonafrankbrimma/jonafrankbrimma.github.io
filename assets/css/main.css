@@ -441,7 +441,7 @@ ul {
 }
 
 .mid-text {
-	font-size: 1.3rem;
+	font-size: 1rem;
 	display: block;
 	font-style: italic;
 	margin-bottom: 15px;
@@ -478,6 +478,7 @@ ul {
 	margin-top: 15px;
 	text-align: center;
 	font-weight: bold;
+	letter-spacing: 0.03rem;
 }
 
 .annotation-2 {
@@ -487,6 +488,7 @@ ul {
 	margin-top: 5px;
 	text-align: center;
 	font-weight: lighter;
+	letter-spacing: 0.03rem;
 }
 
 .mugshot-steve {
@@ -591,10 +593,11 @@ ul {
 
 .about-us-left {
 	min-width: 230px;
+	height: 250px;
 	position: relative;
 	color: #333333;
-	font-weight: 700;
-	margin: 60px 30px 30px 0px;
+	font-weight: 400;
+	margin: 50px 30px 30px 0px;
 	font-size: 3rem;
 	border-top: 5px solid #588DD6;
 }
@@ -606,7 +609,7 @@ ul {
 }
 
 .about-us-right {
-	margin: 60px 0px 60px 100px;
+	margin: 50px 0px 40px 100px;
 	display: flex;
 	flex-flow: column;
 	justify-content: flex-start;
@@ -620,8 +623,8 @@ ul {
 .about-us-right span {
 	color: #666666;
 	font-family: 'Merriweather', serif;
-	font-size: 1.2rem;
-	line-height: 2.2rem;
+	font-size: 1rem;
+	line-height: 1.8rem;
 	font-weight: 100;
 }
 
@@ -638,7 +641,7 @@ ul {
 .about-us-right li span {
 	padding-left: 1.5%;
 	font-size: 1rem;
-	line-height: 2;
+	line-height: 1.8;
 }
 
 .our-strengths {
@@ -653,7 +656,7 @@ ul {
 .our-strengths-title {
 	text-align: center;
 	font-weight: 400;
-	font-size: 1.9rem;
+	font-size: 1.5rem;
 	color: #333333;
 	padding-top: 50px;
 }
@@ -661,18 +664,18 @@ ul {
 .our-strengths-content {
 	color: #666666;
 	font-family: 'Merriweather', serif;
-	font-size: 1.2rem;
-	line-height: 2.2rem;
+	font-size: 1rem;
+	line-height: 1.8rem;
 	font-weight: 100;
 	text-align: center;
-	padding: 34.5px 0px 50px 0px;
+	padding: 22px 0px 50px 0px;
 }
 
 .our-strengths-content strong {
 	font-family: 'Merriweather', serif;
-	font-size: 1.2rem;
-	line-height: 2.2rem;
-	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.8rem;
+	font-weight: 700;
 }
 
 .about-team {
@@ -686,7 +689,7 @@ ul {
 
 .about-team-title {
 	font-weight: 400;
-	font-size: 1.9rem;
+	font-size: 1.5rem;
 	color: #333333;
 	padding: 50px 0px 0px 0px;
 	text-align: center;
@@ -695,10 +698,10 @@ ul {
 
 .about-team-content {
 	color: #666666;
-	padding: 34.5px 0px 50px 0px;
+	padding: 22px 0px 50px 0px;
 	font-family: 'Merriweather', serif;
-	font-size: 1.2rem;
-	line-height: 2.2rem;
+	font-size: 1rem;
+	line-height: 1.8rem;
 	font-weight: 100;
 	text-align: center;
 
@@ -708,8 +711,8 @@ ul {
 	color: blue !important;
 	font-family: 'Merriweather', serif;
 	font-weight: 100;
-	font-size: 1.2rem;
-	line-height: 2.2rem;
+	font-size: 1rem;
+	line-height: 1.8rem;
 }
 
 .about-team-content a:hover {
@@ -718,9 +721,9 @@ ul {
 
 .about-team-content strong {
 	font-family: 'Merriweather', serif;
-	font-size: 1.2rem;
-	line-height: 2.2rem;
-	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.8rem;
+	font-weight: 700;
 }
 
 .about-team-team {
@@ -745,19 +748,20 @@ ul {
 	min-width: 230px;
 	display: flex;
 	flex-flow: column;
+	position: relative;
 	justify-content: center;
 	align-self: flex-start;
 	transition: all 1s;
 }
 
 .fade-member {
-	opacity: 0.6;
+	filter:opacity(25%);
 }
 
 .member-pic {
 	width: 230px;
 	height: 230px;
-	background: transparent;
+
 	filter: grayscale(100%);
 }
 
@@ -784,10 +788,10 @@ ul {
 
 .member-desc {
 	display: none;
-	position: relative;
+	position: absolute;
 	z-index: 1;
 	padding: 15px 25px;
-	top: -45px;
+	top: 230px;
 	right: 0px;
 	background: white;
 	width: 960px;
@@ -798,14 +802,15 @@ ul {
 	margin-top: 0px;
 	margin-bottom: 10px;
 	font-family: 'Lato';
-	color: #666666
+	font-weight: 400;
+	color: #333333
 }
 
-.member-desc p, .member-desc a {
+.member-desc p, .member-desc a, .member-desc li{
 	font-family: 'Merriweather', serif;
 	font-weight: 100;
-	font-size: 1rem;
-	line-height: 1.7;
+	font-size: .85rem;
+	line-height: 1.5rem;
 	color: #666666
 }
 
@@ -828,24 +833,32 @@ ul {
 	display: flex;
 	flex-flow: column;
 	padding-bottom: 50px;
+	text-align: center;
 }
+
+
 
 .vision-title {
 	text-align: center;
 	font-weight: 400;
-	font-size: 1.9rem;
+	font-size: 1.5rem;
 	color: #333333;
-	padding: 50px 0px 34.5px 0px;
+	padding: 50px 0px 22px 0px;
 }
 
 .vision p {
 	color: #666666;
 	font-family: 'Merriweather', serif;
 	font-weight: 100;
-	font-size: 1.2rem;
-	line-height: 2.2rem;
+	font-size: 1rem;
+	line-height: 1.8rem;
 }
 
+.vision b {
+	font-family: 'Merriweather', serif;
+	font-weight: 700;
+	font-size: 1rem;
+}
 .vision ul {
 	padding-bottom: 10px;
 }
@@ -863,7 +876,7 @@ ul {
 /* Page 2 - Our Offerings  */
 
 .page-2 .block-1 {
-	margin-top: 120px;
+	margin-top: 50px;
 	display: flex;
 	flex-flow: row;
 	position: relative;
@@ -899,7 +912,7 @@ ul {
 
 .ourofferings {
 	font-family: 'Lato';
-	font-weight: 700;
+	font-weight: 400;
 	font-size: 3rem;
 }
 
@@ -914,7 +927,7 @@ ul {
 .left-list {
 	font-family: 'Merriweather', serif;
 	letter-spacing: .5px;
-	line-height: 2rem;
+	line-height: 1.8rem;
 	padding-left: 49%;
 	padding-top: 40%;
 	text-align: right;
@@ -932,10 +945,10 @@ ul {
 
 .info-left {
 	font-family: 'Merriweather', sans-serif;
-	line-height: 1.5rem;
+	line-height: 1.8rem;
 	font-size: 1rem;
 	letter-spacing: .5px;
-	padding-top: 20% !important;
+	padding-top: 21% !important;
 	text-align: right;
 }
 
@@ -943,14 +956,15 @@ ul {
 	font-family: 'Merriweather', serif;
 	font-size: 1rem;
 	letter-spacing: .5px;
-	line-height: 1.5rem;
-	padding-top: 102px;
+	line-height: 1.8rem;
+	padding-top: 96px;
 	text-align: left;
 	top: 19.5%;
 	left: 53%;
 	padding-left: 3%;
 	width: 400px;
 	color: #333333;
+
 }
 
 /* Offerings Right CSS */
@@ -975,13 +989,14 @@ ul {
 	font-family: 'Merriweather', sans-serif;
 	font-size: 1rem;
 	font-weight: 100;
-	line-height: 2rem;
+	line-height: 1.8rem;
 	padding-left: 3%;
 }
 
 .offering-title {
 	font-family: 'Merriweather', sans-serif;
-	font-size: 1.2rem;
+	font-size: 1rem;
+	line-height: 1.8rem;
 	color: black;
 }
 
@@ -1034,16 +1049,16 @@ ul {
 
 .middle-heading {
 	font-weight: 400;
-	font-size: 1.9rem;
+	font-size: 1.5rem;
 	color: #333333;
 	text-align: center;
 }
 
 .middle-content {
 	color: #666666;
-	font-size: 1.2rem;
-  padding-top: 34.5px;
-	line-height: 2.2rem;
+	font-size: 1rem;
+  padding-top: 22px;
+	line-height: 1.8rem;
 	font-weight: 100;
 	font-family: 'Merriweather', serif;
 	text-align: center;
@@ -1065,7 +1080,7 @@ ul {
 
 .our-customers-heading {
 	font-weight: 400;
-	font-size: 1.9rem;
+	font-size: 1.5rem;
 	color: #333333;
 	text-align: center;
 }
@@ -1083,12 +1098,13 @@ ul {
 	display: block;
 	margin: auto;
 	padding-top: 5%;
+	width: 250px;
 }
 
 .our-customers-content p {
 	margin-top: 5% !important;
-	font-size: 1.2rem;
-	line-height: 2.2rem;
+	font-size: 1rem;
+	line-height: 1.8rem;
 	font-weight: 100;
 	font-family: 'Merriweather', serif;
 	text-align: center;
@@ -1122,8 +1138,8 @@ ul {
 
 .tribal-title {
 	font-family: 'Merriweather';
-	font-size: 1.2rem;
-	line-height: 2.2rem;
+	font-size: 1rem;
+	line-height: 1.8rem;
 	font-weight: 100;
 }
 
@@ -1145,11 +1161,11 @@ ul {
 }
 
 .tribal-content {
-	padding-top: 34.5px;
+	padding-top: 22px;
 	font-family: 'Merriweather';
-	font-size: 1.2rem;
+	font-size: 1rem;
 	font-weight: 100;
-	line-height: 2.2rem;
+	line-height: 1.8rem;
 }
 
 .tribal-right {
@@ -1178,19 +1194,19 @@ ul {
 
 .tribal-content-bottom {
 	color: #666666;
-	font-size: 1.2rem;
-	line-height: 2.2rem;
-	margin-top: 34.5px !important;
-	/* text-align: center; */
+	font-size: 1rem;
+	line-height: 1.8rem;
+	margin-top: 22px !important;
+	text-align: center;
 }
 
 .tribal-content-bottom a {
-	color: #0645AD !important;
+	color: blue !important;
 	font-family: 'Merriweather';
 }
 
 .tribal-content-bottom a:hover {
-	color: #0645AD !important;
+	color: blue !important;
 	font-family: 'Merriweather';
 	text-decoration: underline !important;
 }
@@ -1198,8 +1214,8 @@ ul {
 .tribal-content-bottom p {
 	font-family: 'Merriweather', serif;
 	font-weight: 100;
-	font-size: 1.2rem;
-	line-height: 2.2rem;
+	font-size: 1rem;
+	line-height: 1.8rem;
 
 }
 
@@ -1254,7 +1270,7 @@ ul {
 
 .joinourtribe {
 	font-family: 'Lato';
-	font-weight: 700;
+	font-weight: 400;
 	font-size: 3rem;
 	color: white;
 }
@@ -1272,13 +1288,13 @@ ul {
 .row-1 {
 	width: 100%;
 	display: flex;
-	margin-bottom: 34.5px;
+	margin-bottom: 22px;
 }
 
 .row-2 {
 	width: 100%;
 	display: flex;
-	margin-bottom: 34.5px;
+	margin-bottom: 22px;
 }
 
 .row-3 {
@@ -1289,44 +1305,47 @@ ul {
 .resume-fields input {
 	background-color: #424244;
 	border: 1px solid #9E9E9F;
-	height: 50px;
+	height: 40px;
 	width: 290px;
 	margin-left: 20px;
-	margin-top: 20px;
+	margin-top: 10px;
 	color: white;
-	font-size: 1.2rem;
+	font-size: .875rem;
+  font-weight: 100;
+	font-family: 'Merriweather', serif;
 	padding: 10px;
 }
 
 .upload{
-	color: white;
-	padding-bottom: 20px;
-	width: 290px;
+	padding-bottom: 10px;
 	margin-left: 20px;
-	font-size: 1rem;
+	font-size: 0.875rem;
 	letter-spacing: 0.03rem;
-
+	color: #cccccc;
 }
 
 .resume-fields select {
 	background-color: #424244;
+	border-radius: 0px !important;
 	border: 1px solid #9E9E9F;
-	height: 50px;
+	height: 40px;
 	width: 290px;
 	margin-left: 20px;
-	margin-top: 20px;
+	margin-top: 10px;
 	color: white;
-	font-size: 1.2rem;
+	font-family: 'Merriweather', serif;
+	font-size: .875rem;
+  font-weight: 100;
 	padding: 10px;
 }
 
 
 .resume-fields label {
-	color: white;
+	color: #cccccc;
 	height: 50px;
 	width: 290px;
 	margin-left: 20px;
-	font-size: 1rem;
+	font-size: 0.875rem;
 	letter-spacing: 0.03rem;
 }
 
@@ -1341,20 +1360,20 @@ ul {
 .file+label {
 	width: 100%;
 	font-family: 'Lato-Bold';
-	font-size: 1rem;
+	font-size: 0.875rem;
 	letter-spacing: 0.03rem;
 	color: #6699CC;
 	font-weight: 400;
 	text-align: center;
-	padding: 15px;
+	padding: 16px;
 	background-color: white;
 }
 
 .send {
-	margin-top: 60px;
+	margin-top: 30px;
 	width: 100%;
 	font-family: 'Lato-Bold';
-	font-size: 1rem;
+	font-size: 0.875rem;
 	letter-spacing: 0.03rem;
 	color: white;
 	text-align: center;
@@ -1368,34 +1387,39 @@ ul {
 .joinourtribe-content-1 p {
 	font-family: 'Merriweather', serif;
 	font-weight: 100;
-	font-size: 1.2rem;
-	line-height: 2.2rem;
+	font-size: 1rem;
+	line-height: 1.8rem;
 }
 
 .joinourtribe-content p {
-	margin-top: 34.5px !important;
+	margin-top: 22px !important;
 	font-family: 'Merriweather', serif;
 	font-weight: 100;
-	font-size: 1.2rem;
-	line-height: 2.2rem;
+	font-size: 1rem;
+	line-height: 1.8rem;
 }
-
+.joinourtribe-content i {
+	font-family: 'Merriweather', serif;
+	font-weight: 100;
+	font-size: 1rem;
+	line-height: 1.8rem;
+}
 .send-resume {
 	width: 300px;
-	height: 60px;
-  margin-top: 50px;
+	height: 50px;
+  margin-top: 40px;
 	background-color: #FFA658;
 	color: white;
 	border: 0px;
 	font-family: 'Lato-Bold';
-  font-size: 1rem;
+  font-size: 0.875rem;
 	letter-spacing: 0.03rem;
 }
 
 
 .joinourtribe-white {
 	font-family: 'Lato';
-	font-weight: 700;
+	font-weight: 400;
 	font-size: 3rem;
 }
 
@@ -1472,7 +1496,7 @@ ul {
 	min-width: 230px;
 	position: relative;
 	color: #333333;
-	font-weight: 700;
+	font-weight: 400;
 	margin: 50px 30px 30px 10px;
 	font-size: 3rem;
 	border-top: 5px solid #588DD6;
@@ -1485,7 +1509,7 @@ ul {
 }
 
 .contact-us-right {
-	margin: 60px 10px 60px 80px;
+	margin: 50px 10px 50px 80px;
 	display: flex;
 	flex-flow: column;
 	justify-content: flex-start;
@@ -1497,13 +1521,13 @@ ul {
 .contact-label,.contact-us-right i {
 	font-family: 'Merriweather', serif;
 	font-weight: 100;
-	font-size: 1.2rem;
+	font-size: 1rem;
 }
 .contact-us-right p {
 	font-family: 'Merriweather', serif;
 	font-weight: 100;
-	font-size: 1.2rem;
-	line-height: 2.2rem;
+	font-size: 1rem;
+	line-height: 1.8rem;
 }
 
 .contact-row {
@@ -1533,10 +1557,13 @@ ul {
 .contact-row input {
 	border: 1px solid #999999;
 	padding: 10px 10px;
-	height: 50px;
+	height: 40px;
 	width: 290px;
 	margin-left: 20px;
-	margin-top: 20px;
+	margin-top: 10px;
+	font-size: .875rem;
+	font-family: 'Merriweather';
+	color: #333333
 }
 
 /* .resume-fields label {
@@ -1549,10 +1576,10 @@ ul {
 } */
 .contact-us .contact-label {
 	font-family: 'Lato-Bold';
-	font-size: 1rem;
+	color: #666666;
+	font-size: 0.875rem;
 	letter-spacing: 0.03rem;
 	padding-bottom: 0px;
-	/* white-space: nowrap; */
 	margin-top: 20px;
 	font-weight: 400;
 	margin-left: 20px;
@@ -1576,7 +1603,9 @@ ul {
 	margin-bottom: 30px;
 	padding: 10px 10px;
 	margin-left: 20px;
-	margin-top: 20px;
+	margin-top: 10px;
+	font-size: 0.875rem;
+	font-family: 'Merriweather';
 }
 .contact-us-section {
 margin-left: -20px;
@@ -1598,7 +1627,7 @@ letter-spacing: 0.03rem; */
 	color: white;
 	text-align: center;
 	font-family: 'Lato-Bold';
-	font-size: 1rem;
+	font-size: 0.875rem;
 	letter-spacing: 0.03rem;
 	margin-left:20px;
 	height: 50px;
@@ -1615,9 +1644,9 @@ letter-spacing: 0.03rem; */
 
 .contact-us-reach-title {
 	font-weight: 400;
-	font-size: 1.9rem;
+	font-size: 1.5rem;
 	color: #333333;
-	padding: 50px 10px 34.5px 10px;
+	padding: 50px 10px 22px 10px;
 }
 
 .contact-us-reach-content {
@@ -1627,7 +1656,7 @@ letter-spacing: 0.03rem; */
 	padding: 10px;
 	padding-bottom: 50px;
 	font-family: 'Merriweather', serif !important;
-	font-size: 1.2rem;
+	font-size: 1rem;
 }
 .reach-title{
 	font-family: 'Merriweather', serif !important;
@@ -1915,5 +1944,14 @@ letter-spacing: 0.03rem; */
 	}
 	.contact-us-reach-content div {
 		margin-bottom: 10px;
+	}
+
+	/* Remove arrow from number field */
+	input[type=number]::-webkit-inner-spin-button,
+	input[type=number]::-webkit-outer-spin-button {
+	    -webkit-appearance: none;
+	    -moz-appearance: none;
+	    appearance: none;
+	    margin: 0;
 	}
 }
