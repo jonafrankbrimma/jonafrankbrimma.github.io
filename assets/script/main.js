@@ -7,6 +7,7 @@ $(document).ready(function () {
 	});
 	$(".join-our-tribe").css("display", "none");
 	$(".acknowledge").css("display", "none");
+	$(".contact-response").css("display","none");
 	$('#fullpage').fullpage({
 		controlArrows: false,
 		easing: 'easeInOutCubic',
@@ -55,6 +56,15 @@ $(document).ready(function () {
 			}
 		);
 	});
+	$(".contact-submit").click(function () {
+		$(".contact-response").addClass("animated fadeIn");
+		$(".contact-response").css("display", "flex");
+		$("#contact-name").val("");
+		$("#email").val("");
+		$("#company").val("");
+		$("#phone").val("");
+		$("#contact-info").val("");
+	});
 	$(".send-resume").click(function () {
 		$(".triballeadership-white").addClass("animated fadeOut").one(
 			'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
@@ -69,16 +79,32 @@ $(document).ready(function () {
 		);
 	});
 	$(".back").click(function () {
-		console.log("cclicked");
-		$(".triballeadership-white").addClass("animated fadeIn").one(
+		$(".join-our-tribe").addClass("animated fadeOut").one(
 			'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
 			function () {
+				$(".join-our-tribe").css("display", "none");
+				$(".triballeadership-white").removeClass("animated fadeOut");
+				$(".join-our-tribe").removeClass("animated fadeIn");
+				$(".acknowledge").removeClass("animated fadeIn");
+				// $(".resume-form").css("display", "flex");
+				$(".triballeadership-white").addClass("animated fadeIn");
 				$(".triballeadership-white").css("display", "flex");
-				$(".join-our-tribe").addClass("animated fadeIn");
-				$(".join-our-tribe").css("display", "flex");
-				$(".page-5 .block-1").css("padding-top", "60px");
-				$(".page-5 .block-2").css("padding-top", "0px");
-				$(".page-5 .block-2").css("padding-bottom", "0px");
+				$(".page-5 .block-1").css("padding-top", "0px");
+				$(".page-5 .block-2").css("padding-top", "50px");
+				$(".page-5 .block-2").css("padding-bottom", "50px");
+			}
+		);
+	});
+
+
+	$(".fa-spin").hide();
+	$(".browse").click(function () {
+		$(".resume-form").addClass("animated fadeOut").one(
+			'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+			function () {
+				$(".resume-form").css("display", "none");
+				$(".acknowledge").addClass("animated fadeIn");
+				$(".acknowledge").css("display", "flex");
 			}
 		);
 	});

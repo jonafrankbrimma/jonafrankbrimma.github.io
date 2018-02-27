@@ -41,8 +41,8 @@ select {
 	border:2px solid #000;
 	background:url('/assets/images/downarrow.png');
 	background-repeat:no-repeat;
-	background-size:50px 50px;
-  background-position: 246px -2px;
+	background-size:30px 30px;
+  background-position: 266px 6px;
 }
 body {
 	margin: 0;
@@ -2065,6 +2065,8 @@ letter-spacing: 0.03rem; */
 	.contact-us-reach-content div {
 		margin-bottom: 10px;
 	}
-
+	.contact-response{
+		margin-top:10px;
+	}
 
 }

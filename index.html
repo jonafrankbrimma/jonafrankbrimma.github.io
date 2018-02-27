@@ -19,6 +19,7 @@
   <!-- Fullpage.js -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.css"
   />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Merriweather:300i,400" rel="stylesheet">
   <script type="text/javascript" src="assets/script/scrolloverflow.min.js"></script>
@@ -524,7 +525,7 @@
                 </div>
                 <div class="row-3">
                   <input name="file" class="file" type="file">
-                  <label for="file" id="file">BROWSE</label>
+                  <label for="file" id="file">BROWSE<i class="fa fa-spinner fa-spin" style="color:black"></i></label>
                 </div>
                 <div class="row-3">
                   <button class="send">SEND</button>
@@ -592,36 +593,38 @@
           </div>
           <div class="contact-us-right">
             <p>So the <i>stakes are high</i> and your <i>interest is increasing</i> (pun intended), get in touch with us now! We'll respond
-              within 24 hours!</p>
+              within 24 hours!</p> <br>
             <div class="contact-us-section">
               <div class="contact-row">
                 <div>
                   <div class="contact-label">NAME</div>
-                  <input type="text" name="name">
+                  <input type="text" id="contact-name" name="name">
                 </div>
                 <div>
                   <div class="contact-label">EMAIL</div>
-                  <input type="text" name="email">
+                  <input type="text" id="email" name="email">
                 </div>
               </div>
               <div class="contact-row">
                 <div>
                   <div class="contact-label">COMPANY</div>
-                  <input type="text" name="company">
+                  <input type="text" id="company" name="company">
                 </div>
                 <div>
                   <div class="contact-label">PHONE NUMBER</div>
-                  <input type="number" name="phone">
+                  <input type="number" id="phone" name="phone">
                 </div>
               </div>
               <div>
                 <div class="contact-label">WE ARE ALL EARS :</div>
-                <textarea></textarea>
+                <textarea id="contact-info" name="contact-info"></textarea>
               </div>
               <div class="contact-row">
                 <div class="contact-submit">SUBMIT</div>
               </div>
             </div>
+            <div class="contact-response"><p>Thanks a lot for submitting your message/query. Our team will get in touch with you within 24 hours.</p></div>
+
           </div>
         </div>
         <div class="block-3">
