@@ -6,6 +6,7 @@ $(document).ready(function () {
 		$("#file").append(filename);
 	});
 	$(".join-our-tribe").css("display", "none");
+	$(".acknowledge").css("display", "none");
 	$('#fullpage').fullpage({
 		controlArrows: false,
 		easing: 'easeInOutCubic',
@@ -44,6 +45,16 @@ $(document).ready(function () {
 	$('.menu li').removeClass('active-menu');
 	$("[data-url='" + currentHref + "']").addClass('active-menu');
 
+	$(".send").click(function () {
+		$(".resume-form").addClass("animated fadeOut").one(
+			'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+			function () {
+				$(".resume-form").css("display", "none");
+				$(".acknowledge").addClass("animated fadeIn");
+				$(".acknowledge").css("display", "flex");
+			}
+		);
+	});
 	$(".send-resume").click(function () {
 		$(".triballeadership-white").addClass("animated fadeOut").one(
 			'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
@@ -54,11 +65,23 @@ $(document).ready(function () {
 				$(".page-5 .block-1").css("padding-top", "60px");
 				$(".page-5 .block-2").css("padding-top", "0px");
 				$(".page-5 .block-2").css("padding-bottom", "0px");
-
 			}
 		);
 	});
-
+	$(".back").click(function () {
+		console.log("cclicked");
+		$(".triballeadership-white").addClass("animated fadeIn").one(
+			'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+			function () {
+				$(".triballeadership-white").css("display", "flex");
+				$(".join-our-tribe").addClass("animated fadeIn");
+				$(".join-our-tribe").css("display", "flex");
+				$(".page-5 .block-1").css("padding-top", "60px");
+				$(".page-5 .block-2").css("padding-top", "0px");
+				$(".page-5 .block-2").css("padding-bottom", "0px");
+			}
+		);
+	});
 	var page3ImgSrcs = [
 		"assets/images/3_1.png",
 		"assets/images/3_2.png",
@@ -77,7 +100,7 @@ $(document).ready(function () {
 
 	setInterval(function () {
 		$.fn.fullpage.moveSlideRight();
-	}, 30000);
+	}, 50000000);
 });
 
 function menuButton() {

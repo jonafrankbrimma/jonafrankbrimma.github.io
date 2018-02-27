@@ -23,6 +23,27 @@
 	src: url('../fonts/tahoma.ttf');
 }
 
+/* Remove  arrows from nubmer field */
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+select {
+	width:100px;
+	appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	-ms-appearance:none;
+	border:2px solid #000;
+	background:url('/assets/images/downarrow.png');
+	background-repeat:no-repeat;
+	background-size:50px 50px;
+  background-position: 246px -2px;
+}
 body {
 	margin: 0;
 	padding: 0;
@@ -185,12 +206,26 @@ ul {
 .linkedin {
 	background: url("../icon/linkedin.png") no-repeat;
 	background-size: 100%;
-	width: 25px;
-	height: 25px;
+	width: 100%;
+	height: 100%;
 	display: inline-block;
-	margin: 5px;
 	-webkit-filter: invert(100%);
 	filter: invert(65%);
+	margin-right: 20px;
+	margin-bottom: 20px;
+
+}
+.linkedin:hover {
+	background: url("../icon/linkedin.png") no-repeat;
+	background-size: 100%;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	-webkit-filter: invert(100%);
+	filter: invert(65%);
+	margin-right: 20px;
+	margin-bottom: 20px;
+	filter: brightness(100%);
 }
 
 .twitter {
@@ -425,6 +460,20 @@ ul {
 	text-align: center;
 }
 
+.pro-select{
+	width: 50%;
+}
+.mba-section{
+	width: 50%;
+	padding-top: 29px;
+}
+.dev-section{
+	width: 50%;
+}
+.second-section{
+	display: flex;
+	margin-top: 50px;
+}
 .big-text {
 	font-size: 3rem;
 	display: block;
@@ -434,10 +483,11 @@ ul {
 }
 
 .bigger-text {
-	font-size: 2rem;
+	font-size: 1.5rem;
 	display: block;
 	font-family: 'Merriweather';
-	font-weight: lighter;
+	font-weight: 100;
+	line-height: 1.875rem;
 }
 
 .mid-text {
@@ -451,13 +501,12 @@ ul {
 }
 
 .middle-text {
-	font-size: 1.2rem;
+	font-size: 1rem;
+	margin-top: 10px;
+	line-height: 1.875em;
+	color: #c2c2c2c2;
 	display: block;
-	margin: 15px 0px;
 	font-family: 'Merriweather';
-	font-weight: lighter;
-	line-height: 1.5;
-	color: #AAAAAA;
 }
 
 .small-text {
@@ -508,14 +557,29 @@ ul {
 }
 
 .ellie-mae-logo {
-	background: url('../images/elimae_logo.png') no-repeat;
-	width: 206px;
-	height: 189px;
+	background: url('../images/elliemae-proselect.png') no-repeat;
+	width: 150px;
+	height: 137px;
 	display: block;
 	margin: auto;
 	background-size: 100%;
 }
-
+.mba-logo {
+	background: url('../images/mba.png') no-repeat;
+	width: 206px;
+	height: 110px;
+	display: block;
+	margin: auto;
+	background-size: 100%;
+}
+.encompass-logo {
+	background: url('../images/ellimae-dev.png') no-repeat;
+	width: 143px;
+	height: 141px;
+	display: block;
+	margin: auto;
+	background-size: 100%;
+}
 .page-3 .block-1 {
 	height: 560px;
 	display: flex;
@@ -1384,6 +1448,25 @@ ul {
 	height: 50px;
 }
 
+.send:hover {
+	background-color: #ff8e2b;
+}
+
+.response-content-1 p {
+	font-family: 'Merriweather', serif;
+	font-weight: 100;
+	font-size: 1rem;
+	line-height: 1.8rem;
+	color: white;
+}
+.response-content p {
+	margin-top: 22px !important;
+	font-family: 'Merriweather', serif;
+	font-weight: 100;
+	font-size: 1rem;
+	line-height: 1.8rem;
+	color: white;
+}
 .joinourtribe-content-1 p {
 	font-family: 'Merriweather', serif;
 	font-weight: 100;
@@ -1416,6 +1499,24 @@ ul {
 	letter-spacing: 0.03rem;
 }
 
+.send-resume:hover {
+	background-color: #ff8e2b;
+}
+.back {
+	width: 300px;
+	height: 50px;
+  margin-top: 40px;
+	background-color: #FFA658;
+	color: white;
+	border: 0px;
+	font-family: 'Lato-Bold';
+  font-size: 0.875rem;
+	letter-spacing: 0.03rem;
+}
+
+.back:hover {
+	background-color: #ff8e2b;
+}
 
 .joinourtribe-white {
 	font-family: 'Lato';
@@ -1632,6 +1733,9 @@ letter-spacing: 0.03rem; */
 	margin-left:20px;
 	height: 50px;
 }
+.contact-submit:hover {
+	background-color: #ff8e2b;
+}
 
 .contact-us-reach {
 	color: #333333;
@@ -1641,7 +1745,21 @@ letter-spacing: 0.03rem; */
 	flex-flow: column;
 	margin: auto;
 }
-
+.contact-us-reach-content div {
+	font-family: 'Merriweather', serif !important;
+	line-height: 1.8rem;
+}
+.contact-us-reach-content a{
+	font-family: 'Merriweather', serif !important;
+	line-height: 1.8rem;
+	color: blue !important;
+}
+.contact-us-reach-content a:hover{
+	font-family: 'Merriweather', serif !important;
+	line-height: 1.8rem;
+	color: blue !important;
+	text-decoration: underline !important;
+}
 .contact-us-reach-title {
 	font-weight: 400;
 	font-size: 1.5rem;
@@ -1658,9 +1776,7 @@ letter-spacing: 0.03rem; */
 	font-family: 'Merriweather', serif !important;
 	font-size: 1rem;
 }
-.reach-title{
-	font-family: 'Merriweather', serif !important;
-}
+
 /* .contact-us-email,
 .contact-us-phone,
 .contact-us-location {
@@ -1712,9 +1828,11 @@ letter-spacing: 0.03rem; */
 }
 
 .contact-us-footer div {
-	padding: 10px;
+	padding: 20px;
 	color: #CCCCCC;
 	font-size: 0.8rem;
+	padding-left: 20px;
+
 }
 
 .contact-us-footer .push-down {
@@ -1725,7 +1843,9 @@ letter-spacing: 0.03rem; */
 	padding: 0px 10px;
 	cursor: pointer;
 }
-
+.contact-us-footer .push-down span:hover {
+	filter: brightness(125%);
+}
 .supree {
 	background: url("../images/color/supree.png") no-repeat;
 	background-size: cover;
@@ -1946,12 +2066,5 @@ letter-spacing: 0.03rem; */
 		margin-bottom: 10px;
 	}
 
-	/* Remove arrow from number field */
-	input[type=number]::-webkit-inner-spin-button,
-	input[type=number]::-webkit-outer-spin-button {
-	    -webkit-appearance: none;
-	    -moz-appearance: none;
-	    appearance: none;
-	    margin: 0;
-	}
+
 }
