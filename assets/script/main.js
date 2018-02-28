@@ -162,7 +162,7 @@ function showDesc(element) {
 	$(element).find('.member-desc').css({
 		left: ($(element.parentElement).offset().left - $(element).offset().left)
 	});
-	$(element).find('.member-desc').stop(true, true).delay(800).fadeIn('slow');
+	$(element).find('.member-desc').stop(true, true).delay(400).fadeIn('slow');
 	$(element).find('.member-pic').addClass('member-active');
 	$(element).siblings().addClass('fade-member');
 }
