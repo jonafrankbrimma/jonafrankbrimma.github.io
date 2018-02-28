@@ -28,6 +28,9 @@
   <!-- Animate Text Dependencies -->
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"> -->
   <link href="assets/css/animate.css" rel="stylesheet">
+  <link href="assets/css/jquery.fileupload-ui.css" rel="stylesheet">
+
+
   <!-- End Animate Text Dependencies -->
   <!-- Google Analytics -->
   <script>
@@ -44,6 +47,11 @@
   <!-- End Google Analytics -->
   <link href="assets/css/main.css" rel="stylesheet">
   <script type="text/javascript" src="assets/script/main.js"></script>
+  <script src="assets/script/jquery.fileupload.js"></script>
+  <script src="assets/script/jquery.fileupload-ui.js"></script>
+  <script src="js/jquery.iframe-transport.js"></script>
+
+
 </head>
 
 <body>
@@ -523,9 +531,12 @@
                 <div class="upload">
                   <span for="" class="number">UPLOAD YOUR RESUME (Only .doc, .docx, and PDF formats)</span>
                 </div>
-                <div class="row-3">
-                  <input name="file" class="file" type="file">
-                  <label for="file" id="file">BROWSE<i class="fa fa-spinner fa-spin" style="color:black"></i></label>
+                <div class="row-3 browse-button">
+                  <input id="fileupload" name="file[]" class="file" type="file">
+                  <label for="file" id="file">BROWSE</label>
+                </div>
+                <div id="progress">
+                <div class="bar" style="width: 0%;"></div>
                 </div>
                 <div class="row-3">
                   <button class="send">SEND</button>

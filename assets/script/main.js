@@ -1,10 +1,13 @@
 $(document).ready(function () {
 	$('input[type="file"]').change(function(){
 		var filename = $('input[type=file]').val().replace(/.*(\/|\\)/, '');
-		console.log(filename);
+		// console.log(filename);
 		$("#file").empty();
-		$("#file").append(filename);
+		$("#file").append(filename+'<i class="spin-css fa fa-spinner fa-spin"></i>');
+		$(".fa-spin").css("display", "block");
+
 	});
+	$(".fa-spin").hide();
 	$(".join-our-tribe").css("display", "none");
 	$(".acknowledge").css("display", "none");
 	$(".contact-response").css("display","none");
@@ -15,6 +18,7 @@ $(document).ready(function () {
 		autoScrolling: false,
 		css3: true,
 		fitToSection: false,
+		lockAnchors: false,
 		onSlideLeave: function (anchorLink, index, slideIndex, direction, nextSlideIndex) {
 			if (direction == 'right') {
 				let className = '.slide-' + Number(slideIndex + 2) + ' ';
@@ -56,6 +60,7 @@ $(document).ready(function () {
 			}
 		);
 	});
+
 	$(".contact-submit").click(function () {
 		$(".contact-response").addClass("animated fadeIn");
 		$(".contact-response").css("display", "flex");
@@ -95,9 +100,6 @@ $(document).ready(function () {
 			}
 		);
 	});
-
-
-	$(".fa-spin").hide();
 	$(".browse").click(function () {
 		$(".resume-form").addClass("animated fadeOut").one(
 			'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
