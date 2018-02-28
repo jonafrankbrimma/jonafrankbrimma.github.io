@@ -472,7 +472,7 @@ ul {
 }
 .second-section{
 	display: flex;
-	margin-top: 50px;
+	margin-top: 25px;
 }
 .big-text {
 	font-size: 3rem;
@@ -483,7 +483,7 @@ ul {
 }
 
 .bigger-text {
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	display: block;
 	font-family: 'Merriweather';
 	font-weight: 100;
@@ -558,24 +558,24 @@ ul {
 
 .ellie-mae-logo {
 	background: url('../images/elliemae-proselect.png') no-repeat;
-	width: 150px;
-	height: 137px;
+	width: 123px;
+	height: 121px;
 	display: block;
 	margin: auto;
 	background-size: 100%;
 }
 .mba-logo {
 	background: url('../images/mba.png') no-repeat;
-	width: 206px;
-	height: 110px;
+	width: 186px;
+	height: 100px;
 	display: block;
 	margin: auto;
 	background-size: 100%;
 }
 .encompass-logo {
 	background: url('../images/ellimae-dev.png') no-repeat;
-	width: 143px;
-	height: 141px;
+	width: 133px;
+	height: 131px;
 	display: block;
 	margin: auto;
 	background-size: 100%;
@@ -2068,5 +2068,11 @@ letter-spacing: 0.03rem; */
 	.contact-response{
 		margin-top:10px;
 	}
-
+	.spin-css{
+		color: black;
+		display: block;
+		float: right;
+		margin: auto;
+		font-size: 1.5rem;
+	}
 }
