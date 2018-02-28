@@ -1711,15 +1711,6 @@ ul {
 .contact-us-section {
 margin-left: -20px;
 }
-/* width: 300px;
-height: 60px;
-margin-top: 50px;
-background-color: #FFA658;
-color: white;
-border: 0px;
-font-family: 'Lato-Bold';
-font-size: 1rem;
-letter-spacing: 0.03rem; */
 
 .contact-submit {
 	width: 600px !important;
@@ -1734,6 +1725,22 @@ letter-spacing: 0.03rem; */
 	height: 50px;
 }
 .contact-submit:hover {
+	background-color: #ff8e2b;
+}
+
+.contact-back{
+margin-top: 20px;
+width: 300px;
+padding: 15px;
+background-color: #FFA658;
+color: white;
+text-align: center;
+font-family: 'Lato-Bold';
+font-size: 0.875rem;
+letter-spacing: 0.03rem;
+height: 50px;
+}
+.contact-back:hover {
 	background-color: #ff8e2b;
 }
 
@@ -1900,7 +1907,10 @@ letter-spacing: 0.03rem; */
 	background: url("../images/color/you.png") no-repeat;
 	background-size: cover;
 }
-
+.contact-response{
+	margin-top:20px;
+	flex-direction: column;
+}
 @media screen and (max-width:1440px) {
 	.people-pic {
 	    background-image: url(../images/tribal.png);
@@ -2122,9 +2132,7 @@ letter-spacing: 0.03rem; */
 	.contact-us-reach-content div {
 		margin-bottom: 10px;
 	}
-	.contact-response{
-		margin-top:10px;
-	}
+
 	.spin-css{
 		color: black;
 		display: block;

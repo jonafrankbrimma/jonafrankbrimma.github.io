@@ -61,15 +61,6 @@ $(document).ready(function () {
 		);
 	});
 
-	$(".contact-submit").click(function () {
-		$(".contact-response").addClass("animated fadeIn");
-		$(".contact-response").css("display", "flex");
-		$("#contact-name").val("");
-		$("#email").val("");
-		$("#company").val("");
-		$("#phone").val("");
-		$("#contact-info").val("");
-	});
 	$(".send-resume").click(function () {
 		$(".triballeadership-white").addClass("animated fadeOut").one(
 			'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
@@ -110,6 +101,40 @@ $(document).ready(function () {
 			}
 		);
 	});
+	$(".contact-submit").click(function () {
+		$(".contact-form").addClass("animated fadeOut").one(
+			'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+			function () {
+				$("#contact-name").val("");
+				$("#email").val("");
+				$("#company").val("");
+				$("#phone").val("");
+				$("#contact-info").val("");
+				$(".contact-form").css("display", "none");
+				$(".contact-response").addClass("animated fadeIn");
+				$(".contact-response").removeClass("fadeIn");
+				$(".contact-form").removeClass("animated");
+				$(".contact-response").removeClass("animated");
+				$(".contact-form").removeClass("fadeOut");
+				$(".contact-response").css("display", "flex");
+			}
+		);
+	});
+	$(".contact-back").click(function () {
+		$(".contact-response").addClass("animated fadeOut").one(
+			'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+			function () {
+				$(".contact-response").css("display", "none");
+				$(".contact-form").addClass("fadeIn");
+				$(".contact-form").css("display", "block");
+
+				$(".contact-form").removeClass("fadeIn");
+				$(".contact-response").removeClass("fadeOut");
+
+			}
+		);
+	});
+
 	var page3ImgSrcs = [
 		"assets/images/3_1.png",
 		"assets/images/3_2.png",
@@ -162,7 +187,7 @@ function showDesc(element) {
 	$(element).find('.member-desc').css({
 		left: ($(element.parentElement).offset().left - $(element).offset().left)
 	});
-	$(element).find('.member-desc').stop(true, true).delay(400).fadeIn('slow');
+	$(element).find('.member-desc').stop(true, true).delay(800).fadeIn('slow');
 	$(element).find('.member-pic').addClass('member-active');
 	$(element).siblings().addClass('fade-member');
 }
