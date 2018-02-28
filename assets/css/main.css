@@ -1908,7 +1908,6 @@ height: 50px;
 	background-size: cover;
 }
 .contact-response{
-	margin-top:20px;
 	flex-direction: column;
 }
 @media screen and (max-width:1440px) {
