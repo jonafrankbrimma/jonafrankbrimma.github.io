@@ -42,7 +42,7 @@ select {
 	background:url('/assets/images/downarrow.png');
 	background-repeat:no-repeat;
 	background-size:30px 30px;
-  background-position: 266px 6px;
+  background-position: 256px 6px;
 }
 body {
 	margin: 0;
@@ -1915,6 +1915,63 @@ letter-spacing: 0.03rem; */
     position: relative;
     height: 505px;
 }
+
+.bigger-text {
+	font-size: 1.2rem;
+	display: block;
+	font-family: 'Merriweather';
+	font-weight: 100;
+	line-height: 1.875rem;
+}
+.middle-text {
+	font-size: 1rem;
+	margin-top: 10px;
+	line-height: 1.875em;
+	color: #c2c2c2c2;
+	display: block;
+	font-family: 'Merriweather';
+}
+.ellie-mae-logo {
+	background: url('../images/elliemae-proselect.png') no-repeat;
+	width: 115px;
+	height: 103px;
+	display: block;
+	margin: auto;
+	background-size: 100%;
+}
+.mba-logo {
+	background: url('../images/mba.png') no-repeat;
+	width: 173px;
+	height: 93px;
+	display: block;
+	margin: auto;
+	background-size: 100%;
+}
+.encompass-logo {
+	background: url('../images/ellimae-dev.png') no-repeat;
+	width: 130px;
+	height: 129px;
+	display: block;
+	margin: auto;
+	background-size: 100%;
+}
+.middle-text {
+    font-size: 0.8rem;
+    margin-top: 10px;
+    line-height: 1.5em;
+    color: #c2c2c2c2;
+    display: block;
+    font-family: 'Merriweather';
+}
+.bigger-text {
+    font-size: 1rem;
+    display: block;
+    font-family: 'Merriweather';
+    font-weight: 100;
+    line-height: 1.5rem;
+}
+
+
 }
 
 @media screen and (max-width:500px) {
