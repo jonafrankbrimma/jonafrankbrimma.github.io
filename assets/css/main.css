@@ -45,6 +45,7 @@ select {
   background-position: 256px 6px;
 }
 body {
+
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
@@ -68,6 +69,20 @@ body {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+}
+
+body:after
+{
+content: url("../images/color/supree.png")
+url("../images/color/deepan.png")
+url("../images/color/divya.png")
+url("../images/color/jona.png")
+url("../images/color/gops.png")
+url("../images/color/abhi.png")
+url("../images/color/peri.png")
+url("../images/color/kevin.png")
+url("../images/color/kirupa.png")
+url("../images/color/pavi.png");
 }
 
 * {
