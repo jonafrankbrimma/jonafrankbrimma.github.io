@@ -826,12 +826,12 @@ ul {
 	width: 230px;
 	height: 230px;
 
-	filter: grayscale(100%);
+	/* filter: grayscale(100%); */
 }
 
 .member-pic:hover,
 .member-active {
-	filter: grayscale(0%);
+	/* filter: grayscale(0%); */
 }
 
 .member-name {
@@ -1853,58 +1853,109 @@ height: 50px;
 .contact-us-footer .push-down span:hover {
 	filter: brightness(125%);
 }
-.supree {
+/* Color Images */
+.supree:hover {
 	background: url("../images/color/supree.png") no-repeat;
 	background-size: cover;
 }
 
-.deepan {
+.deepan:hover {
 	background: url("../images/color/deepan.png") no-repeat;
 	background-size: cover;
 }
 
-.divya {
+.divya:hover {
 	background: url("../images/color/divya.png") no-repeat;
 	background-size: cover;
 }
 
-.jona {
+.jona:hover {
 	background: url("../images/color/jona.png") no-repeat;
 	background-size: cover;
 }
 
-.gops {
+.gops:hover {
 	background: url("../images/color/gops.png") no-repeat;
 	background-size: cover;
 }
 
-.abhi {
+.abhi:hover {
 	background: url("../images/color/abhi.png") no-repeat;
 	background-size: cover;
 }
 
-.peri {
+.peri:hover {
 	background: url("../images/color/peri.png") no-repeat;
 	background-size: cover;
 }
 
-.kevin {
+.kevin:hover {
 	background: url("../images/color/kevin.png") no-repeat;
 	background-size: cover;
 }
 
-.kirupa {
+.kirupa:hover {
 	background: url("../images/color/kirupa.png") no-repeat;
 	background-size: cover;
 }
 
-.pavi {
+.pavi:hover {
 	background: url("../images/color/pavi.png") no-repeat;
+	background-size: cover;
+}
+/* BW Images */
+.supree {
+	background: url("../images/bw/supree.png") no-repeat;
+	background-size: cover;
+}
+
+.deepan {
+	background: url("../images/bw/deepan.png") no-repeat;
+	background-size: cover;
+}
+
+.divya {
+	background: url("../images/bw/divya.png") no-repeat;
+	background-size: cover;
+}
+
+.jona {
+	background: url("../images/bw/jona.png") no-repeat;
+	background-size: cover;
+}
+
+.gops {
+	background: url("../images/bw/gops.png") no-repeat;
+	background-size: cover;
+}
+
+.abhi {
+	background: url("../images/bw/abhi.png") no-repeat;
+	background-size: cover;
+}
+
+.peri {
+	background: url("../images/bw/peri.png") no-repeat;
+	background-size: cover;
+}
+
+.kevin {
+	background: url("../images/bw/kevin.png") no-repeat;
+	background-size: cover;
+}
+
+.kirupa {
+	background: url("../images/bw/kirupa.png") no-repeat;
+	background-size: cover;
+}
+
+.pavi {
+	background: url("../images/bw/pavi.png") no-repeat;
 	background-size: cover;
 }
 
 .you {
-	background: url("../images/color/you.png") no-repeat;
+	background: url("../images/bw/you.png") no-repeat;
 	background-size: cover;
 }
 .contact-response{

@@ -19,6 +19,7 @@ $(document).ready(function () {
 		css3: true,
 		fitToSection: false,
 		lockAnchors: false,
+		keyboardScrolling: true,
 		onSlideLeave: function (anchorLink, index, slideIndex, direction, nextSlideIndex) {
 			if (direction == 'right') {
 				let className = '.slide-' + Number(slideIndex + 2) + ' ';
@@ -153,7 +154,7 @@ $(document).ready(function () {
 
 	setInterval(function () {
 		$.fn.fullpage.moveSlideRight();
-	}, 50000000);
+	}, 10000);
 });
 
 function menuButton() {
@@ -187,7 +188,7 @@ function showDesc(element) {
 	$(element).find('.member-desc').css({
 		left: ($(element.parentElement).offset().left - $(element).offset().left)
 	});
-	$(element).find('.member-desc').stop(true, true).delay(800).fadeIn('slow');
+	$(element).find('.member-desc').stop(true, true).delay(400).fadeIn('slow');
 	$(element).find('.member-pic').addClass('member-active');
 	$(element).siblings().addClass('fade-member');
 }
