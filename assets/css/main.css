@@ -73,6 +73,7 @@ body {
 
 body:after
 {
+	display: none;
 content: url("../images/color/supree.png")
 url("../images/color/deepan.png")
 url("../images/color/divya.png")
