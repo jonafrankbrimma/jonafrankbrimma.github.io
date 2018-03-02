@@ -758,6 +758,23 @@ ul {
 	font-weight: 700;
 }
 
+.our-strengths-content-heading {
+	color: #666666;
+	font-family: 'Merriweather', serif;
+	font-size: 1rem;
+	line-height: 1.8rem;
+	font-weight: 100;
+	text-align: center;
+	padding: 22px 0px 0px 0px;
+}
+
+.our-strengths-content-heading strong {
+	font-family: 'Merriweather', serif;
+	font-size: 1rem;
+	line-height: 1.8rem;
+	font-weight: 700;
+}
+
 .about-team {
 	max-width: 960px;
 	margin: auto;
@@ -1028,7 +1045,7 @@ ul {
 	line-height: 1.8rem;
 	font-size: 1rem;
 	letter-spacing: .5px;
-	padding-top: 21% !important;
+	padding-top: 45% !important;
 	text-align: right;
 }
 
